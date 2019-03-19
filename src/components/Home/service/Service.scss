@@ -8,10 +8,8 @@
 /* ====================================
 Service Image
 ======================================= */
-.serviceImageContainer {
-  max-width: 32.25rem;
-  margin: 0 auto 2rem;
-
+.service__imageContainer {
+  text-align: center;
   position: relative;
 
   &::after {
@@ -22,64 +20,56 @@ Service Image
 }
 
 // modifiers
-.serviceImageContainer_width_half {
+.service__imageContainer_shortened {
+  max-width: 32.25rem;
+  margin: 0 auto 2rem;
+}
+.service__imageContainer_width_half {
   @media screen and (min-width: $break-service) {
     width: 60%;
   }
 }
-.serviceImageContainer_float_right {
+.service__imageContainer_float_right {
   @media screen and (min-width: $break-service) {
     float: right;
   }
 }
-.serviceImageContainer_float_left {
+.service__imageContainer_float_left {
   @media screen and (min-width: $break-service) {
     float: left;
   }
 }
-.serviceImageContainer_fixed {
-  margin-right: -2rem; 
+// .service__imageContainer_fixed {
+//   margin-right: -2rem; 
 
-  @media screen and (min-width: $break-large) {
-    width: 30%;
-    position: absolute;
-    right: calc((-100vw + 65rem) / 2);
-  }
+//   @media screen and (min-width: $break-large) {
+//     width: 30%;
+//     position: absolute;
+//     right: calc((-100vw + 65rem) / 2);
+//   }
 
-  @media screen and (min-width: $break-service-large) {
-    width: 40%;
-  }
+//   @media screen and (min-width: $break-service-large) {
+//     width: 40%;
+//   }
 
-  @media screen and (min-width: $break-service-xlarge) {
-    width: 50%;
-  }
-}
-.serviceImageContainer_fixed_left {
-  margin-left: -2rem; 
+//   @media screen and (min-width: $break-service-xlarge) {
+//     width: 50%;
+//   }
+// }
+// .service__imageContainer_fixed_left {
+//   margin-left: -2rem; 
 
-  @media screen and (min-width: $break-dashboard) {
-    width: 64%;
-    max-width: initial;
-    position: absolute;
-    left: calc((-100vw + 65rem) / 2);
-  }
+//   @media screen and (min-width: $break-dashboard) {
+//     width: 64%;
+//     max-width: initial;
+//     position: absolute;
+//     left: calc((-100vw + 65rem) / 2);
+//   }
 
-  @media screen and (min-width: $break-service-xlarge) {
-    width: 70%;
-  }
-}
-
-/* image --- */
-
-// modifiers
-.serviceImageContainer__image_stuck_left {
-  @media screen and (min-width: $break-service) {
-    position: absolute;
-    right: 0;
-    max-width: initial;
-    width: 50vw;
-  }
-}
+//   @media screen and (min-width: $break-service-xlarge) {
+//     width: 70%;
+//   }
+// }
 
 /* ====================================
 Service Content
@@ -96,9 +86,9 @@ Service Content
     width: 40%;
   }
 }
-.service__content_move_up {
-  margin-top: -6rem;
-}
+// .service__content_move_up {
+  // margin-top: -2rem;
+// }
 .service__content_width_half {
   @media screen and (min-width: $break-service) {
     width: 40%;

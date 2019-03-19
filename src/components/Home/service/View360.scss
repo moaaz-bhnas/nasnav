@@ -1,16 +1,20 @@
 @import '../../../sass-modules/breakpoints';
 
 /* 360 --- */
-.serviceImageContainer__360 {
+.service__360Badge {
   width: 13rem;
-  position: absolute;
-  top: -12rem;
-  right: 0;
+  top: -10rem;
   z-index: -1;
 }
 
+/* phone image --- */
+.service__phoneImage {
+  width: 100%;
+  max-width: 28.35rem;
+}
+
 /* eye --- */
-.serviceImageContainer__eye {
+.service__eye {
   width: 5.5rem;
   position: absolute;
   top: 10rem;

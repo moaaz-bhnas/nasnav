@@ -10,7 +10,7 @@ import './ControlPanel.scss';
 const ControlPanel = () => {
   return (
     <article className="service controlPanel" role="article">
-      <div className="serviceImageContainer serviceImageContainer_width_half serviceImageContainer_float_right">
+      <div className="service__imageContainer service__imageContainer_width_half service__imageContainer_float_right">
         <img className="controlPanel__phone" src={phone} alt="Phone"/>
         <img className="controlPanel__tablet" src={tablet} alt="Tablet"/>
         <img className="controlPanel__badge" src={badge1} alt="Badge"/>

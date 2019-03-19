@@ -7,8 +7,8 @@ import './NavBox.scss';
 const NavBox = () => {
   return (
     <article className="service" role="article">
-      <div className="serviceImageContainer serviceImageContainer_width_half serviceImageContainer_float_right">
-        <img src={navboxImage} alt="Navbox image"     className="image serviceImageContainer__image"/>
+      <div className="service__imageContainer service__imageContainer_shortened service__imageContainer_width_half service__imageContainer_float_right">
+        <img src={navboxImage} alt="Navbox image"     className="image image_size_full"/>
       </div>
       <div className="service__content service__content_width_half service__content_float_left">
         <h3 className="service__title">NavBox</h3>

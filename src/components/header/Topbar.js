@@ -42,7 +42,7 @@ class Topbar extends Component {
           onClick={this.openSidebar}
           ref={this.menuButton}
         >
-          <img className="image" src={menuIcon} alt="Menu Icon" />
+          <img className="image image_size_full" src={menuIcon} alt="Menu Icon" />
         </button>
         {/* Sidebar: mobile only when menu button is clicked */}
         {

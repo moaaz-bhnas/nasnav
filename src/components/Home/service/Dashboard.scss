@@ -1,17 +1,17 @@
 @import '../../../sass-modules/breakpoints';
 
 /* badges --- */
-.serviceImageContainer__badge {
+.dashboard .service__badge {
   width: 13rem;
   position: absolute;
 }
 
-.serviceImageContainer__badge:nth-of-type(2) {
+.dashboard .service__badge:nth-of-type(2) {
   top: 25%;
   right: -7%;
 }
 
-.serviceImageContainer__badge:nth-of-type(3) {
+.dashboard .service__badge:nth-of-type(3) {
   top: 50%;
   right: -2%;
 }

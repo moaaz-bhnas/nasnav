@@ -1,3 +1,29 @@
-.image {
+@import '../sass-modules/breakpoints';
+@import '../sass-modules/lengths';
+
+// modifiers
+.image_size_full {
   max-width: 100%;
+}
+
+.image_size_3Quarters {
+  max-width: 70%;
+}
+
+.image_extend_left {
+  @media screen and (min-width: $break-service) {
+    position: absolute;
+    right: 0;
+    max-width: initial;
+    width: 50vw;
+  }
+}
+
+.image_stuck_right {
+  position: absolute;
+  right: -1.5rem;
+
+  @media screen and (min-width: $break-large) {
+    right: calc((-100vw + 65rem) /2);
+  }
 }

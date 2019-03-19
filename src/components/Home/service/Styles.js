@@ -6,8 +6,8 @@ import './Styles.scss';
 const Styles = () => {
   return (
     <article className="service navboxStyles" role="article">
-      <div className="serviceImageContainer serviceImageContainer_width_half serviceImageContainer_float_left">
-        <img src={stylesImage} alt="Navbox styles"     className="image serviceImageContainer__image serviceImageContainer__image_stuck_left"/>
+      <div className="service__imageContainer service__imageContainer_shortened service__imageContainer_width_half service__imageContainer_float_left">
+        <img src={stylesImage} alt="Navbox styles"     className="image image_size_full image_extend_left"/>
       </div>
       <div className="service__content service__content_width_half service__content_float_right">
         <h3 className="service__title">NavBox Styles</h3>
