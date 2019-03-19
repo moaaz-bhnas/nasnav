@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.scss';
 import './App.scss';
 import './Container.scss';
@@ -15,7 +15,11 @@ import HomePage from './Home/HomePage';
 class App extends Component {
   render() {
     return (
-      <HomePage />
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
