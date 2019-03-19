@@ -5,7 +5,9 @@
   position: relative;
 }
 
-/* service image --- */
+/* ====================================
+Service Image
+======================================= */
 .serviceImageContainer {
   max-width: 32.25rem;
   margin: 0 auto 2rem;
@@ -67,7 +69,21 @@
   }
 }
 
-/* service content --- */
+/* image --- */
+
+// modifiers
+.serviceImageContainer__image_stuck_left {
+  @media screen and (min-width: $break-service) {
+    position: absolute;
+    right: 0;
+    max-width: initial;
+    width: 50vw;
+  }
+}
+
+/* ====================================
+Service Content
+======================================= */
 .service__content {
   max-width: 34rem;
   margin: 0 auto;

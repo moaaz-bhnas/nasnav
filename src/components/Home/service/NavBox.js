@@ -2,11 +2,6 @@ import React from 'react';
 import dot from '../../../image/dot.svg';
 import google from '../../../image/google.png';
 import navboxImage from '../../../image/navbox-image.png';
-import googleBadge from '../../../image/google-badge.png';
-import view360Badge from '../../../image/360-badge.png';
-import onlinePaymentBadge from '../../../image/online-badge.png';
-import designEditorBadge from '../../../image/design-badge.png';
-import barcode from '../../../image/barcode.png';
 import './NavBox.scss';
 
 const NavBox = () => {
@@ -14,11 +9,6 @@ const NavBox = () => {
     <article className="service" role="article">
       <div className="serviceImageContainer serviceImageContainer_width_half serviceImageContainer_float_right">
         <img src={navboxImage} alt="Navbox image"     className="image serviceImageContainer__image"/>
-        <img src={googleBadge} alt="Google badge" className="serviceImageContainer__googleBadge"/>
-        <img src={barcode} alt="Barcode" className="serviceImageContainer__barcode"/>
-        <img src={onlinePaymentBadge} alt="Online payment badge" className="serviceImageContainer__onlinePaymentBadge"/>
-        <img src={designEditorBadge} alt="Design editor badge" className="serviceImageContainer__designEditorBadge"/>
-        <img src={view360Badge} alt="360 view badge" className="serviceImageContainer__360ViewBadge"/>
       </div>
       <div className="service__content service__content_width_half service__content_float_left">
         <h3 className="service__title">NavBox</h3>
