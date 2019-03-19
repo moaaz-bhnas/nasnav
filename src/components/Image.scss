@@ -24,6 +24,13 @@
   right: -1.5rem;
 
   @media screen and (min-width: $break-large) {
-    right: calc((-100vw + 65rem) /2);
+    right: calc((-100vw + #{$max-width}) /2);
+  }
+}
+
+.image_cropped_right {
+  @media screen and (min-width: $break-service) {
+    position: absolute;
+    right: calc(((-100vw + #{$max-width}) / 2) - 2.5rem);
   }
 }

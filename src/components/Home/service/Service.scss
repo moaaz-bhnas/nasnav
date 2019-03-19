@@ -1,5 +1,6 @@
 @import '../../../sass-modules/colors';
 @import '../../../sass-modules/breakpoints';
+@import '../../../sass-modules/lengths';
 
 .service {
   position: relative;
@@ -20,6 +21,9 @@ Service Image
 }
 
 // modifiers
+.service__imageContainer_margin_top {
+  margin-top: 2rem;
+}
 .service__imageContainer_shortened {
   max-width: 32.25rem;
   margin: 0 auto 2rem;
@@ -27,6 +31,11 @@ Service Image
 .service__imageContainer_width_half {
   @media screen and (min-width: $break-service) {
     width: 60%;
+  }
+}
+.service__imageContainer_width_third {
+  @media screen and (min-width: $break-service) {
+    width: 30vw;
   }
 }
 .service__imageContainer_float_right {
@@ -37,6 +46,17 @@ Service Image
 .service__imageContainer_float_left {
   @media screen and (min-width: $break-service) {
     float: left;
+  }
+}
+.service__imageContainer_stuck_left {
+  display: inline-block;
+  margin-left: -1.5rem;
+
+  @media screen and (min-width: $break-service) {
+    transform: translateX(0);
+    position: absolute;
+    top: 0;
+    left: calc((-100vw + #{$max-width}) / 2);
   }
 }
 // .service__imageContainer_fixed {
@@ -81,14 +101,10 @@ Service Content
 
 // modifiers
 .service__content_align_center {
-  @media screen and (min-width: $break-large) {
+  @media screen and (min-width: $break-service) {
     text-align: center;
-    width: 40%;
   }
 }
-// .service__content_move_up {
-  // margin-top: -2rem;
-// }
 .service__content_width_half {
   @media screen and (min-width: $break-service) {
     width: 40%;

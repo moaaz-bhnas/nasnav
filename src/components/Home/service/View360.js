@@ -9,13 +9,13 @@ import './View360.scss';
 const View360 = () => {
   return (
     <article className="service view360" role="article">
-      <div className="service__imageContainer service__imageContainer_fixed">
+      <div className="service__imageContainer service__imageContainer_width_third service__imageContainer_float_right">
         <img src={badge360} alt="360 badge"   className="service__360Badge image_stuck_right"/>
-        <img src={phone} alt="Phone" className="image service__phoneImage"/>
+        <img src={phone} alt="Phone" className="image image_cropped_right service__phoneImage"/>
       </div>
-      <div className="service__content service__content_align_center service__content_width_ service__content_move_up">
+      <div className="service__content service__content_align_center service__content_width_half">
         <h3 className="service__title">360 view</h3>
-        <p className="paragraph service__paragraph paragraph_color_grey">
+        <p className="paragraph service__paragraph paragraph_color_grey paragraph_line_high">
           Once your customers have a fun experience using 360 technology
         </p>
         <p className="paragraph service__paragraph paragraph_size_large">
@@ -27,8 +27,8 @@ const View360 = () => {
         <button className="button service__button button_color_white button_back_blue button_shape_oval button_size_large buttn_color_white buttn_decoration_underline">Get Started</button>
         <button className="button button_color_white button_back_green button_shape_oval button_size_large  buttn_decoration_underline">Live Demo</button>
       </div>
-      <div className="chair">
-        <img className="image chair__image" src={chair} alt="Chair"/>
+      <div className="chair service__imageContainer service__imageContainer_width_third  service__imageContainer_stuck_left service__imageContainer_margin_top">
+        <img className="image image_size_full chair__image" src={chair} alt="Chair"/>
         <img className="chair__modal" src={modal} alt="Modal"/>
         <div className="chair__content">
           <h4 className="chair__title">Modern Chair</h4>
