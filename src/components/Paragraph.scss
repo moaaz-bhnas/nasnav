@@ -1,0 +1,78 @@
+@import '../sass-modules/colors';
+@import '../sass-modules/breakpoints';
+
+// modifiers
+/* Line heiht --- */
+.paragraph_line_high {
+  line-height: 1.5;
+}
+.paragraph_line_short {
+  line-height: 1.15;
+}
+
+/* Weight --- */
+.paragraph_weight_light {
+  font-weight: 300;
+}
+.paragraph_weight_med {
+  font-weight: 500;
+}
+.paragraph_weight_semiBold {
+  font-weight: 600;
+}
+
+/* Size --- */
+.paragraph_size_medSmall {
+  font-size: 1.05rem;
+}
+.paragraph_size_med {
+  font-size: 1.3rem;
+
+  @media screen and (min-width: $break-jumbotron) {
+    font-size: 1.5rem;
+  }
+}
+.paragraph_size_large {
+  font-size: 1.5rem;
+
+  @media screen and (min-width: $break-jumbotron) {
+    font-size: 2rem;
+  }
+}
+.paragraph_size_xLarge {
+  font-size: 1.8rem;
+
+  @media screen and (min-width: $break-jumbotron) {
+    font-size: 2.64rem;
+  }
+}
+
+/* Align --- */
+.paragraph_align_center {
+  text-align: center;
+}
+
+/* Color --- */
+.paragraph_color_white {
+  color: #fff;
+}
+.paragraph_color_grey {
+  color: $light-grey;
+}
+
+/* Shortened --- */
+.paragraph_shortened_med {
+  max-width: 35rem;
+}
+.paragraph_shortened_medLarge {
+  max-width: 41rem;
+}
+.paragraph_shortened_large {
+  max-width: 47rem;
+}
+
+/* Space between letters --- */
+.paragraph_letters_spaced {
+  letter-spacing: .02rem;
+}
+

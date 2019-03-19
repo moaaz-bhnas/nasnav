@@ -1,0 +1,130 @@
+@import '../../sass-modules/breakpoints';
+@import '../../sass-modules/colors';
+
+.topbar {
+  text-align: center;
+
+  height: 5rem;
+
+  position: relative;
+}
+
+.header__topbar {
+  margin-bottom: 3rem;
+}
+
+/* logo --- */
+.topbar__logo {
+  margin-top: 1.8rem;
+
+  @media screen and (min-width: $break-sidenav) {
+    float: left;
+  }
+}
+
+/* ===================================== 
+Menu Button
+===================================== */
+.menuButton {
+  display: inline-block;
+
+  width: 3rem;
+  padding: .7rem;
+  background-color: transparent;
+  border: none;
+  margin-top: .9rem;
+
+  cursor: pointer;
+
+  @media screen and (min-width: $break-sidenav) {
+    display: none;
+  }
+}
+
+.topbar__menuButton {
+  position: absolute;
+  left: 0;
+}
+
+/* ===================================== 
+Desktop Navigation Bar 
+===================================== */
+.desktopNavbar {
+  display: none;
+
+  @media screen and (min-width: $break-sidenav) {
+    display: inline-block;
+  }
+}
+
+/* --- title --- */
+.desktopNavbar__title {
+  position: absolute;
+  left: -100rem;
+}
+
+/* ===================================== 
+Desktop Navigation Menu 
+===================================== */
+.desktopNavMenu {
+  margin: 0;
+}
+
+/* --- item --- */
+.desktopNavMenu__item {
+  display: inline-block;
+}
+
+/* --- link --- */
+.desktopNavMenu__link {
+  display: block;
+
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 5rem;
+  color: #fff;
+  text-decoration: none;
+
+  padding: 0 1.2rem;
+
+  position: relative;
+
+  @media screen and (min-width: $break-large) {
+    padding: 0 2.05rem;
+  }
+
+  &::before {
+    content: '';
+  
+    width: 1.4rem;
+    height: .2rem;
+  
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: .2s background-color, .2s box-shadow;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: #fff;
+      box-shadow: 0 0 10px #fff;
+    }
+  }
+}
+
+/* ===================================== 
+Button
+===================================== */
+.topbar__button {
+  margin-top: 1.23rem;
+  display: none;
+
+  @media screen and (min-width: $break-sidenav) {
+    display: block;
+    float: right;
+  }
+}

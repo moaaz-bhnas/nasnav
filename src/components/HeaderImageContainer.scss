@@ -1,0 +1,35 @@
+@import '../sass-modules/breakpoints';
+
+.headerImageContainer {
+  position: relative;
+}
+
+// modifiers
+.headerImageContainer_width_half {
+  @media screen and (min-width: $break-sidenav) {
+    display: inline-block;
+    width: 50%;
+  }
+}
+.headerImageContainer_width_third {
+  @media screen and (min-width: $break-sidenav) {
+    display: inline-block;
+    width: 38%;
+  }
+}
+
+/* images --- */
+.headerImageContainer__image {
+  max-width: 100%;
+
+  @media screen and (min-width: $break-xlarge) {
+    width: 160%;
+    max-width: initial;
+
+    position: absolute;
+    top: 0;
+    left: -2rem;
+
+    vertical-align: top;
+  }
+}

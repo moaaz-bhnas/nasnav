@@ -1,0 +1,85 @@
+@import '../../sass-modules/colors';
+@import '../../sass-modules/breakpoints';
+
+.sidebar {
+  text-align: left;
+
+  width: 13rem;
+  background-color: transparent;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+
+  @media screen and (min-width: $break-sidenav-med) {
+    width: 15rem;
+  }
+
+  @media screen and (min-width: $break-sidenav-large) {
+    width: 18.75rem;
+  }
+}
+
+/* button --- */
+.sidebar__button {
+  margin-left: 1.6rem;
+
+  position: absolute;
+  top: 17.6rem;
+  z-index: 2;
+}
+
+/* ===================================== 
+Sidebar Overlay
+===================================== */
+.sidebarOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba($color: #000, $alpha: .5);
+}
+
+/* ===================================== 
+Mobile Navigation Bar
+===================================== */
+.mobileNavbar {
+  height: 100%;
+  background: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- title --- */
+.mobileNavbar__title {
+  position: absolute;
+  left: -100rem;
+}
+
+/* ===================================== 
+Mobile Navigation Menu
+===================================== */
+.mobileNavMenu {
+  margin: 0;
+}
+
+/* --- link --- */
+.mobileNavMenu__link {
+  display: block;
+
+  text-decoration: none;
+  color: $dark-grey;
+
+  padding: 1rem 0 1rem 3rem;
+
+  transition: .2s background-color;
+
+  &:hover,
+  &:focus {
+    background-color: #d3e9fb;
+  }
+}

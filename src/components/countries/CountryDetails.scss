@@ -1,0 +1,61 @@
+@import '../../sass-modules/colors';
+@import '../../sass-modules/breakpoints';
+
+.country {
+  font-size: .9rem;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 19.3%;
+  min-width: 200.72px;
+  padding: 0 1.5rem;
+
+  @media screen and (min-width: $break-countries) {
+    text-align: left;
+  }
+}
+
+.countryList__country {
+  margin-right: -.3rem;
+  margin-bottom: 3rem;
+}
+
+/* name --- */
+.country__countryName {
+  font-weight: 500;
+  margin: 0;
+}
+
+/* location --- */
+.country__countryLocation {
+  color: $light-grey;
+  margin: .9rem 0;
+}
+
+/* customer service title --- */
+.country__customerServicesTitle {
+  font-weight: 500;
+  color: $brand-color;
+
+  margin: 0 0 1rem;
+}
+
+/* =============================
+Customer Services
+================================ */
+/* item --- */
+.customerServices__item:first-child {
+  margin-bottom: 1rem;
+}
+
+/* contact icon --- */
+.customerServices__contactIcon {
+  width: 1rem;
+  vertical-align: middle;
+  margin-right: .19rem;
+}
+
+/* mail --- */
+.customerServices__mail {
+  margin-right: -.5rem;
+}

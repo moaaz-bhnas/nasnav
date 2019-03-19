@@ -1,0 +1,39 @@
+@import '../sass-modules/breakpoints';
+
+.header__intro {
+  margin-bottom: 2rem;
+  
+  @media screen and (min-width: $break-sidenav) {
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin-right: -.4rem;
+  }
+}
+
+// modifiers
+.header__intro_width_half {
+  @media screen and (min-width: $break-sidenav) {
+    width: 50%;
+  }
+}
+.header__intro_width_overHalf {
+  @media screen and (min-width: $break-sidenav) {
+    width: 62%;
+  }
+}
+
+/* paragraph --- */
+.intro__paragraph:first-of-type {
+  margin: 0;
+}
+
+.intro__paragraph:last-of-type {
+  margin: 2rem 0;
+}
+
+/* button --- */
+.intro__button:last-of-type {
+  margin-left: 1rem;
+}

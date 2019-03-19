@@ -1,0 +1,115 @@
+@import '../../../sass-modules/breakpoints';
+
+.aboutSection {
+  text-align: center;
+}
+
+/* container --- */
+.aboutSection__container {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem; 
+  background: url(../../../image/background-map.png) no-repeat 50% / 41rem 100%;
+}
+
+/* title --- */
+.aboutSection__title {
+  position: absolute;
+  left: -100rem;
+}
+
+/* paragraph --- */
+.aboutSection__paragraph {
+  margin: 1.2rem auto;
+}
+
+/* service list --- */
+.serviceIconList {
+  display: none;
+
+  @media screen and (min-width: $break-about) {
+    display: block;
+  }
+}
+
+/* service --- */
+.serviceIconList__item {
+  position: absolute;
+}
+
+/* service name --- */
+.serviceIconList__name {
+  color: #fff;
+}
+
+// (1)
+.serviceIconList__item:nth-child(1) {
+  top: -3rem;
+  left: 9rem;
+
+  .serviceIconList__name {
+    position: absolute;
+    top: 4rem;
+    left: 1.3rem;
+  }
+}
+
+// (2)
+.serviceIconList__item:nth-child(2) {
+  top: -2rem;
+  left: -2.5rem;
+
+  .serviceIconList__name {
+    position: absolute;
+    top: 6rem;
+    left: 3rem;
+  }
+}
+
+// (3)
+.serviceIconList__item:nth-child(3) {
+  bottom: 1rem;
+  left: 5rem;
+
+  .serviceIconList__name {
+    position: absolute;
+    top: 3.8rem;
+    left: .7rem;
+  }
+}
+
+// (4)
+.serviceIconList__item:nth-child(4) {
+  top: -3rem;
+  right: 9rem;
+
+  .serviceIconList__name {
+    position: absolute;
+    top: 4.5rem;
+    left: .8rem;
+  }
+}
+
+// (5)
+.serviceIconList__item:nth-child(5) {
+  top: -2rem;
+  right: -2.5rem;
+
+  .serviceIconList__name {
+    position: absolute;
+    top: 6.5rem;
+    left: 1.5rem;
+  }
+}
+
+// (6)
+.serviceIconList__item:nth-child(6) {
+  bottom: 1rem;
+  right: 5rem;
+
+  .serviceIconList__name {
+    position: absolute;
+    top: 4.5rem;
+    left: 1.8rem;
+  }
+}

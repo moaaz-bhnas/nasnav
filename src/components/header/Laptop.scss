@@ -1,0 +1,29 @@
+// @import '../../sass-modules/breakpoints';
+
+// .laptopContainer {
+//   width: 100%;
+//   max-width: 486px;
+//   margin: 0 auto;
+
+//   position: relative;
+
+//   @media screen and (min-width: $break-sidenav) {
+//     display: inline-block;
+//     width: 50%;
+//     max-width: initial;
+//   }
+// }
+
+// /* Laptop --- */
+// .laptopContainer__laptop {
+//   @media screen and (min-width: $break-xlarge) {
+//     width: 115%;
+//     max-width: initial!important;
+
+//     position: absolute;
+//     top: -2rem;
+//     left: 0;
+
+//     vertical-align: top;
+//   }
+// }
