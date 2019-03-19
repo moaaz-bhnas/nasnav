@@ -38,7 +38,7 @@ const Map = () => {
 
   return (
     <div className="map countries__map">
-      <img src={map} alt="Map" className="image mapImage" />
+      <img src={map} alt="Map" className="image image_size_full mapImage" />
       <ul className="list flagList">
         {
           countryFlags.map((countryFlag, index) => {

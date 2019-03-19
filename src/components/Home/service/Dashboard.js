@@ -8,7 +8,7 @@ import './Dashboard.scss';
 const Dashboard = () => {
   return (
     <article className="service dashboard" role="article">
-      <div className="service__imageContainer service__imageContainer_width_half service__imageContainer_float_left service__imageContainer_fixed_left">
+      <div className="service__imageContainer service__imageContainer_shortened service__imageContainer_width_half service__imageContainer_float_left service__imageContainer_fixed_left">
         <img src={laptop} alt="Laptop" className="image image_size_full"/>
         <img className="service__badge" src={badge1} alt="Badge"/>
         <img className="service__badge" src={badge2} alt="Badge"/>

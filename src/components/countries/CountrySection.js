@@ -47,7 +47,7 @@ const CountrySection = () => {
         <p className="paragraph paragraph_size_med countries__paragraph">
           <strong>Where do</strong> we go and offer our services?
         </p>
-        <p className="paragraph paragraph_color_grey paragraph_shortened_large countries__paragraph">
+        <p className="paragraph paragraph_line_high paragraph_color_grey paragraph_shortened_large countries__paragraph">
           Here at NasNav we designed a device called the route box that plugs into a store barcode scanner we designed a device called the route box that.
         </p>
         <Map />
