@@ -53,10 +53,16 @@ Service Image
   margin-left: -1.5rem;
 
   @media screen and (min-width: $break-service) {
-    transform: translateX(0);
     position: absolute;
     top: 0;
     left: calc((-100vw + #{$max-width}) / 2);
+  }
+}
+.service__imageContainer_stuck_left_viewport_small {
+  margin-left: -1.5rem;
+  
+  @media screen and (min-width: $break-service) {
+    margin-left: 0;
   }
 }
 // .service__imageContainer_fixed {
