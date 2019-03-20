@@ -38,7 +38,7 @@ const CountrySection = () => {
   ];
 
   return (
-    <section className="countries" role="region" aria-labelledby="countries__heading">
+    <section className="countries" role="region" aria-labelledby="countries__title">
       <div className="container">
         <h2 className="countries__title" id="countries__title">Countries where we offer our services</h2>
         <p className="paragraph paragraph_color_grey countries__paragraph">
