@@ -7,7 +7,7 @@ const Styles = () => {
   return (
     <article className="service navboxStyles" role="article">
       <div className="service__imageContainer service__imageContainer_width_half service__imageContainer_float_left service__imageContainer_align_left">
-        <img src={stylesImage} alt="Navbox styles" className="image image_extend_left image_shortened_viewport_small"/>
+        <img src={stylesImage} alt="Navbox styles" className="image image_size_full_viwport_small image_extend_left image_shortened_viewport_small"/>
       </div>
       <div className="service__content service__content_width_half service__content_float_right">
         <h3 className="service__title">NavBox Styles</h3>

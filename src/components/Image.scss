@@ -6,6 +6,12 @@
   max-width: 100%;
 }
 
+.image_size_full_viwport_small {
+  @media screen and (max-width: $break-service) {
+    width: 100%;
+  }
+}
+
 .image_size_half {
   max-width: 50%;
 }
