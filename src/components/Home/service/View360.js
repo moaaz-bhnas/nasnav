@@ -11,7 +11,7 @@ const View360 = () => {
     <article className="service view360" role="article">
       <div className="service__imageContainer service__imageContainer_align_right service__imageContainer_width_third service__imageContainer_float_right">
         <img src={badge360} alt="360 badge"   className="service__360Badge image_stuck_right"/>
-        <img src={laptop} alt="Phone" className="image image_size_full image_stuck_right_viewport_large service__laptopImage"/>
+        <img src={laptop} alt="Laptop" className="image image_size_full image_stuck_right_viewport_large service__laptopImage"/>
         <img className="service__eye" src={eye} alt=""/>
       </div>
       <div className="service__content service__content_align_center service__content_width_half">
