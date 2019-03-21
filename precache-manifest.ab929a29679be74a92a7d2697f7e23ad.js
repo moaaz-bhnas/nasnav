@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "856f7439fc48e13ceb7b07aadc167453",
-    "url": "/nasnav2/static/media/navbox-image.856f7439.png"
+    "revision": "dfe7b4a7201de30d7e7040985860fd5c",
+    "url": "/nasnav2/static/media/design-badge.dfe7b4a7.png"
   },
   {
-    "revision": "7d3919f4091bcdf7f8fa",
-    "url": "/nasnav2/static/css/main.a9ad6fab.chunk.css"
+    "revision": "a90b825e81375776268a",
+    "url": "/nasnav2/static/css/main.5456236c.chunk.css"
   },
   {
     "revision": "f75c8a45a1c973a5c85a",
     "url": "/nasnav2/static/js/runtime~main.2d4ff0fe.js"
   },
   {
-    "revision": "2c9f660eded122f6dfb6",
-    "url": "/nasnav2/static/js/2.7565a8a8.chunk.js"
+    "revision": "36fd435f6072609e5bde",
+    "url": "/nasnav2/static/js/2.75b4329f.chunk.js"
   },
   {
     "revision": "3a760e5c5393475b6477d4295806f06e",
@@ -44,12 +44,32 @@ self.__precacheManifest = [
     "url": "/nasnav2/static/media/google.0188c496.png"
   },
   {
-    "revision": "7d3919f4091bcdf7f8fa",
-    "url": "/nasnav2/static/js/main.6c92e419.chunk.js"
+    "revision": "20c94cb77670947431bccbc592a11397",
+    "url": "/nasnav2/static/media/navbox-image.20c94cb7.png"
+  },
+  {
+    "revision": "affc8e67d0bb500545146164addae2bc",
+    "url": "/nasnav2/static/media/360-badge.affc8e67.png"
+  },
+  {
+    "revision": "211c482863b3a1e6f65764f03da6ec35",
+    "url": "/nasnav2/static/media/online-badge.211c4828.png"
+  },
+  {
+    "revision": "a90b825e81375776268a",
+    "url": "/nasnav2/static/js/main.9ec7f281.chunk.js"
+  },
+  {
+    "revision": "f874c1addbaa4a197eb1fba8d18a7474",
+    "url": "/nasnav2/static/media/barcode.f874c1ad.png"
   },
   {
     "revision": "c2ace54e98400aa6455fb8f2ce71fd47",
     "url": "/nasnav2/static/media/styles-image.c2ace54e.png"
+  },
+  {
+    "revision": "f499192b2291ae16a55f2ff52d62a6d2",
+    "url": "/nasnav2/static/media/360-laptop.f499192b.png"
   },
   {
     "revision": "8ca4a06afaac6618b31546b416567c91",
@@ -88,7 +108,7 @@ self.__precacheManifest = [
     "url": "/nasnav2/static/media/background-map.88a7e95f.png"
   },
   {
-    "revision": "d9a6a98ec8b6d0ed0f45650987974c7b",
+    "revision": "cc70c19d3fd545acf28f73073403d8e4",
     "url": "/nasnav2/index.html"
   }
 ];
