@@ -4,3 +4,43 @@
   vertical-align: middle;
   margin-left: .4rem;
 }
+
+/* Google badge --- */
+.serviceImageContainer__googleBadge {
+  width: 22%;
+  position: absolute;
+  top: 8%;
+  left: -9%;
+}
+
+/* barcode --- */
+.serviceImageContainer__barcode {
+  width: 20%;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+/* online payment badge --- */
+.serviceImageContainer__onlinePaymentBadge {
+  width: 40%;
+  position: absolute;
+  top: 8%;
+  right: 5%;
+}
+
+/* design editor badge --- */
+.serviceImageContainer__designEditorBadge {
+  width: 40%;
+  position: absolute;
+  top: 55%;
+  left: 0;
+}
+
+/* 360 view badge --- */
+.serviceImageContainer__360ViewBadge {
+  width: 40%;
+  position: absolute;
+  top: 35%;
+  right: -10%;
+}
