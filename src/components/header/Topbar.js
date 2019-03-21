@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../image/logo.png';
 import menuIcon from '../../image/menu-button.svg';
 import './Topbar.scss';
@@ -32,7 +33,9 @@ class Topbar extends Component {
     return (
       <div className="topbar header__topbar">
         {/* Logo: always exists */}
-        <img src={logo} alt="Logo" className="logo logo_size_med topbar__logo" />
+        <Link to="/">
+          <img src={logo} alt="Logo" className="logo logo_size_med topbar__logo" />
+        </Link>
         {/* Menu button: mobile only */}
         <button 
           className="menuButton topbar__menuButton" 
@@ -54,19 +57,19 @@ class Topbar extends Component {
           <h2 className="desktopNavbar__title">Desktop Navigation Bar</h2>
           <ul className="list desktopNavMenu">
             <li className="desktopNavMenu__item">
-              <a href="#" className="desktopNavMenu__link">Navbox</a>
+              <Link to="/" className="desktopNavMenu__link">Navbox</Link>
             </li>
             <li className="desktopNavMenu__item">
-              <a href="#" className="desktopNavMenu__link">NavStyle</a>
+              <Link to="/" className="desktopNavMenu__link">NavStyle</Link>
             </li>
             <li className="desktopNavMenu__item">
-              <a href="#" className="desktopNavMenu__link">Shopping</a>
+              <Link to="/" className="desktopNavMenu__link">Shopping</Link>
             </li>
             <li className="desktopNavMenu__item">
-              <a href="#" className="desktopNavMenu__link">360 Editor</a>
+              <Link to="/" className="desktopNavMenu__link">360 Editor</Link>
             </li>
             <li className="desktopNavMenu__item">
-              <a href="#" className="desktopNavMenu__link">Dashboard</a>
+              <Link to="/" className="desktopNavMenu__link">Dashboard</Link>
             </li>
           </ul>
         </nav>

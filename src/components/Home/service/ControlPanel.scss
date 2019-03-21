@@ -25,7 +25,11 @@
 
 /* badge --- */
 .controlPanel__badge {
-  width: 6.5rem;
+  width: 4rem;
+
+  @media screen and (min-width: $break-service) {
+    width: 6.5rem;
+  }
 }
 
 .controlPanel__badge:nth-of-type(3) {
