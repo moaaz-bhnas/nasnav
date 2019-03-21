@@ -12,8 +12,8 @@ const Intro = () => {
         in your home and see theyou an edge over the online competitors <br /> 
         of big businesses data
       </p>
-      <button className="button intro__button button_color_blue button_back_white button_size_large button_shape_oval">Watch Video</button>
-      <button className="button intro__button button_back_white button_shape_circular button_verticalAlign_middle">
+      <button href="https://youtu.be/N-NXIkkQFsI" target="_blank" className="button intro__button button_color_blue button_back_white button_size_large button_shape_oval">Watch Video</button>
+      <button href="https://youtu.be/N-NXIkkQFsI" target="_blank" className="button intro__button button_back_white button_shape_circular button_verticalAlign_middle">
         <img src={play} alt="Watch video" className="image"/>
       </button>
     </div>  
