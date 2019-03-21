@@ -5,7 +5,7 @@ const Intro = () => {
   return (
     <div className="intro header__intro header__intro_width_overHalf">
       <p className="paragraph paragraph_size_xLarge paragraph_color_white paragraph_weight_light intro__paragraph">
-        <strong>Nasorg</strong> is the Next Generation of big businesses Data !
+        <strong>NasNav</strong> is the Next Generation of big businesses Data !
       </p>
       <p className="paragraph paragraph_line_high paragraph_color_white paragraph_letters_spaced paragraph_weight_med intro__paragraph">
         Our services are not to be reckoned with upload Products can sliping <br /> 

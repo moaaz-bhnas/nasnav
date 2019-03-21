@@ -9,9 +9,19 @@
 .dashboard .service__badge:nth-of-type(2) {
   top: 6rem;
   right: -7%;
+
+  @media screen and (min-width: $break-service) {
+    top: 3rem;
+    right: -7%;
+  }
 }
 
 .dashboard .service__badge:nth-of-type(3) {
-  top: 12rem;
+  top: 6rem;
   right: -2%;
+
+  @media screen and (min-width: $break-service) {
+    top: 12rem;
+    right: -2%;
+  }
 }
