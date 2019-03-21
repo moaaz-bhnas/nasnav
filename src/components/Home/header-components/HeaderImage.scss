@@ -1,0 +1,29 @@
+@import '../../../sass-modules/breakpoints';
+@import '../../../sass-modules/lengths';
+
+.headerImageContainer {
+  @media screen and (min-width: $break-large) {
+    position: absolute;
+    right: calc(((-100vw + #{$max-width}) / 2) - 12rem);
+  }
+}
+
+.headerImageContainer__tablet {
+  width: 60%;
+
+  @media screen and (min-width: $break-large) {
+    position: absolute;
+    width: 40rem;
+    top: 7rem;
+    right: 30vw;
+  }
+}
+
+.headerImageContainer__phone {
+  width: 40%;
+
+  @media screen and (min-width: $break-large) {
+    position: absolute;
+    width: 25rem;
+  }
+}

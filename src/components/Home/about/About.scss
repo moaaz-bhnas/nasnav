@@ -24,17 +24,10 @@
 }
 
 /* service list --- */
-.serviceIconList {
-  display: none;
-
-  @media screen and (min-width: $break-about) {
-    display: block;
-  }
-}
-
 /* service --- */
 .serviceIconList__item {
   position: absolute;
+  transform: scale(.8);
 }
 
 /* service name --- */
@@ -44,8 +37,13 @@
 
 // (1)
 .serviceIconList__item:nth-child(1) {
-  top: -3rem;
-  left: 9rem;
+  top: -4rem;
+  left: 0rem;
+
+  @media screen and (min-width: $break-about) {
+    top: -3rem;
+    left: 9rem;
+  }
 
   .serviceIconList__name {
     position: absolute;
@@ -58,6 +56,11 @@
 .serviceIconList__item:nth-child(2) {
   top: -2rem;
   left: -2.5rem;
+  display: none;
+
+  @media screen and (min-width: $break-about) {
+    display: block;
+  }
 
   .serviceIconList__name {
     position: absolute;
@@ -69,7 +72,12 @@
 // (3)
 .serviceIconList__item:nth-child(3) {
   bottom: 1rem;
-  left: 5rem;
+  left: 0rem;
+
+  @media screen and (min-width: $break-about) {
+    bottom: 1rem;
+    left: 5rem;
+  }
 
   .serviceIconList__name {
     position: absolute;
@@ -80,8 +88,13 @@
 
 // (4)
 .serviceIconList__item:nth-child(4) {
-  top: -3rem;
-  right: 9rem;
+  top: -4rem;
+  right: 0rem;
+
+  @media screen and (min-width: $break-about) {
+    top: -3rem;
+    right: 9rem;
+  }
 
   .serviceIconList__name {
     position: absolute;
@@ -94,6 +107,11 @@
 .serviceIconList__item:nth-child(5) {
   top: -2rem;
   right: -2.5rem;
+  display: none;
+
+  @media screen and (min-width: $break-about) {
+    display: block;
+  }
 
   .serviceIconList__name {
     position: absolute;
@@ -105,7 +123,12 @@
 // (6)
 .serviceIconList__item:nth-child(6) {
   bottom: 1rem;
-  right: 5rem;
+  right: 0rem;
+
+  @media screen and (min-width: $break-about) {
+    bottom: 1rem;
+    right: 5rem;
+  }
 
   .serviceIconList__name {
     position: absolute;

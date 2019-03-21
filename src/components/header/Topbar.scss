@@ -43,7 +43,7 @@ Menu Button
 
 .topbar__menuButton {
   position: absolute;
-  left: 0;
+  left: -.5rem;
 }
 
 /* ===================================== 
@@ -79,7 +79,7 @@ Desktop Navigation Menu
 .desktopNavMenu__link {
   display: block;
 
-  font-size: .9rem;
+  font-size: .95rem;
   font-weight: 500;
   line-height: 5rem;
   color: #fff;

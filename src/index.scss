@@ -1,5 +1,9 @@
 @import './sass-modules/colors';
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   color: $dark-grey;
 
