@@ -14,8 +14,12 @@
   max-width: 70%;
 }
 
-.image_shortened {
+.image_shortened_viewport_small {
   max-width: 32.25rem;
+
+  @media screen and (min-width: $break-service) {
+    max-width: initial;
+  }
 }
 
 .image_extend_left {
@@ -25,7 +29,6 @@
     margin-left: 0;
     position: absolute;
     right: 0;
-    max-width: initial;
     width: 50vw;
   }
 }
