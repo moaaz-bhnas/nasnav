@@ -1,8 +1,5 @@
 @import './sass-modules/colors';
-
-html {
-  overflow-x: hidden;
-}
+@import './sass-modules/breakpoints';
 
 body {
   color: $dark-grey;
@@ -13,7 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  overflow-x: hidden;
+  @media screen and (min-width: $break-large) {
+    overflow-x: hidden;
+  }
 }
 
 body[data-scroll="false"] {
