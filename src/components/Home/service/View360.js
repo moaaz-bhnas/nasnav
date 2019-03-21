@@ -1,5 +1,5 @@
 import React from 'react';
-import phone from '../../../image/home-header-phone.png';
+import laptop from '../../../image/360-laptop.png';
 import chair from '../../../image/chair.png';
 import badge360 from '../../../image/360.png';
 import modal from '../../../image/modal.png';
@@ -9,9 +9,10 @@ import './View360.scss';
 const View360 = () => {
   return (
     <article className="service view360" role="article">
-      <div className="service__imageContainer service__imageContainer_width_third service__imageContainer_float_right">
+      <div className="service__imageContainer service__imageContainer_align_right service__imageContainer_width_third service__imageContainer_float_right">
         <img src={badge360} alt="360 badge"   className="service__360Badge image_stuck_right"/>
-        <img src={phone} alt="Phone" className="image image_cropped_right service__phoneImage"/>
+        <img src={laptop} alt="Phone" className="image image_size_full image_stuck_right_viewport_large service__laptopImage"/>
+        <img className="service__eye" src={eye} alt=""/>
       </div>
       <div className="service__content service__content_align_center service__content_width_half">
         <h3 className="service__title">360 view</h3>

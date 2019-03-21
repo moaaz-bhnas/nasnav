@@ -14,8 +14,15 @@
   max-width: 70%;
 }
 
+.image_shortened {
+  max-width: 32.25rem;
+}
+
 .image_extend_left {
+  margin-left: -1.5rem;
+
   @media screen and (min-width: $break-service) {
+    margin-left: 0;
     position: absolute;
     right: 0;
     max-width: initial;
@@ -28,6 +35,13 @@
   right: -1.5rem;
 
   @media screen and (min-width: $break-large) {
+    right: calc((-100vw + #{$max-width}) /2);
+  }
+}
+
+.image_stuck_right_viewport_large {
+  @media screen and (min-width: $break-large) {
+    position: absolute;
     right: calc((-100vw + #{$max-width}) /2);
   }
 }
