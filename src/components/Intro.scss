@@ -34,6 +34,10 @@
 }
 
 /* button --- */
+.intro__button {
+  box-sizing: border-box;
+}
+
 .intro__button:last-of-type {
   margin-left: 1rem;
 }
