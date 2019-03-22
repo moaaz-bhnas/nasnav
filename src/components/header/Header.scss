@@ -13,21 +13,13 @@
   @media screen and (min-width: $break-sidenav) {
     padding-bottom: 4rem;
   }
-
-  @media screen and (min-width: $break-large) {
-    padding-bottom: 15rem;
-  }
 }
 
 .App__header {
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 
   @media screen and (min-width: $break-sidenav) {
-    margin-bottom: 6rem;
-  }
-
-  @media screen and (min-width: $break-xlarge) {
-    margin-bottom: 9rem;
+    margin-bottom: 4rem;
   }
 }
 

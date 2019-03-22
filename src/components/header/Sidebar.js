@@ -41,19 +41,19 @@ class Sidebar extends Component {
             onKeyDown={(e) => this.trapFocus(e, this.firstLink.current, this.lastLink.current, closeSidebar)}
           >
             <li className="mobileNavMenu__item">
-              <a href="#" className="mobileNavMenu__link" ref={this.firstLink}>Navbox</a>
+              <a href="/navbox" className="mobileNavMenu__link" ref={this.firstLink}>Navbox</a>
             </li>
             <li className="mobileNavMenu__item">
-              <a href="#" className="mobileNavMenu__link">NavStyle</a>
+              <a href="/" className="mobileNavMenu__link">NavStyle</a>
             </li>
             <li className="mobileNavMenu__item">
-              <a href="#" className="mobileNavMenu__link">Shopping</a>
+              <a href="/" className="mobileNavMenu__link">Shopping</a>
             </li>
             <li className="mobileNavMenu__item">
-              <a href="#" className="mobileNavMenu__link">360 Editor</a>
+              <a href="/" className="mobileNavMenu__link">360 Editor</a>
             </li>
             <li className="mobileNavMenu__item">
-              <a href="#" className="mobileNavMenu__link" ref={this.lastLink}>Dashboard</a>
+              <a href="/" className="mobileNavMenu__link" ref={this.lastLink}>Dashboard</a>
             </li>
           </ul>
         </nav>

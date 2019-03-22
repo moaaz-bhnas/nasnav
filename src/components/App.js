@@ -11,7 +11,10 @@ import './Intro.scss';
 import './HeaderImageContainer.scss';
 import './Logo.scss';
 import './Link.scss';
+import './ServiceSection.scss';
+import './Service.scss';
 import HomePage from './Home/HomePage';
+import NavboxPage from './Navbox/NavboxPage';
 
 class App extends Component {
   render() {
@@ -19,6 +22,7 @@ class App extends Component {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route path="/navbox" component={NavboxPage} />
         </Switch>
       </BrowserRouter>
     );

@@ -57,7 +57,7 @@ class Topbar extends Component {
           <h2 className="desktopNavbar__title">Desktop Navigation Bar</h2>
           <ul className="list desktopNavMenu">
             <li className="desktopNavMenu__item">
-              <Link to="/" className="desktopNavMenu__link">Navbox</Link>
+              <Link to="/navbox" className="desktopNavMenu__link">Navbox</Link>
             </li>
             <li className="desktopNavMenu__item">
               <Link to="/" className="desktopNavMenu__link">NavStyle</Link>

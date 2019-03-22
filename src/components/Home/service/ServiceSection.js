@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBox from './NavBox';
 import './ServiceSection.scss';
-import './Service.scss';
 import Styles from './Styles';
 import View360 from './View360';
 import ControlPanel from './ControlPanel';
@@ -9,7 +8,7 @@ import Dashboard from './Dashboard';
 
 const ServiceSection = () => {
   return (
-    <section className="serviceSection mainContent__serviceSection" role="region" aria-labelledby="serviceSection__title">
+    <section className="serviceSection home__serviceSection" role="region" aria-labelledby="serviceSection__title">
       <div className="container">
         <h2 className="serviceSection__title" id="serviceSection__title">Services</h2>
         <ul className="list serviceList">

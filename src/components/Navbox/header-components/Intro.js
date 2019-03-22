@@ -1,5 +1,4 @@
 import React from 'react';
-import play from '../../../image/play.svg';
 
 const Intro = () => {
   return (

@@ -1,28 +1,35 @@
 @import '../../../sass-modules/breakpoints';
 @import '../../../sass-modules/lengths';
 
-.headerImageContainer {
-  @media screen and (min-width: $break-large) {
-    position: absolute;
+.home__headerImageContainer {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  @media screen and (min-width: $break-home-header-image) {
+    position: relative;
     right: calc(((-100vw + #{$max-width}) / 2) - 12rem);
+    padding-bottom: 30rem;
   }
 }
 
 .headerImageContainer__tablet {
   width: 60%;
 
-  @media screen and (min-width: $break-large) {
+  @media screen and (min-width: $break-home-header-image) {
     position: absolute;
     width: 40rem;
     top: 7rem;
-    right: 30vw;
+    right: 23vw;
   }
 }
 
 .headerImageContainer__phone {
   width: 40%;
 
-  @media screen and (min-width: $break-large) {
+  @media screen and (min-width: $break-home-header-image) {
     position: absolute;
     width: 25rem;
   }
