@@ -1,6 +1,10 @@
 @import '../../../sass-modules/breakpoints';
 @import '../../../sass-modules/lengths';
 
+.headerImageContainer {
+  padding-bottom: 25rem;
+}
+
 .headerImageContainer__shoppingImage {
   max-width: 29.375rem;
   width: 100%;
