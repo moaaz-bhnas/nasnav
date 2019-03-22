@@ -9,3 +9,7 @@
 }
 
 /* service items --- */
+.navbox__serviceSection .serviceList__item:last-of-type {
+  position: relative;
+  top: -3rem;
+}

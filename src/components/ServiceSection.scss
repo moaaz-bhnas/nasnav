@@ -1,25 +1,6 @@
 @import '../sass-modules/breakpoints';
 @import '../sass-modules/colors';
 
-.serviceSection {
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 88rem;
-    right: 0;
-    z-index: -1;
-    width: 180%;
-    height: 35rem;
-    background-color: $ribbon;
-  
-    transform-origin: 100% 0;
-    transform: rotate(-24deg);
-  }
-}
-
 /* title --- */
 .serviceSection__title {
   position: absolute;
@@ -28,7 +9,7 @@
 
 /* service item --- */
 .serviceList__item {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 
   &::after {
     content: '';

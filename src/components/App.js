@@ -13,6 +13,7 @@ import './Logo.scss';
 import './Link.scss';
 import './ServiceSection.scss';
 import './Service.scss';
+import './MainContent.scss';
 import HomePage from './Home/HomePage';
 import NavboxPage from './Navbox/NavboxPage';
 
