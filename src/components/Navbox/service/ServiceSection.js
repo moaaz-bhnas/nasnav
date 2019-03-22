@@ -4,7 +4,7 @@ import NavBox from './NavBox';
 
 const ServiceSection = () => {
 	return (
-		<section className="serviceSection home__serviceSection" role="region" aria-labelledby="serviceSection__title">
+		<section className="serviceSection navbox__serviceSection" role="region" aria-labelledby="serviceSection__title">
       <div className="container">
         <h2 className="serviceSection__title" id="serviceSection__title">Services</h2>
         <ul className="list serviceList">

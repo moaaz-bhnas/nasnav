@@ -1,0 +1,9 @@
+@import '../../../sass-modules/breakpoints';
+
+.navbox__serviceSection {
+  margin: 2.5rem 0;
+
+  @media screen and (min-width: $break-service) {
+    margin: 7rem 0;
+  }
+}

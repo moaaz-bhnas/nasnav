@@ -5,10 +5,10 @@ import navbox from '../../../image/navbox.png'
 const NavBox = () => {
   return (
     <article className="service" role="article">
-      <div className="service__imageContainer service__imageContainer_shortened service__imageContainer_width_half service__imageContainer_float_right">
+      <div className="service__imageContainer service__imageContainer_shortened service__imageContainer_width_half service__imageContainer_float_left">
         <img src={navbox} alt="Navbox image" className="image image_size_full serviceImageContainer__image"/>
       </div>
-      <div className="service__content service__content_width_half service__content_float_left">
+      <div className="service__content service__content_width_half service__content_float_right">
         <h3 className="service__title">NavBox</h3>
         <p className="paragraph service__paragraph paragraph_color_grey">
           You'll get the device whereever you are
