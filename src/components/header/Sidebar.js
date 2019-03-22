@@ -8,7 +8,7 @@ class Sidebar extends Component {
   lastLink = React.createRef();
 
   componentDidMount() {
-    this.firstLink.current.focus();
+    // this.firstLink.current.focus();
     document.body.setAttribute('data-scroll', 'false');
   }
 
@@ -17,17 +17,17 @@ class Sidebar extends Component {
   }
 
   trapFocus = (e, firstElement, lastElement, closeFunc) => {
-    const esc = e.keyCode === 27;
-    const tab = e.keyCode === 9;
-    if (esc) { 
-      closeFunc();
-    } else if (tab && e.shiftKey && e.target === firstElement) {
-      e.preventDefault();
-      lastElement.focus();
-    } else if (tab && !e.shiftKey && e.target === lastElement) {
-      e.preventDefault();
-      firstElement.focus();
-    }
+    // const esc = e.keyCode === 27;
+    // const tab = e.keyCode === 9;
+    // if (esc) { 
+    //   closeFunc();
+    // } else if (tab && e.shiftKey && e.target === firstElement) {
+    //   e.preventDefault();
+    //   lastElement.focus();
+    // } else if (tab && !e.shiftKey && e.target === lastElement) {
+    //   e.preventDefault();
+    //   firstElement.focus();
+    // }
   }
 
   render() {
