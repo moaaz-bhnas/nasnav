@@ -13,9 +13,6 @@ const Intro = () => {
         of big businesses data
       </p>
       <a href="https://youtu.be/N-NXIkkQFsI" target="_blank" className="link link_decoration_none button intro__button button_color_blue button_back_white button_size_large button_shape_oval">Watch Video</a>
-      <a href="https://youtu.be/N-NXIkkQFsI" target="_blank" className="link link_decoration_none button intro__button button_back_white button_shape_circular button_verticalAlign_middle">
-        <img src={play} alt="Watch video" className="image"/>
-      </a>
     </div>  
   );
 }

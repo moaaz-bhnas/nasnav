@@ -52,7 +52,7 @@ const NavBox = () => {
             </span>
           </li>
         </ul>
-        <button className="button button_color_white button_back_blue button_shape_oval button_size_large buttn_decoration_underline">Get Started</button>
+        <button className="button button_color_white button_back_blue button_shape_oval button_size_large buttn_decoration_underline">Download PDF</button>
       </div>
     </article>
   );

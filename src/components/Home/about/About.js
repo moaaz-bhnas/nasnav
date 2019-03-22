@@ -17,7 +17,6 @@ const About = () => {
         <p className=" aboutSection__paragraph paragraph_line_high paragraph_shortened_medLarge">
           We use proven technologies, combining them with new concepts and techniques wherever possible. In this way we rapidly develop tailor-made solutions which incubates location-based and retailers services technologies.
         </p>
-        <button className="button button_size_large button_color_white button_back_blue button_shape_oval">Get Started</button>
         <ul className="list serviceIconList">
           <li className="serviceIconList__item">
             <img className="serviceIconList__image" src={service1} alt=""/>
