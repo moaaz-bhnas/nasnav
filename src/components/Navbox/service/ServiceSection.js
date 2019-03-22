@@ -1,6 +1,7 @@
 import React from 'react';
 import './ServiceSection.scss';
 import NavBox from './NavBox';
+import Seo from './Seo';
 
 const ServiceSection = () => {
 	return (
@@ -10,6 +11,9 @@ const ServiceSection = () => {
         <ul className="list serviceList">
           <li className="serviceList__item">
             <NavBox />
+          </li>
+          <li className="serviceList__item">
+            <Seo />
           </li>
         </ul>
       </div>

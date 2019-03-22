@@ -1,11 +1,8 @@
 @import '../../../sass-modules/breakpoints';
 
-.navbox__serviceSection {
-  margin: 3.5rem 0;
-
+.seo .serviceImageContainer__image {
   @media screen and (min-width: $break-service) {
-    margin: 7rem 0;
+    position: relative;
+    top: -4rem;
   }
 }
-
-/* service items --- */
