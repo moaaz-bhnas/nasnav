@@ -12,7 +12,7 @@ const ServiceSection = () => {
           <li className="serviceList__item">
             <Seo />
           </li>
-          <li className="serviceList__item">
+          <li className="serviceList__item seo2">
             <Seo2 />
           </li>
         </ul>

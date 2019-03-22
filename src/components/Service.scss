@@ -33,9 +33,20 @@ Service Image
   max-width: 32.25rem;
   margin: 0 auto 2rem;
 }
+.service__imageContainer_shortened_viewport_small {
+  @media screen and (max-width: $break-service) {
+    max-width: 32.25rem;
+    margin: 0 auto 2rem;
+  }
+}
 .service__imageContainer_width_half {
   @media screen and (min-width: $break-service) {
     width: 50%;
+  }
+}
+.service__imageContainer_width_overHalf {
+  @media screen and (min-width: $break-service) {
+    width: 55%;
   }
 }
 .service__imageContainer_width_third {

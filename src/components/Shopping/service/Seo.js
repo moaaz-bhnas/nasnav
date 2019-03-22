@@ -5,7 +5,7 @@ import './Seo.scss';
 const Seo = () => {
   return (
     <article className="service seo" role="article">
-      <div className="service__imageContainer service__imageContainer_shortened service__imageContainer_width_half service__imageContainer_float_right">
+      <div className="service__imageContainer service__imageContainer_shortened_viewport_small service__imageContainer_width_overHalf  service__imageContainer_float_right">
         <img src={phones} alt="your site is always at the top" className="image image_size_full serviceImageContainer__image"/>
       </div>
       <div className="service__content service__content_width_half service__content_float_left">
