@@ -4,7 +4,7 @@ import './HeaderImage.scss';
 
 const HeaderImage = () => {
   return (
-    <div className="headerImageContainer headerImageContainer_width_half">
+    <div className="headerImageContainer shopping__headerImageContainer headerImageContainer_width_half">
       <img className="headerImageContainer__shoppingImage" src={phone} alt="Screens"/>
     </div>
   );
