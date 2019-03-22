@@ -61,6 +61,9 @@
 }
 
 /* Shortened --- */
+.paragraph_shortened_small {
+  max-width: 18rem;
+}
 .paragraph_shortened_med {
   max-width: 35rem;
 }
@@ -69,6 +72,12 @@
 }
 .paragraph_shortened_large {
   max-width: 47rem;
+}
+
+/* Centered --- */
+.paragraph_centered {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Space between letters --- */
