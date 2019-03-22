@@ -2,9 +2,11 @@
 @import '../../../sass-modules/lengths';
 
 .headerImageContainer__shoppingImage {
-  max-width: 100%;
-  // position: relative;
-  // right: -1.5rem;
+  max-width: 29.375rem;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  
 
   @media screen and (min-width: $break-xlarge) {
     max-width: initial;

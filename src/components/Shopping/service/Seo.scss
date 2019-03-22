@@ -1,0 +1,8 @@
+@import '../../../sass-modules/breakpoints';
+
+.seo .serviceImageContainer__image {
+  @media screen and (min-width: $break-service) {
+    position: relative;
+    top: -4rem;
+  }
+}

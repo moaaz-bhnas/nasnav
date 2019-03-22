@@ -4,6 +4,8 @@ import Intro from './header-components/Intro';
 import HeaderImage from './header-components/HeaderImage';
 import Footer from '../footer/Footer';
 import CountrySection from '../countries/CountrySection';
+import ThrillerSection from './thriller/ThrillerSection';
+import ServiceSection from './service/ServiceSection';
 
 const shopping = () => {
   return (
@@ -14,8 +16,8 @@ const shopping = () => {
         overflowHidden={true}
       />
       <main className="mainContent" role="main">
-        {/* <ThrillerSection /> */}
-        {/* <ServiceSection /> */}
+        <ThrillerSection />
+        <ServiceSection />
         <CountrySection />
       </main>
       <Footer />
