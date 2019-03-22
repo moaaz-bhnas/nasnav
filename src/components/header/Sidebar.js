@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.scss';
 
 class Sidebar extends Component {
@@ -41,19 +42,19 @@ class Sidebar extends Component {
             onKeyDown={(e) => this.trapFocus(e, this.firstLink.current, this.lastLink.current, closeSidebar)}
           >
             <li className="mobileNavMenu__item">
-              <a href="/navbox" className="mobileNavMenu__link" ref={this.firstLink}>Navbox</a>
+              <Link to="/navbox" className="mobileNavMenu__link" ref={this.firstLink}>Navbox</Link>
             </li>
             <li className="mobileNavMenu__item">
-              <a href="/" className="mobileNavMenu__link">NavStyle</a>
+              <Link to="/" className="mobileNavMenu__link">NavStyle</Link>
             </li>
             <li className="mobileNavMenu__item">
-              <a href="/shopping" className="mobileNavMenu__link">Shopping</a>
+              <Link to="/shopping" className="mobileNavMenu__link">Shopping</Link>
             </li>
             <li className="mobileNavMenu__item">
-              <a href="/" className="mobileNavMenu__link">360 Editor</a>
+              <Link to="/" className="mobileNavMenu__link">360 Editor</Link>
             </li>
             <li className="mobileNavMenu__item">
-              <a href="/" className="mobileNavMenu__link" ref={this.lastLink}>Dashboard</a>
+              <Link to="/" className="mobileNavMenu__link" ref={this.lastLink}>Dashboard</Link>
             </li>
           </ul>
         </nav>
