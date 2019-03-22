@@ -2,7 +2,9 @@
 @import '../../../sass-modules/lengths';
 
 .shopping__headerImageContainer {
-  padding-bottom: 25rem;
+  @media screen and (min-width: $break-service) {
+    padding-bottom: 25rem;
+  }
 }
 
 .headerImageContainer__shoppingImage {
