@@ -1,8 +1,7 @@
 import React from 'react';
 import phones from '../../../image/shopping-seo-phones2.png';
-import './Seo.scss';
 
-const Seo = () => {
+const Seo2 = () => {
   return (
     <article className="service seo" role="article">
       <div className="service__imageContainer service__imageContainer_shortened_viewport_small service__imageContainer_width_overHalf service__imageContainer_float_left">
@@ -25,4 +24,4 @@ const Seo = () => {
   );
 }
 
-export default Seo;
+export default Seo2;

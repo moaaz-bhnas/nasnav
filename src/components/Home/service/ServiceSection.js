@@ -11,7 +11,7 @@ const ServiceSection = () => {
     <section className="serviceSection home__serviceSection" role="region" aria-labelledby="serviceSection__title">
       <div className="container">
         <h2 className="serviceSection__title" id="serviceSection__title">Services</h2>
-        <ul className="list serviceList">
+        <ul className="list serviceList serviceSection__list">
           <li className="serviceList__item">
             <NavBox />
           </li>

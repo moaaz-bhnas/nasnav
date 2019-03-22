@@ -1,6 +1,5 @@
 import React from 'react';
 import phones from '../../../image/shopping-seo-phones.png';
-import './Seo.scss';
 
 const Seo = () => {
   return (
