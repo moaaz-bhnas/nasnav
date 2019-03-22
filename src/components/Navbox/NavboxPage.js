@@ -15,7 +15,7 @@ const NavboxPage = () => {
         headerImage={<HeaderImage />}
       />
       <main className="mainContent" role="main">
-      <ThrillerSection />
+        <ThrillerSection />
         <ServiceSection />
         <CountrySection />
       </main>

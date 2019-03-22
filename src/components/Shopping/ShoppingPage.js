@@ -2,21 +2,20 @@ import React from 'react';
 import Header from '../header/Header';
 import Intro from './header-components/Intro';
 import HeaderImage from './header-components/HeaderImage';
-import About from './about/About';
-import ServiceSection from './service/ServiceSection';
 import Footer from '../footer/Footer';
 import CountrySection from '../countries/CountrySection';
 
-const HomePage = () => {
+const shopping = () => {
   return (
     <React.Fragment>
       <Header 
         intro={<Intro />} 
         headerImage={<HeaderImage />}
+        overflowHidden={true}
       />
       <main className="mainContent" role="main">
-        <About />
-        <ServiceSection />
+        {/* <ThrillerSection /> */}
+        {/* <ServiceSection /> */}
         <CountrySection />
       </main>
       <Footer />
@@ -24,4 +23,4 @@ const HomePage = () => {
   );
 }
 
-export default HomePage;
+export default shopping;

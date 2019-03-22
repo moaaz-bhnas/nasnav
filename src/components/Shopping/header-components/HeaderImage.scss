@@ -1,0 +1,15 @@
+@import '../../../sass-modules/breakpoints';
+@import '../../../sass-modules/lengths';
+
+.headerImageContainer__shoppingImage {
+  max-width: 100%;
+  // position: relative;
+  // right: -1.5rem;
+
+  @media screen and (min-width: $break-xlarge) {
+    max-width: initial;
+    position: absolute;
+    right: -4rem;
+    width: 52vw;
+  }
+}

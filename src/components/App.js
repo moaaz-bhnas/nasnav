@@ -16,6 +16,7 @@ import './Service.scss';
 import './MainContent.scss';
 import HomePage from './Home/HomePage';
 import NavboxPage from './Navbox/NavboxPage';
+import shoppingPage from './Shopping/ShoppingPage';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/navbox" component={NavboxPage} />
+          <Route path="/shopping" component={shoppingPage} />
         </Switch>
       </BrowserRouter>
     );

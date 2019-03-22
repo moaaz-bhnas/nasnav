@@ -47,7 +47,7 @@ class Sidebar extends Component {
               <a href="/" className="mobileNavMenu__link">NavStyle</a>
             </li>
             <li className="mobileNavMenu__item">
-              <a href="/" className="mobileNavMenu__link">Shopping</a>
+              <a href="/shopping" className="mobileNavMenu__link">Shopping</a>
             </li>
             <li className="mobileNavMenu__item">
               <a href="/" className="mobileNavMenu__link">360 Editor</a>

@@ -63,7 +63,7 @@ class Topbar extends Component {
               <Link to="/" className="desktopNavMenu__link">NavStyle</Link>
             </li>
             <li className="desktopNavMenu__item">
-              <Link to="/" className="desktopNavMenu__link">Shopping</Link>
+              <Link to="/shopping" className="desktopNavMenu__link">Shopping</Link>
             </li>
             <li className="desktopNavMenu__item">
               <Link to="/" className="desktopNavMenu__link">360 Editor</Link>
