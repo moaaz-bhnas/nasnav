@@ -10,8 +10,9 @@
 
   @media screen and (min-width: $break-home-header-image) {
     position: relative;
+    top: 1rem;
     right: calc(((-100vw + #{$max-width}) / 2) - 12rem);
-    padding-bottom: 30rem;
+    padding-bottom: 31rem;
   }
 }
 

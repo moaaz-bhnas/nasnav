@@ -6,9 +6,16 @@
   max-width: 100%;
 }
 
-.image_size_full_viwport_small {
+.image_size_full_viewport_small {
   @media screen and (max-width: $break-service) {
     max-width: 100%;
+  }
+}
+
+.image_size_full_limited_viewport_small {
+  @media screen and (max-width: $break-service) {
+    width: 100%;
+    max-width: 32.25rem;
   }
 }
 
@@ -21,10 +28,8 @@
 }
 
 .image_shortened_viewport_small {
-  max-width: 32.25rem;
-
-  @media screen and (min-width: $break-service) {
-    max-width: initial;
+  @media screen and (max-width: $break-service) {
+    max-width: 32.25rem;
   }
 }
 

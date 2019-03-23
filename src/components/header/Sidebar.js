@@ -8,7 +8,7 @@ class Sidebar extends Component {
   lastLink = React.createRef();
 
   componentDidMount() {
-    // this.firstLink.current.focus();
+    this.firstLink.current.focus();
     document.body.setAttribute('data-scroll', 'false');
   }
 
@@ -17,17 +17,17 @@ class Sidebar extends Component {
   }
 
   trapFocus = (e, firstElement, lastElement, closeFunc) => {
-    // const esc = e.keyCode === 27;
-    // const tab = e.keyCode === 9;
-    // if (esc) { 
-    //   closeFunc();
-    // } else if (tab && e.shiftKey && e.target === firstElement) {
-    //   e.preventDefault();
-    //   lastElement.focus();
-    // } else if (tab && !e.shiftKey && e.target === lastElement) {
-    //   e.preventDefault();
-    //   firstElement.focus();
-    // }
+    const esc = e.keyCode === 27;
+    const tab = e.keyCode === 9;
+    if (esc) { 
+      closeFunc();
+    } else if (tab && e.shiftKey && e.target === firstElement) {
+      e.preventDefault();
+      lastElement.focus();
+    } else if (tab && !e.shiftKey && e.target === lastElement) {
+      e.preventDefault();
+      firstElement.focus();
+    }
   }
 
   render() {
@@ -42,7 +42,7 @@ class Sidebar extends Component {
             onKeyDown={(e) => this.trapFocus(e, this.firstLink.current, this.lastLink.current, closeSidebar)}
           >
             <li className="mobileNavMenu__item">
-              <Link to="/navbox" className="mobileNavMenu__link" ref={this.firstLink}>Navbox</Link>
+              <Link to="/navbox" className="mobileNavMenu__link" innerRef={this.firstLink}>Navbox</Link>
             </li>
             <li className="mobileNavMenu__item">
               <Link to="/" className="mobileNavMenu__link">NavStyle</Link>
@@ -51,10 +51,10 @@ class Sidebar extends Component {
               <Link to="/shopping" className="mobileNavMenu__link">Shopping</Link>
             </li>
             <li className="mobileNavMenu__item">
-              <Link to="/" className="mobileNavMenu__link">360 Editor</Link>
+              <Link to="/360editor" className="mobileNavMenu__link">360 Editor</Link>
             </li>
             <li className="mobileNavMenu__item">
-              <Link to="/" className="mobileNavMenu__link" ref={this.lastLink}>Dashboard</Link>
+              <Link to="/" className="mobileNavMenu__link" innerRef={this.lastLink}>Dashboard</Link>
             </li>
           </ul>
         </nav>
