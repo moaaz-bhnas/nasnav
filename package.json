@@ -2,7 +2,7 @@
   "name": "nasnav2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://moaaz-bhnas.github.io/nasnav2",
+  "homepage": "http://moaaz-bhnas.github.io/nasnav",
   "dependencies": {
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
