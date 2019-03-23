@@ -1,0 +1,8 @@
+@import '../../../sass-modules/breakpoints';
+
+.editor360__serviceImage {
+  @media screen and (min-width: $break-service) {
+    position: relative;
+    top: -2rem
+  }
+}

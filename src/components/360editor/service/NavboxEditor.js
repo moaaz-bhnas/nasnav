@@ -1,11 +1,12 @@
 import React from 'react';
 import laptop1 from '../../../image/laptop-1.png';
+import './NavboxEditor.scss';
 
 const NavboxEditor = () => {
   return (
     <article className="service" role="article">
       <div className="service__imageContainer service__imageContainer_shortened_viewport_small service__imageContainer_width_overHalf service__imageContainer_float_right">
-        <img src={laptop1} alt="your site is always at the top" className="image image_size_full serviceImageContainer__image"/>
+        <img src={laptop1} alt="your site is always at the top" className="image image_size_full serviceImageContainer__image editor360__serviceImage"/>
       </div>
       <div className="service__content service__content_width_half service__content_float_left">
         <h3 className="service__title">Navbox Editor</h3>
