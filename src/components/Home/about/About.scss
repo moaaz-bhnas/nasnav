@@ -73,11 +73,10 @@
 
 // (3)
 .serviceIconList__item:nth-child(3) {
-  bottom: 1rem;
+  bottom: -2.5rem;
   left: 0rem;
 
   @media screen and (min-width: $break-about) {
-    bottom: 1rem;
     left: 5rem;
   }
 
@@ -124,11 +123,10 @@
 
 // (6)
 .serviceIconList__item:nth-child(6) {
-  bottom: 1rem;
+  bottom: -2.5rem;
   right: 0rem;
 
   @media screen and (min-width: $break-about) {
-    bottom: 1rem;
     right: 5rem;
   }
 
