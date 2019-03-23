@@ -39,6 +39,11 @@ Service Image
     margin: 0 auto 2rem;
   }
 }
+.service__imageContainer_width_lessThanHalf {
+  @media screen and (min-width: $break-service) {
+    width: 40%;
+  }
+}
 .service__imageContainer_width_half {
   @media screen and (min-width: $break-service) {
     width: 50%;
@@ -99,6 +104,11 @@ Service Content
 .service__content_width_half {
   @media screen and (min-width: $break-service) {
     width: 40%;
+  }
+}
+.service__content_width_overHalf {
+  @media screen and (min-width: $break-service) {
+    width: 60%;
   }
 }
 .service__content_float_left {

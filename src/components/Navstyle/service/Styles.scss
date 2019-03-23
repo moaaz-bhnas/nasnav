@@ -1,0 +1,20 @@
+@import '../../../sass-modules/breakpoints';
+@import '../../../sass-modules/lengths';
+
+.styles {
+  @media screen and (min-width: $break-service) {
+    margin-top: 34rem;
+  }
+}
+
+.styles__serviceImage {
+  width: 100%;
+  max-width: 32.25rem;
+  margin-left: -1.5rem;
+
+  @media screen and (min-width: $break-service) {
+    max-width: initial;
+    width: 55vw;
+    margin: -32rem 0 0 calc((-100vw + #{$max-width}) /2);
+  }
+}
