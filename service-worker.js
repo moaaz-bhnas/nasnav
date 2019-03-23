@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/nasnav/precache-manifest.bd70874f369bf2d03abb6fd7003d73f7.js"
+  "/nasnav/precache-manifest.3bbc05248bfc85d8da42e1993958e247.js"
 );
 
 workbox.clientsClaim();
