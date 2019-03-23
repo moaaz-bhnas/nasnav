@@ -2,11 +2,11 @@ import React from 'react';
 import styles from '../../../image/styles-image.png';
 import './Styles.scss';
 
-const Styles = () => {
+const Styles2 = () => {
   return (
-    <article className="service styles" role="article">
+    <article className="service styles2" role="article">
       <div className="service__imageContainer  service__imageContainer_width_lessThanHalf service__imageContainer_float_left">
-        <img src={styles} alt="your site is always at the top" className="image image_size_full serviceImageContainer__image styles__serviceImage"/>
+        <img src={styles} alt="your site is always at the top" className="image image_size_full serviceImageContainer__image"/>
       </div>
       <div className="service__content service__content_width_overHalf service__content_float_right">
         <h3 className="service__title">Various styles</h3>
@@ -25,4 +25,4 @@ const Styles = () => {
   );
 }
 
-export default Styles;
+export default Styles2;

@@ -1,20 +1,6 @@
 @import '../../../sass-modules/breakpoints';
 
-.shopping__serviceSection {
-  margin: 3.5rem 0;
-
-  @media screen and (min-width: $break-service) {
-    margin: 7rem 0;
-  }
-}
-
-/* service Items --- */
-.seo2 {
-  position: relative;
-  top: -2rem;
-}
-
-/* paragraph --- */
-.serviceSection__paragraph {
-  margin-bottom: 8rem;
+/* first paragraph --- */
+.navstyles__serviceParagraph:first-of-type {
+  margin-top: 6rem;
 }

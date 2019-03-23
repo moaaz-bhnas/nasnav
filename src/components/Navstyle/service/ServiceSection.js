@@ -1,10 +1,11 @@
 import React from 'react';
 import './ServiceSection.scss';
 import Styles from './Styles';
+import Styles2 from './Styles2';
 
 const ServiceSection = () => {
 	return (
-		<section className="serviceSection shopping__serviceSection" role="region" aria-labelledby="serviceSection__title">
+		<section className="serviceSection" role="region" aria-labelledby="serviceSection__title">
       <div className="container">
         <h2 className="serviceSection__title" id="serviceSection__title">Services</h2>
         <Styles />
@@ -14,6 +15,7 @@ const ServiceSection = () => {
         <p className="paragraph paragraph_line_high paragraph_color_grey paragraph_align_center paragraph_shortened_large paragraph_centered serviceSection__paragraph">
           Some pages in can find out what's new and special for your customer details and the work carried out through the application
         </p>
+        <Styles2 />
         <ul className="list serviceList serviceSection__list">
           <li className="serviceList__item">
             {/* <NavboxEditor /> */}
