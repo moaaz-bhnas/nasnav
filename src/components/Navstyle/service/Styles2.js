@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../../image/styles-image.png';
-import './Styles.scss';
+import './Styles2.scss';
 
 const Styles2 = () => {
   return (
