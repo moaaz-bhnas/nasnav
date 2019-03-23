@@ -4,7 +4,7 @@ import Intro from './header-components/Intro';
 import Footer from '../footer/Footer';
 import CountrySection from '../countries/CountrySection';
 import HeaderImage from './header-components/HeaderImage';
-// import ThrillerSection from './thriller/ThrillerSection';
+import ThrillerSection from './thriller/ThrillerSection';
 // import ServiceSection from './service/ServiceSection';
 
 const NavstylePage = () => {
@@ -15,7 +15,7 @@ const NavstylePage = () => {
         headerImage={<HeaderImage />}
       />
       <main className="mainContent" role="main">
-        {/* <ThrillerSection /> */}
+        <ThrillerSection />
         {/* <ServiceSection /> */}
         <CountrySection />
       </main>
