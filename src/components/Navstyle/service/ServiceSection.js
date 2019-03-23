@@ -8,6 +8,12 @@ const ServiceSection = () => {
       <div className="container">
         <h2 className="serviceSection__title" id="serviceSection__title">Services</h2>
         <Styles />
+        <p className="paragraph navstyles__serviceParagraph paragraph_line_high paragraph_size_large paragraph_align_center paragraph_shortened_large paragraph_centered">
+          Quick statistics and details of all the tasks you performed by cashier
+        </p>
+        <p className="paragraph paragraph_line_high paragraph_color_grey paragraph_align_center paragraph_shortened_large paragraph_centered serviceSection__paragraph">
+          Some pages in can find out what's new and special for your customer details and the work carried out through the application
+        </p>
         <ul className="list serviceList serviceSection__list">
           <li className="serviceList__item">
             {/* <NavboxEditor /> */}
