@@ -37,7 +37,8 @@ Second Paragraph
 Image
 ================================== */
 .statistics__image {
-  width: 35rem;
+  max-width: 35rem;
+  width: 100%
 }
 
 /* ===============================
