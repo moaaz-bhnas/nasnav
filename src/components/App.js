@@ -20,6 +20,7 @@ import NavboxPage from './Navbox/NavboxPage';
 import shoppingPage from './Shopping/ShoppingPage';
 import Editor360Page from './360editor/Editor360Page';
 import NavstylePage from './Navstyle/NavstylePage';
+import DashboardPage from './Dashboard/DashboardPage';
 
 class App extends Component {
   render() {
@@ -31,6 +32,7 @@ class App extends Component {
           <Route path="/shopping" component={shoppingPage} />
           <Route path="/360editor" component={Editor360Page} />
           <Route path="/navstyle" component={NavstylePage} />
+          <Route path="/dashboard" component={DashboardPage} />
         </Switch>
       </BrowserRouter>
     );

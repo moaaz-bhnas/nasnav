@@ -54,7 +54,7 @@ class Sidebar extends Component {
               <Link to="/360editor" className="mobileNavMenu__link">360 Editor</Link>
             </li>
             <li className="mobileNavMenu__item">
-              <Link to="/" className="mobileNavMenu__link" innerRef={this.lastLink}>Dashboard</Link>
+              <Link to="/dashboard" className="mobileNavMenu__link" innerRef={this.lastLink}>Dashboard</Link>
             </li>
           </ul>
         </nav>

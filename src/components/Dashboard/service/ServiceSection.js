@@ -1,8 +1,7 @@
 import React from 'react';
-import './ServiceSection.scss';
 import NavboxEditor from './NavboxEditor';
-import NavboxEditor2 from './NavboxEditor2';
-import View360 from './View360';
+import EasyExperience from './EasyExperience';
+import Panoramas from './Panoramas';
 
 const ServiceSection = () => {
 	return (
@@ -14,10 +13,10 @@ const ServiceSection = () => {
             <NavboxEditor />
           </li>
           <li className="serviceList__item">
-            <View360 />
+            <EasyExperience />
           </li>
           <li className="serviceList__item">
-            <NavboxEditor2 />
+            <Panoramas />
           </li>
         </ul>
       </div>
