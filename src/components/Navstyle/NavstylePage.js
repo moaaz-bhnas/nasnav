@@ -6,6 +6,7 @@ import CountrySection from '../countries/CountrySection';
 import HeaderImage from './header-components/HeaderImage';
 import ThrillerSection from './thriller/ThrillerSection';
 import ServiceSection from './service/ServiceSection';
+import FeatureSection from './feature/FeatureSection';
 
 const NavstylePage = () => {
   return (
@@ -17,6 +18,7 @@ const NavstylePage = () => {
       <main className="mainContent" role="main">
         <ThrillerSection />
         <ServiceSection />
+        <FeatureSection />
         <CountrySection />
       </main>
       <Footer />

@@ -18,6 +18,12 @@ const ServiceSection = () => {
         </p>
         <Styles2 />
         <Carousel />
+        <p className="paragraph navstyles__serviceParagraph paragraph_line_high paragraph_color_grey paragraph_align_center paragraph_centered">
+          You'll get the device wherever you are
+        </p>
+        <p className="paragraph navstyles__serviceParagraph paragraph_line_high paragraph_size_large paragraph_align_center paragraph_shortened_large paragraph_centered">
+          <strong>Many</strong> advantages are available in your new system
+        </p>
       </div>
     </section>
 	);
