@@ -1,6 +1,7 @@
 @import '../../../sass-modules/breakpoints';
 
 .styles__thrillerSection {
+  margin-bottom: 5rem;
   @media screen and (min-width: $break-thriller) {
     margin-top: 5vw;
   }

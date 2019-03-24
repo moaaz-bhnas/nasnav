@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <article className="service dashboard" role="article">
       <div className="service__imageContainer service__imageContainer_shortened service__imageContainer_width_half service__imageContainer_float_left service__imageContainer_stuck_left_viewport_small">
-        <img src={laptop} alt="Laptop" className="image image_size_full_viwport_small image_extend_left"/>
+        <img src={laptop} alt="Laptop" className="image image_size_full_viewport_small image_extend_left"/>
         <img className="service__badge" src={badge1} alt="Badge"/>
         <img className="service__badge" src={badge2} alt="Badge"/>
       </div>
