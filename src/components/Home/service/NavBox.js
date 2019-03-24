@@ -12,7 +12,7 @@ import './NavBox.scss';
 const NavBox = () => {
   return (
     <article className="service" role="article">
-      <div className="service__imageContainer service__imageContainer_shortened service__imageContainer_width_half service__imageContainer_float_right">
+      <div className="service__imageContainer service__imageContainer_shortened service__imageContainer_width_half service__imageContainer_float_right animated">
         <img src={navboxImage} alt="Navbox image" className="image image_size_full serviceImageContainer__image"/>
         <img src={googleBadge} alt="Google badge" className="serviceImageContainer__googleBadge"/>
         <img src={barcode} alt="Barcode" className="serviceImageContainer__barcode"/>
