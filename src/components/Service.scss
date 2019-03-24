@@ -10,6 +10,7 @@
 Service Image
 ======================================= */
 .service__imageContainer {
+  animation: up-down 3s infinite ease-in-out;
   position: relative;
 
   &::after {
