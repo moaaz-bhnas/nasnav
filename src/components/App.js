@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, HashRouter } from 'react-router-dom';
 import './App.scss';
 import './App.scss';
 import './Container.scss';
@@ -25,7 +25,7 @@ import DashboardPage from './Dashboard/DashboardPage';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/navbox" component={NavboxPage} />
@@ -34,7 +34,7 @@ class App extends Component {
           <Route path="/navstyle" component={NavstylePage} />
           <Route path="/dashboard" component={DashboardPage} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
