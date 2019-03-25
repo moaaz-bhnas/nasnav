@@ -1,5 +1,4 @@
 import React from 'react';
-import play from '../../../image/play.svg';
 
 const Intro = () => {
   return (
@@ -12,7 +11,7 @@ const Intro = () => {
         in your home and see theyou an edge over the online competitors <br /> 
         of big businesses data
       </p>
-      <a href="https://youtu.be/N-NXIkkQFsI" target="_blank" className="link link_decoration_none button intro__button button_color_blue button_back_white button_size_large button_shape_oval">Watch Video</a>
+      <a href="https://youtu.be/N-NXIkkQFsI" target="_blank" rel="noopener" className="link link_decoration_none button intro__button button_color_blue button_back_white button_size_large button_shape_oval">Watch Video</a>
     </div>  
   );
 }

@@ -41,7 +41,7 @@ class Topbar extends Component {
           className="menuButton topbar__menuButton" 
           aria-pressed={menuButtonPressed} 
           aria-expanded={menuButtonPressed} 
-          aria-controls="sidebar"
+          aria-controls={menuButtonPressed ? "sidebar" : null}
           onClick={this.openSidebar}
           ref={this.menuButton}
         >
