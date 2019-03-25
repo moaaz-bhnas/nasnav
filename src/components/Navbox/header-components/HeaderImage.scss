@@ -8,7 +8,8 @@
 
   @media screen and (min-width: $break-large) {
     max-width: initial;
-    right: 0;
+    position: absolute;
+    left: 0;
     width: 50vw;
   }
 }

@@ -2,14 +2,15 @@
 @import '../../sass-modules/breakpoints';
 
 .map {
-  max-width: 53rem;
   position: relative;
 }
 
 .countries__map {
+  max-width: 53rem;
   margin: 2rem auto 0;
 
   @media screen and (max-width: 680px) {
+    max-width: initial;
     margin: 2rem -12rem 0;
   }
 

@@ -1,12 +1,6 @@
 @import '../../../sass-modules/breakpoints';
 @import '../../../sass-modules/lengths';
 
-.styles__headerImageContainer {
-  @media screen and (min-width: $break-large) {
-    padding-bottom: 32vw;
-  }
-}
-
 .headerImageContainer__styles {
   transform: rotateY(180deg);
   width: 100%;

@@ -1,12 +1,6 @@
 @import '../../../sass-modules/breakpoints';
 @import '../../../sass-modules/lengths';
 
-.editor360__headerImageContainer {
-  @media screen and (min-width: $break-xlarge) {
-    padding-bottom: 27rem;
-  }
-}
-
 .headerImageContainer__computer {
   width: 100%;
   max-width: 30.4rem;
