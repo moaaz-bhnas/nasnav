@@ -29,25 +29,6 @@ Service Image Container
 .service__imageContainer_imagePositionOnSmallScreen_center {
   text-align: center;
 }
-// .service__imageContainer_align_right {
-//   text-align: right;
-// }
-// .service__imageContainer_align_left {
-//   text-align: left;
-// }
-// .service__imageContainer_margin_top {
-//   margin-top: 2rem;
-// }
-// .service__imageContainer_shortened {
-//   max-width: 32.25rem;
-//   margin: 0 auto 2rem;
-// }
-// .service__imageContainer_shortened_viewport_small {
-//   @media screen and (max-width: $break-service) {
-//     max-width: 32.25rem;
-//     margin: 0 auto 2rem;
-//   }
-// }
 .service__imageContainer_widthOnlargeScreen_lessThanHalf {
   @media screen and (min-width: $break-service) {
     width: 40%;
@@ -63,11 +44,6 @@ Service Image Container
     width: 55%;
   }
 }
-// .service__imageContainer_width_third {
-//   @media screen and (min-width: $break-service) {
-//     width: 30vw;
-//   }
-// }
 .service__imageContainer_floatOnlargeScreen_right {
   @media screen and (min-width: $break-service) {
     float: right;
@@ -78,23 +54,6 @@ Service Image Container
     float: left;
   }
 }
-// .service__imageContainer_stuck_left {
-//   display: inline-block;
-//   margin-left: -1.5rem;
-
-//   @media screen and (min-width: $break-service) {
-//     position: absolute;
-//     top: 0;
-//     left: calc((-100vw + #{$max-width}) / 2);
-//   }
-// }
-// .service__imageContainer_stuck_left_viewport_small {
-//   margin-left: -1.5rem;
-  
-//   @media screen and (min-width: $break-service) {
-//     margin-left: 0;
-//   }
-// }
 
 /* ---------------------
 Service Image 
