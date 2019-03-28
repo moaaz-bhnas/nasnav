@@ -1,0 +1,161 @@
+// @import '../sass-modules/colors';
+// @import '../sass-modules/breakpoints';
+// @import '../sass-modules/lengths';
+
+// .service {
+//   position: relative;
+// }
+
+/* ====================================
+Service Image
+======================================= */
+.service__imageContainer {
+  animation: up-down 3s infinite ease-in-out;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+// modifiers
+.service__imageContainer_align_right {
+  text-align: right;
+}
+.service__imageContainer_align_left {
+  text-align: left;
+}
+.service__imageContainer_margin_top {
+  margin-top: 2rem;
+}
+.service__imageContainer_shortened {
+  max-width: 32.25rem;
+  margin: 0 auto 2rem;
+}
+.service__imageContainer_shortened_viewport_small {
+  @media screen and (max-width: $break-service) {
+    max-width: 32.25rem;
+    margin: 0 auto 2rem;
+  }
+}
+.service__imageContainer_width_lessThanHalf {
+  @media screen and (min-width: $break-service) {
+    width: 40%;
+  }
+}
+.service__imageContainer_width_half {
+  @media screen and (min-width: $break-service) {
+    width: 50%;
+  }
+}
+.service__imageContainer_width_overHalf {
+  @media screen and (min-width: $break-service) {
+    width: 55%;
+  }
+}
+.service__imageContainer_width_third {
+  @media screen and (min-width: $break-service) {
+    width: 30vw;
+  }
+}
+.service__imageContainer_float_right {
+  @media screen and (min-width: $break-service) {
+    float: right;
+  }
+}
+.service__imageContainer_float_left {
+  @media screen and (min-width: $break-service) {
+    float: left;
+  }
+}
+.service__imageContainer_stuck_left {
+  display: inline-block;
+  margin-left: -1.5rem;
+
+  @media screen and (min-width: $break-service) {
+    position: absolute;
+    top: 0;
+    left: calc((-100vw + #{$max-width}) / 2);
+  }
+}
+.service__imageContainer_stuck_left_viewport_small {
+  margin-left: -1.5rem;
+  
+  @media screen and (min-width: $break-service) {
+    margin-left: 0;
+  }
+}
+
+/* ====================================
+Service Content
+======================================= */
+.service__content {
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+// modifiers
+.service__content_align_center {
+  @media screen and (min-width: $break-service) {
+    text-align: center;
+  }
+}
+.service__content_width_half {
+  @media screen and (min-width: $break-service) {
+    width: 40%;
+  }
+}
+.service__content_width_overHalf {
+  @media screen and (min-width: $break-service) {
+    width: 60%;
+  }
+}
+.service__content_float_left {
+  @media screen and (min-width: $break-service) {
+    float: left;
+  }
+}
+.service__content_float_right {
+  @media screen and (min-width: $break-service) {
+    float: right;
+  }
+}
+
+// /* title --- */
+// .service__title {
+//   position: absolute;
+//   left: -100rem;
+// }
+
+// /* paragraph --- */
+// .service__paragraph:nth-of-type(2) {
+//   margin: 0;
+// }
+
+// /* step --- */
+// .step {
+//   color: $light-grey;
+// }
+
+// .stepList__step {
+//   margin: 1.5rem 0;
+// }
+
+// /* dot icon --- */
+// .step__icon {
+//   display: inline-block;
+//   width: .5rem;
+//   margin-right: 1rem;
+// }
+
+// /* step explanation --- */
+// .step__explanation {
+//   vertical-align: middle;
+// }
+
+// /* button --- */
+// .service__button:first-of-type {
+//   margin-right: 1.5rem;
+// }

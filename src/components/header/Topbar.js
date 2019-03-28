@@ -38,14 +38,14 @@ class Topbar extends Component {
         </Link>
         {/* Menu button: mobile only */}
         <button 
-          className="menuButton topbar__menuButton" 
+          className="topbar__menuButton" 
           aria-pressed={menuButtonPressed} 
           aria-expanded={menuButtonPressed} 
           aria-controls={menuButtonPressed ? "sidebar" : null}
           onClick={this.openSidebar}
           ref={this.menuButton}
         >
-          <img className="image image_size_full" src={menuIcon} alt="Menu Icon" />
+          <img className="topbar__menuImage" src={menuIcon} alt="Menu Icon" />
         </button>
         {/* Sidebar: mobile only when menu button is clicked */}
         {

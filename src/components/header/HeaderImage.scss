@@ -1,0 +1,205 @@
+@import '../../sass-modules/breakpoints';
+@import '../../sass-modules/lengths';
+
+.header__imageContainer {
+  @media screen and (min-width: $break-header) {
+    display: inline-block;
+  }
+}
+
+// modifiers
+.header__content_widthOnLargeViewport_half {
+  @media screen and (min-width: $break-header) {
+    width: 50%;
+  }
+}
+.header__content_widthOnLargeViewport_lessThanHalf {
+  @media screen and (min-width: $break-header) {
+    width: 38%;
+  }
+}
+
+/* ===========================================
+Home Page
+============================================== */
+.homePage {
+  .header__imageContainer {
+    position: relative;
+    z-index: 1;
+  }
+
+  .header__image {
+    &:first-child {
+      width: 60%;
+
+      @media screen and (min-width: $break-header) {
+        position: absolute;
+        top: 13rem;
+        right: 5.8rem;
+        width: 30rem;
+      }
+      
+      @media screen and (min-width: $break-header2) {
+        top: 10rem;
+        right: calc((-100vw + #{$max-width}) / 2 + 6rem);
+        width: 37.5rem;
+      }
+
+      @media screen and (min-width: $break-header3) {
+        top: 7.5rem;
+      }
+    }
+
+    &:last-child {
+      width: 40%;
+
+      @media screen and (min-width: $break-header) {
+        position: absolute;
+        top: 8rem;
+        right: -10rem;
+        width: 20rem;
+      }
+      
+      @media screen and (min-width: $break-header2) {
+        top: 3.5rem;
+        right: calc((-100vw + #{$max-width}) / 2 - 13.5rem);
+        width: 25rem;
+      }
+
+      @media screen and (min-width: $break-header3) {
+        top: 1rem;
+      }
+    }
+  }
+}
+
+/* ===========================================
+Navbox Page
+============================================== */
+.navboxPage {
+  .header__imageContainer {
+    position: relative;
+    z-index: 1;
+  }
+
+  .header__image {
+    max-width: 100%;
+    position: relative;
+    right: -1.5rem;
+
+    @media screen and (min-width: $break-header) {
+      max-width: initial;
+      position: absolute;
+      left: 0;
+      width: 50vw;
+    }
+  }
+}
+
+/* ===========================================
+Navstyle Page
+============================================== */
+.navstylePage {
+  .header__imageContainer {
+    position: relative;
+    z-index: 1;
+    text-align: right;
+  }
+
+  .header__image {
+    transform: rotateY(180deg);
+    width: 100%;
+    max-width: 30.4rem;
+    position: relative;
+    right: -1.5rem;
+
+    @media screen and (min-width: $break-header) {
+      max-width: initial;
+      position: absolute;
+      left: 0;
+      width: 50vw;
+    }
+  }
+}
+
+/* ===========================================
+Shopping Page
+============================================== */
+.shoppingPage {
+  &.header {
+    overflow: hidden;
+  }
+
+  .header__imageContainer {
+    text-align: center;
+    position: relative;
+
+    @media screen and (min-width: $break-xlarge) {
+      text-align: left;
+    }
+  }
+
+  .header__image {
+    width: 100%;
+    max-width: 30.4rem;
+
+    @media screen and (min-width: $break-xlarge) {
+      max-width: none;
+      position: absolute;
+      right: -4rem;
+      width: 52vw;
+    }
+  }
+}
+
+/* ===========================================
+360 Editor
+============================================== */
+.editor360Page {
+  .header__imageContainer {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (min-width: $break-xlarge) {
+      text-align: left;
+    }
+  }
+
+  .header__image {
+    width: 100%;
+    max-width: 30.4rem;
+
+    @media screen and (min-width: $break-xlarge) {
+      width: 115%;
+      max-width: initial;
+      position: absolute;
+      left: 0;
+      top: -2rem;
+    }
+  }
+}
+
+/* ===========================================
+Dashboard
+============================================== */
+.dashboardPage {
+  .header__imageContainer {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header__image {
+    width: 100%;
+    max-width: 30.4rem;
+
+    @media screen and (min-width: $break-xlarge) {
+      width: 150%;
+      max-width: initial;
+      position: absolute;
+      left: -6rem;
+      top: -2rem;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import '../sass-modules/colors';
+
+.button {
+  font-size: .9rem;
+  font-weight: 700;
+
+  border: none;
+  padding: 0;
+  border-radius: 1.4rem;
+
+  cursor: pointer;
+}
+
+//// modifiers //// 
+// Text decoration
+.buttn_decoration_underline {
+  text-decoration: underline;
+}
+
+// Size
+.button_size_med {
+  padding: 1rem 1.5rem;
+}
+.button_size_large {
+  padding: 1.1rem 1.9rem;
+}
+
+// Vertical alignment
+.button_verticalAlign_middle {
+  vertical-align: middle;
+}
+
+// Colors
+.button_color_white {
+  color: #fff;
+}
+.button_color_blue {
+  color: $dark-blue;
+}
+.button_back_white {
+  background-color: #fff;
+}
+.button_back_blue {
+  background-color: $blue;
+}
+.button_back_green {
+  background-color: $green;
+}

@@ -1,0 +1,129 @@
+@import '../../sass-modules/breakpoints';
+@import '../../sass-modules/lengths';
+
+/* ===============================
+Service Image Container 
+================================== */
+.service__imageContainer {
+  // animation: up-down 3s infinite ease-in-out;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+// modifiers
+.service__imageContainer_width_limited {
+  max-width: $service_image_max-width;
+}
+.service__imageContainer_positionOnSmallScreen_center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.service__imageContainer_positionOnSmallScreen_left {
+  margin-right: auto;
+}
+.service__imageContainer_imagePositionOnSmallScreen_center {
+  text-align: center;
+}
+// .service__imageContainer_align_right {
+//   text-align: right;
+// }
+// .service__imageContainer_align_left {
+//   text-align: left;
+// }
+// .service__imageContainer_margin_top {
+//   margin-top: 2rem;
+// }
+// .service__imageContainer_shortened {
+//   max-width: 32.25rem;
+//   margin: 0 auto 2rem;
+// }
+// .service__imageContainer_shortened_viewport_small {
+//   @media screen and (max-width: $break-service) {
+//     max-width: 32.25rem;
+//     margin: 0 auto 2rem;
+//   }
+// }
+.service__imageContainer_widthOnlargeScreen_lessThanHalf {
+  @media screen and (min-width: $break-service) {
+    width: 40%;
+  }
+}
+.service__imageContainer_widthOnlargeScreen_half {
+  @media screen and (min-width: $break-service) {
+    width: 50%;
+  }
+}
+.service__imageContainer_widthOnlargeScreen_overHalf {
+  @media screen and (min-width: $break-service) {
+    width: 55%;
+  }
+}
+// .service__imageContainer_width_third {
+//   @media screen and (min-width: $break-service) {
+//     width: 30vw;
+//   }
+// }
+.service__imageContainer_floatOnlargeScreen_right {
+  @media screen and (min-width: $break-service) {
+    float: right;
+  }
+}
+.service__imageContainer_floatOnlargeScreen_left {
+  @media screen and (min-width: $break-service) {
+    float: left;
+  }
+}
+// .service__imageContainer_stuck_left {
+//   display: inline-block;
+//   margin-left: -1.5rem;
+
+//   @media screen and (min-width: $break-service) {
+//     position: absolute;
+//     top: 0;
+//     left: calc((-100vw + #{$max-width}) / 2);
+//   }
+// }
+// .service__imageContainer_stuck_left_viewport_small {
+//   margin-left: -1.5rem;
+  
+//   @media screen and (min-width: $break-service) {
+//     margin-left: 0;
+//   }
+// }
+
+/* ---------------------
+Service Image 
+------------------------ */
+.service__image_width_full {
+  width: 100%;
+}
+.service__image_style_normal {
+  width: 100%;
+  max-width: 32.25rem;
+  @media screen and (min-width: $break-service) {
+    max-width: initial;
+  }
+}
+.service__image_extend_left {
+  width: 100%;
+  max-width: 32.25rem;
+  margin-left: -1.5rem;
+  @media screen and (min-width: $break-service) {
+    max-width: initial;
+    width: 50vw;
+
+    position: absolute;
+    right: 0;
+  }
+}
+.service__image_upOnlargeScreen_high {
+  margin-top: -4rem;
+}
+.service__image_upOnlargeScreen_med {
+  margin-top: -2rem;
+}

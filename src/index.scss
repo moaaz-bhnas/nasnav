@@ -1,20 +1,20 @@
-@import './sass-modules/colors';
 @import './sass-modules/breakpoints';
+@import './sass-modules/colors';
 
 body {
-  color: $dark-grey;
-
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $dark-grey;
 
-  @media screen and (min-width: $break-large) {
+  @media screen and (min-width: $break-header) {
     overflow-x: hidden;
   }
 }
 
-body[data-scroll="false"] {
-  overflow: hidden;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }

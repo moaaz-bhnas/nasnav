@@ -1,19 +1,57 @@
-$break-sidenav: 55.5rem;
-$break-sidenav-med: 25rem;
-$break-sidenav-large: 31.25rem;
+/* ===============================
+Header
+================================== */
+$break-header: 55.5rem;
+$break-header2: 66.0625rem;
+$break-header3: 82.5rem;
+
+/* sidebar --- */
+$break-sidebar-med: 25rem;
+$break-sidebar-large: 31.25rem;
+
+/* desktop navigation menu --- */
 $break-large: 65rem;
 $break-xlarge: 75.125rem;
+
+/* ===============================
+Paragraph
+================================== */
+$break-paragraph: 36.25rem;
+
+/* ===============================
+About (home page)
+================================== */
+$break-about: 56.625rem;
+
+/* ===============================
+Service
+================================== */
+$break-service: 69.25rem;
+
+/* ===============================
+Countries
+================================== */
 $break-countries: 28.5625rem;
-$break-footer: 34.375em;
-$break-jumbotron: 36.25rem;
 $break-modal-med: 43.375rem;
 $break-modal-large: 69.875rem;
-$break-about: 56.625rem;
-$break-service: 69.25rem;
-$break-service-large: 72.7rem;
-$break-service-xlarge: 82.75rem;
-$break-dashboard: 70rem;
-$break-header-image-container: 67.2rem;
-$break-home-header-image: 79.125rem;
+
+/* ===============================
+Footer
+================================== */
+$break-footer: 34.375em;
+
+/* ===============================
+Thriller
+================================== */
 $break-thriller: 68.875rem;
 
+
+// $break-modal-med: 43.375rem;
+// $break-modal-large: 69.875rem;
+// $break-service: 69.25rem;
+// $break-service-large: 72.7rem;
+// $break-service-xlarge: 82.75rem;
+// $break-dashboard: 70rem;
+// $break-header-image-container: 67.2rem;
+// $break-home-header-image: 79.125rem;
+// $break-thriller: 68.875rem;

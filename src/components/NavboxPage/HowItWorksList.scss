@@ -1,0 +1,34 @@
+@import '../../sass-modules/breakpoints';
+
+.howItWorksList {
+  text-align: center;
+}
+
+.navboxPage__howItWorksList {
+  margin-top: 2.5rem;
+}
+
+/* ========================
+Thriller Item
+=========================== */
+.navboxStep {
+  display: inline-block;
+  text-align: center;
+  padding: 1.5rem;
+
+  @media screen and (min-width: $break-thriller) {
+    width: 18.6rem;
+  }
+}
+
+/* title --- */
+.navboxStep__title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 1rem 0 .5rem;
+}
+
+/* paragraph --- */
+.navboxStep__paragraph {
+  margin: 0;
+}

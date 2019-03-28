@@ -13,11 +13,11 @@
   bottom: 0;
   z-index: 2;
 
-  @media screen and (min-width: $break-sidenav-med) {
+  @media screen and (min-width: $break-sidebar-med) {
     width: 15rem;
   }
 
-  @media screen and (min-width: $break-sidenav-large) {
+  @media screen and (min-width: $break-sidebar-large) {
     width: 18.75rem;
   }
 }
@@ -28,7 +28,7 @@
 
   position: absolute;
   top: 17.6rem;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* ===================================== 

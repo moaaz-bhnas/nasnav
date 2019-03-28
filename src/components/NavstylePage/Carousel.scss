@@ -1,0 +1,62 @@
+.carousel {
+  text-align: center;
+  padding: 4rem 0;
+  position: relative;
+}
+
+/* container --- */
+.carousel__container {
+  position: relative;
+}
+
+/* list --- */
+.carousel__list {
+  padding: 0 1rem;
+}
+
+/* Items --- */
+.carousel__item {
+  padding: 1rem .8rem;
+  max-width: 19.4rem;
+  display: inline-block;
+}
+
+.carousel__item:nth-of-type(2) {
+  display: none;
+
+  @media screen and (min-width: 48.0625rem) {
+    display: inline-block;
+  }
+}
+
+.carousel__item:nth-of-type(3) {
+  display: none;
+
+  @media screen and (min-width: 69.0625rem) {
+    display: inline-block;
+  }
+}
+
+/* arrows --- */
+.carousel__leftArrow,
+.carousel__rightArrow {
+  width: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba($color: #000, $alpha: .15)
+}
+
+.carousel__leftArrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.carousel__rightArrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: rotateY(180deg) translateY(-50%);
+}

@@ -1,0 +1,39 @@
+/* ===================================
+Features
+====================================== */
+.feature {
+  display: inline-block;
+  text-align: center;
+  max-width: 17.6rem;
+  padding: 2rem 1vw;
+  vertical-align: top;
+
+  @media screen and (min-width: 655px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1102px) {
+    padding: 2rem;
+  }
+}
+
+/* icons --- */
+.feature__iconWrapper {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 4rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba($color: #000, $alpha: .2)
+}
+
+.feature__icon {
+  vertical-align: middle
+}
+
+/* title --- */
+.feature__title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: .9rem 0;
+}

@@ -1,0 +1,41 @@
+@import '../../sass-modules/breakpoints';
+
+/* ===============================
+Service Content
+================================== */
+.service__content {
+  max-width: 37rem;
+  margin: 0 auto;
+}
+
+// modifiers
+.service__content_align_center {
+  @media screen and (min-width: $break-service) {
+    text-align: center;
+  }
+}
+.service__content_widthOnlargeScreen_lessThanHalf {
+  @media screen and (min-width: $break-service) {
+    width: 40%;
+  }
+}
+.service__content_widthOnlargeScreen_45 {
+  @media screen and (min-width: $break-service) {
+    width: 45%;
+  }
+}
+.service__content_widthOnlargeScreen_overHalf {
+  @media screen and (min-width: $break-service) {
+    width: 60%;
+  }
+}
+.service__content_floatOnlargeScreen_left {
+  @media screen and (min-width: $break-service) {
+    float: left;
+  }
+}
+.service__content_floatOnlargeScreen_right {
+  @media screen and (min-width: $break-service) {
+    float: right;
+  }
+}

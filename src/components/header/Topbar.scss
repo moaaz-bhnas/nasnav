@@ -17,16 +17,15 @@
 .topbar__logo {
   padding: 1.8rem 0;
 
-  @media screen and (min-width: $break-sidenav) {
+  @media screen and (min-width: $break-header) {
     float: left;
   }
 }
 
-/* ===================================== 
-Menu Button
-===================================== */
-.menuButton {
-  display: inline-block;
+/* menu button --- */
+.topbar__menuButton {
+  position: absolute;
+  left: -.5rem;
 
   width: 3rem;
   padding: .7rem;
@@ -36,14 +35,14 @@ Menu Button
 
   cursor: pointer;
 
-  @media screen and (min-width: $break-sidenav) {
+  @media screen and (min-width: $break-header) {
     display: none;
   }
 }
 
-.topbar__menuButton {
-  position: absolute;
-  left: -.5rem;
+/* menu image --- */
+.topbar__menuImage {
+  width: 100%;
 }
 
 /* ===================================== 
@@ -52,7 +51,7 @@ Desktop Navigation Bar
 .desktopNavbar {
   display: none;
 
-  @media screen and (min-width: $break-sidenav) {
+  @media screen and (min-width: $break-header) {
     display: inline-block;
   }
 }
@@ -120,11 +119,11 @@ Desktop Navigation Menu
 Button
 ===================================== */
 .topbar__button {
-  margin-top: 1.23rem;
   display: none;
 
-  @media screen and (min-width: $break-sidenav) {
+  @media screen and (min-width: $break-header) {
     display: block;
     float: right;
+    margin-top: 1.23rem;
   }
 }

@@ -1,0 +1,364 @@
+@import '../../sass-modules/colors';
+@import '../../sass-modules/breakpoints';
+@import '../../sass-modules/lengths';
+
+.service {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+/* title --- */
+.service__title {
+  position: absolute;
+  left: -100rem;
+}
+
+/* item --- */
+.stepList__step {
+  margin: 1.5rem 0;
+}
+
+/* paragraph --- */
+.service__paragraph:nth-of-type(2) {
+  margin: 0;
+}
+
+/* step icon --- */
+.step__icon {
+  display: inline-block;
+  width: .5rem;
+  margin-right: .5rem;
+}
+
+/* step explanation --- */
+.step__explanation {
+  width: 3rem;
+  color: $light-grey;
+  vertical-align: middle;
+  margin-left: .4rem;
+}
+
+/* button --- */
+.service__button:first-of-type {
+  margin-right: 1.5rem;
+}
+
+/* ===============================
+NavBox 
+================================== */
+/* google icon --- */
+.step__googleIcon {
+  width: 3rem;
+  vertical-align: middle;
+  margin-left: .4rem;
+}
+
+/* Google badge --- */
+.service__googleBadge {
+  width: 22%;
+  position: absolute;
+  top: 8%;
+  left: -9%;
+}
+
+/* barcode --- */
+.service__barcode {
+  width: 20%;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+/* online payment badge --- */
+.service__onlinePaymentBadge {
+  width: 40%;
+  position: absolute;
+  top: 8%;
+  right: 5%;
+}
+
+/* design editor badge --- */
+.service__designEditorBadge {
+  width: 40%;
+  max-width: 12.9rem;
+  position: absolute;
+  top: 55%;
+  left: 0;
+}
+
+/* 360 view badge --- */
+.service__360ViewBadge {
+  width: 40%;
+  position: absolute;
+  top: 35%;
+  right: -10%;
+}
+
+/* ===============================
+Styles 
+================================== */
+.styles3 {
+  .service__image {
+    width: 100%;
+    max-width: 32.25rem;
+    margin-left: -1.5rem;
+
+    @media screen and (min-width: $break-service) {
+      max-width: initial;
+      width: 67vw;
+      margin-left: calc((-100vw + #{$max-width})/2 - 1.5rem);
+    }
+  }
+
+  .service__content {
+    @media screen and (min-width: $break-service) {
+      margin-top: 26rem; 
+    }
+  }
+}
+
+.styles4 {
+  .service__image {
+    @media screen and (min-width: $break-service) {
+      position: absolute;
+      top: 0;
+      left: -5rem;
+      width: 141%; 
+    }
+  }
+}
+
+/* ===============================
+View 360 
+================================== */
+.view360 {
+  @media screen and (min-width: $break-service) {
+    margin: 0 calc((-100vw + #{$max-width}) / 2);
+  }
+
+  .service__imageContainer:first-child {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-bottom: 9rem;
+    right: -1.5rem;
+
+    @media screen and (min-width: $break-service) {
+      float: right;
+      width: 30vw;
+    }
+
+    .service__eye {
+      position: absolute;
+      top: 17rem;
+      right: 5rem;
+      width: 5rem;
+    }
+  }
+
+  .service__image {
+    position: relative;
+    top: 10.5rem;
+  }
+
+  .service__content {
+    @media screen and (min-width: $break-service) {
+      width: 40vw;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      position: relative;
+      top: 14rem;
+    }
+  }
+}
+
+.service__360Badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 12rem;
+}
+
+/* -----------------
+chair
+-------------------- */
+.chair {
+  max-width: 30rem;
+  margin-top: 2rem;
+  position: relative;
+  left: -1.5rem;
+
+  @media screen and (min-width: $break-service) {
+    float: left;
+    width: 30vw;
+    margin-top: -13rem;
+  }
+}
+
+/* image --- */
+.chair__image {
+  width: 100%;
+}
+
+/* eye --- */
+.chair__eye {
+  width: 5rem;
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+}
+
+/* modal --- */
+.chair__modal {
+  position: absolute;
+  top: 19%;
+  left: 10%;
+  z-index: 1;
+}
+
+/* text --- */
+.chair__content {
+  text-align: center;
+  width: 16rem;
+
+  position: absolute;
+  top: 27%;
+  left: 15%;
+  z-index: 1;
+}
+.chair__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+.chair__paragraph {
+  line-height: 1.7;
+}
+
+/* ===============================
+Control Panel
+================================== */
+.controlPanel {
+  .service__image:first-child {
+    width: 40%;
+
+    @media screen and (min-width: $break-service) {
+      position: absolute;
+      right: 17rem;
+      top: 15rem;
+      width: 23rem;
+    }
+  }
+
+  .service__image:nth-child(2) {
+    width: 60%;
+
+    @media screen and (min-width: $break-service) {
+      position: absolute;
+      right: -15rem;
+      width: 38rem;
+    }
+  }
+
+  .service__badge {
+    width: 4rem;
+  
+    @media screen and (min-width: $break-service) {
+      width: 6.5rem;
+    }
+  
+    &:nth-child(3) {
+      position: absolute;
+      top: -5%;
+      left: 30%;
+  
+      @media screen and (min-width: $break-service) {
+        top: 35rem;
+        left: 17rem;
+      }
+    }
+  
+    &:nth-child(4) {
+      position: absolute;
+      bottom: -8%;
+      right: 10%;
+  
+      @media screen and (min-width: $break-service) {
+        top: 31rem;
+        left: -12rem;
+      }
+    }
+  
+    &:nth-child(5) {
+      position: absolute;
+      bottom: -5%;
+      left: 10%;
+  
+      @media screen and (min-width: $break-service) {
+        top: 10rem;
+        left: 0rem;
+      }
+    }
+  }
+}
+
+/* ===============================
+Dashboard
+================================== */
+.dashboard {
+  .service__imageContainer {
+    margin-left: -1.5rem;
+    max-width: $service_image_max-width;
+    margin-right: auto;
+
+    @media screen and (min-width: $break-large) {
+      margin-left: calc((-100vw + #{$max-width}) / 2 - 1.5rem);
+    }
+
+    @media screen and (min-width: $break-service) {
+      margin-left: 0;
+      position: absolute;
+      left: 0;
+      max-width: initial;
+      width: 50vw;
+    }
+  }
+
+  .service__badge {
+    width: 40%;
+
+    &:nth-child(2) {
+      position: absolute;
+      top: 18%;
+      right: -3rem;
+    }
+
+    &:nth-child(3) {
+      position: absolute;
+      top: 40%;
+      right: -1rem;
+    }
+  }
+}
+
+.dashboard2 {
+  @media screen and (min-width: $break-service) {
+    padding-bottom: 5rem;
+  }
+}
+
+.dashboard3 {
+  .service__image {
+    width: 100%;
+    max-width: $service_image_max-width;
+
+    @media screen and (min-width: $break-service) {
+      width: 120%;
+      max-width: initial;
+    }
+  }
+}

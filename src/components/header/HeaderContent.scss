@@ -1,0 +1,23 @@
+@import '../../sass-modules/breakpoints';
+
+.header__content {
+  margin-bottom: 2rem;
+  
+  @media screen and (min-width: $break-header) {
+    display: inline-block;
+    vertical-align: top;
+    // margin-right: -.4rem;
+  }
+}
+
+// modifiers
+.header__content_widthOnLargeViewport_half {
+  @media screen and (min-width: $break-header) {
+    width: 50%;
+  }
+}
+.header__content_widthOnLargeViewport_overHalf {
+  @media screen and (min-width: $break-header) {
+    width: 62%;
+  }
+}
