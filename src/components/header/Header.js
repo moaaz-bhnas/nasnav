@@ -15,7 +15,7 @@ const Header = (props) => {
     >
       <div className="container">
         <h1 className="header__title">NasNav</h1>
-        <Topbar />
+        {/* <Topbar /> */}
         <HeaderContent 
           width={contentWidth}
           text={text}

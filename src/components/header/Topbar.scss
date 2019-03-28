@@ -9,8 +9,15 @@
   position: relative;
 }
 
-.header__topbar {
-  margin-bottom: 3rem;
+.App__topbar {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+/* container --- */
+.topbar__container {
+  position: relative;
 }
 
 /* logo --- */
@@ -25,7 +32,7 @@
 /* menu button --- */
 .topbar__menuButton {
   position: absolute;
-  left: -.5rem;
+  left: 1rem;
 
   width: 3rem;
   padding: .7rem;
