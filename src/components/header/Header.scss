@@ -68,6 +68,29 @@ Navstyles
 /* ================================
 Dashboard 
 =================================== */
+.navboxPage.App__header {
+  background-image: url('../../image/navbox-header-background.png');
+}
+
+/* ================================
+Shopping 
+=================================== */
+.shoppingPage.App__header {
+  background-image: url('../../image/shopping-header-background.png');
+}
+
+
+/* ================================
+Editor 
+=================================== */
+.editor360Page.App__header {
+  background-image: url('../../image/editor-header-background.png');
+}
+
+
+/* ================================
+Dashboard 
+=================================== */
 .dashboardPage.App__header {
   background-image: url('../../image/dashboard-header-background.png');
 }

@@ -26,6 +26,17 @@ import controlBadge2 from '../../image/control-badge2.png';
 import controlBadge3 from '../../image/control-badge3.png';
 import dashboardBadge1 from '../../image/dashboard-badge1.png';
 import dashboardBadge2 from '../../image/dashboard-badge2.png';
+import stepicon2 from '../../image/step-icon2.png';
+import stepicon3 from '../../image/step-icon3.png';
+import stepicon4 from '../../image/step-icon4.png';
+import stepicon5 from '../../image/step-icon5.png';
+import stepicon6 from '../../image/step-icon6.png';
+import stepicon7 from '../../image/step-icon7.png';
+import stepicon8 from '../../image/step-icon8.png';
+import stepicon9 from '../../image/step-icon9.png';
+import stepicon10 from '../../image/step-icon10.png';
+import stepicon11 from '../../image/step-icon11.png';
+import stepicon12 from '../../image/step-icon12.png';
 
 const HomePage = () => {
   const pageName = 'home';
@@ -106,12 +117,12 @@ const HomePage = () => {
           text: 'Just plug in the NasNav Box'
         },
         {
-          iconSrc: dot,
+          iconSrc: stepicon2,
           iconAlt: '',
           text: 'Your Products appear online'
         },
         {
-          iconSrc: dot,
+          iconSrc: stepicon3,
           iconAlt: '',
           text: 'Come up on',
           googleIcon: googleIcon
@@ -152,17 +163,17 @@ const HomePage = () => {
       ],
       steps: [
         {
-          iconSrc: dot,
+          iconSrc: stepicon4,
           iconAlt: '',
           text: 'Adjust the colors to suit your type of work'
         },
         {
-          iconSrc: dot,
+          iconSrc: stepicon5,
           iconAlt: '',
           text: 'Edit photos and upload photos that reflect you'
         },
         {
-          iconSrc: dot,
+          iconSrc: stepicon6,
           iconAlt: '',
           text: 'Add you logo and your ways of communication'
         }
@@ -299,17 +310,17 @@ const HomePage = () => {
       ],
       steps: [
         {
-          iconSrc: dot,
+          iconSrc: stepicon7,
           iconAlt: '',
           text: 'Add and modify products'
         },
         {
-          iconSrc: dot,
+          iconSrc: stepicon8,
           iconAlt: '',
           text: 'Aditions directions and shapes'
         },
         {
-          iconSrc: dot,
+          iconSrc: stepicon9,
           iconAlt: '',
           text: 'A separate control panel for each branch'
         }
@@ -356,17 +367,17 @@ const HomePage = () => {
       ],
       steps: [
         {
-          iconSrc: dot,
+          iconSrc: stepicon10,
           iconAlt: '',
           text: 'Management of roducts and branches'
         },
         {
-          iconSrc: dot,
+          iconSrc: stepicon11,
           iconAlt: '',
           text: 'Analysis of results and reciept of orders'
         },
         {
-          iconSrc: dot,
+          iconSrc: stepicon12,
           iconAlt: '',
           text: 'Manage Facebook page and Google analytics'
         }

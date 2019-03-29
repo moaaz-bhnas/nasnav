@@ -1,0 +1,31 @@
+@import '../sass-modules/colors';
+
+.App {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 28%;
+    right: 0;
+    z-index: -1;
+    width: 97%;
+    height: 35rem;
+    background-color: $ribbon;
+  
+    transform-origin: 100% 0;
+    transform: rotate(-24deg);
+  }
+
+  // &::after {
+  //   content: url(../../image/curve-cropped.png);
+  //   position: absolute;
+  //   top: 30rem;
+  //   left: 0;
+  //   z-index: -1;
+  //   width: 100%;
+  //   height: 35rem;
+  //   background-color: $ribbon;
+  // }
+}

@@ -6,9 +6,11 @@ import HowItWorksList from './HowItWorksList';
 import serviceImage1 from '../../image/navbox.png';
 import serviceImage2 from '../../image/seo-phones.png';
 import serviceImage3 from '../../image/styles-image.png';
-import dot from '../../image/dot.svg';
 import ServiceSection from '../service/ServiceSection';
 import './NavboxPage.scss';
+import stepIcon1 from '../../image/step-icon4.png';
+import stepIcon2 from '../../image/step-icon5.png';
+import stepIcon3 from '../../image/step-icon6.png';
 
 const NavboxPage = () => {
   const pageName = 'navbox';
@@ -130,17 +132,17 @@ const NavboxPage = () => {
       ],
       steps: [
         {
-          iconSrc: dot,
+          iconSrc: stepIcon1,
           iconAlt: '',
           text: 'Adjust the colors to suit your type of work'
         },
         {
-          iconSrc: dot,
+          iconSrc: stepIcon2,
           iconAlt: '',
           text: 'Edit photos and upload photos that reflect you'
         },
         {
-          iconSrc: dot,
+          iconSrc: stepIcon3,
           iconAlt: '',
           text: 'Add you logo and your ways of communication'
         }

@@ -16,6 +16,7 @@ import ShoppingPage from './ShoppingPage/ShoppingPage';
 import Editor360Page from './Editor360Page/Editor360Page';
 import DashboardPage from './DashboardPage/DashboardPage';
 import Topbar from './header/Topbar';
+import './App.scss';
 
 class App extends Component {
   render() {
