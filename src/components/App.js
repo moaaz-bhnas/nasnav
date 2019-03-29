@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import '../es6-polyfills';
 import HomePage from './HomePage/HomePage';
 import '../sass-basic-components/Container.scss';
 import '../sass-basic-components/Button.scss';
