@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import './index.scss';
-import 'react-app-polyfill/ie8';
+import 'react-app-polyfill/ie9';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
