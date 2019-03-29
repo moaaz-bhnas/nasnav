@@ -1,5 +1,4 @@
 import React from 'react';
-import Topbar from './Topbar';
 import curve from '../../image/curve-cropped.png';
 import './Header.scss';
 import HeaderContent from './HeaderContent';
