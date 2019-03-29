@@ -30,6 +30,12 @@ class Sidebar extends Component {
     }
   }
 
+  handleClick = (e) => {
+    if (e.target.tagName === 'A') {
+      this.props.closeSidebar();
+    }
+  }
+
   render() {
     const {closeSidebar} = this.props;
 
@@ -40,6 +46,7 @@ class Sidebar extends Component {
           <ul 
             className="list mobileNavMenu"
             onKeyDown={(e) => this.trapFocus(e, this.firstLink.current, this.lastLink.current, closeSidebar)}
+            onClick={this.handleClick}
           >
             <li className="mobileNavMenu__item">
               <Link to="/navbox" className="mobileNavMenu__link" innerRef={this.firstLink}>Navbox</Link>
