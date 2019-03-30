@@ -1,16 +1,11 @@
 import React from 'react';
-import screens from '../../image/navbox-header-image.png';
 import Header from '../header/Header';
 import Thriller from '../thriller/Thriller';
 import HowItWorksList from './HowItWorksList';
-import serviceImage1 from '../../image/navbox.png';
-import serviceImage2 from '../../image/seo-phones.png';
-import serviceImage3 from '../../image/styles-image.png';
 import ServiceSection from '../service/ServiceSection';
 import './NavboxPage.scss';
-import stepIcon1 from '../../image/step-icon4.png';
-import stepIcon2 from '../../image/step-icon5.png';
-import stepIcon3 from '../../image/step-icon6.png';
+import navboxPageImages from '../../pages-images/navbox-page-images';
+const { screens, serviceImage1, serviceImage2, serviceImage3, stepIcon1, stepIcon2, stepIcon3 } = navboxPageImages;
 
 const NavboxPage = () => {
   const pageName = 'navbox';

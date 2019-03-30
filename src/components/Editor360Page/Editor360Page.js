@@ -1,12 +1,10 @@
 import React from 'react';
 import Header from '../header/Header';
-import computer from '../../image/computer.png';
-import editor1 from '../../image/laptop-1.png';
-import editor2 from '../../image/laptop-2.png';
-import editor3 from '../../image/laptop-3.png';
 import Thriller from '../thriller/Thriller';
 import ServiceSection from '../service/ServiceSection';
 import StatisticsSection from './StatisticsSection';
+import editor360PageImages from '../../pages-images/360editor-page-images';
+const { computer, editor1, editor2, editor3 } = editor360PageImages;
 
 const Editor360Page = () => {
   const pageName = 'editor360';

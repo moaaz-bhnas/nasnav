@@ -1,12 +1,9 @@
 import React from 'react';
-import headerImage from '../../image/dashboard-header-image.png';
 import Thriller from '../thriller/Thriller';
 import Header from '../header/Header';
-import serviceImage1 from '../../image/dashboard-image2.png';
-import serviceImage2 from '../../image/dashboard-image3.png';
-import serviceImage3 from '../../image/dashboard-image4.png';
-import serviceImage4 from '../../image/dashboard-image7.png';
 import ServiceSection from '../service/ServiceSection';
+import dashboardPageImages from '../../pages-images/dashboard-page-images';
+const { headerImage, serviceImage1, serviceImage2, serviceImage3, serviceImage4 } = dashboardPageImages;
 
 const DashboardPage = () => {
   const pageName = 'dashboard';

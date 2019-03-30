@@ -2,12 +2,11 @@ import React from 'react';
 import Header from '../header/Header';
 import Thriller from '../thriller/Thriller';
 import ServiceSection from '../service/ServiceSection';
-import styles from '../../image/styles-image.png';
-import serviceImage1 from '../../image/styles-image2.png';
-import serviceImage2 from '../../image/styles-image3.png';
 import Carousel from './Carousel';
 import './NavstylePage.scss';
 import FeatureSection from './FeatureSection';
+import navstylePageImages from '../../pages-images/navstyles-page-images';
+const { styles, serviceImage1, serviceImage2 } = navstylePageImages;
 
 const NavstylePage = () => {
   const pageName = 'navstyle';
