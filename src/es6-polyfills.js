@@ -33,7 +33,6 @@ if (!Array.prototype.map) {
 // https://tc39.github.io/ecma262/#sec-array.prototype.includes
 if (!String.prototype.includes) {
   String.prototype.includes = function(search, start) {
-    'use strict';
     if (typeof start !== 'number') {
       start = 0;
     }

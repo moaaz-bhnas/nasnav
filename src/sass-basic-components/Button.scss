@@ -6,7 +6,6 @@
 
   border: none;
   padding: 0;
-  border-radius: 1.4rem;
 
   cursor: pointer;
 }
@@ -45,4 +44,12 @@
 }
 .button_back_green {
   background-color: $green;
+}
+
+// Shapes
+.button_shape_oval {
+  border-radius: 1.4rem;
+}
+.button_shape_circle {
+  border-radius: 50%;
 }
