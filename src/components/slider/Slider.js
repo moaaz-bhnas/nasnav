@@ -65,6 +65,7 @@ class Slider extends Component {
         <div className="slider__wrapper">
           <ul 
             className="list slider__list"
+            id="slider__list"
             style={{
               transform: `translateX(${translateValue}px)`
             }}

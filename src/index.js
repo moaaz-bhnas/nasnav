@@ -8,4 +8,4 @@ import './es6-polyfills';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-serviceWorker.register();
+// serviceWorker.register();

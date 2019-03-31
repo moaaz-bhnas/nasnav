@@ -1,8 +1,15 @@
 @import '../../sass-modules/lengths';
 @import '../../sass-modules/breakpoints';
+@import '../../sass-modules/colors';
 
 .slider {
-  outline: none;
+  &:focus {
+    outline: none;
+    
+    .slider__wrapper {
+      outline: 1px solid rgba($color: $blue, $alpha: .4);
+    }
+  }
 }
 
 .App__slider {

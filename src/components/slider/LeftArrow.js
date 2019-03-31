@@ -6,6 +6,8 @@ const LeftArrow = (props) => {
   return (
     <button 
       type="button" 
+      aria-controls="slider__list"
+      tabIndex="-1"
       className="button slider__leftArrow button_back_white button_shape_circle"
       onClick={props.goToPreviousSlide}
     >
