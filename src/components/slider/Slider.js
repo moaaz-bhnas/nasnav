@@ -62,6 +62,7 @@ class Slider extends Component {
         className={`slider App__slider ${sliderType} ${sliderSize}`}
         tabIndex="0"
         onKeyDown={this.handleKeyDown}
+        onClick={() => {}}
       >
         <div className="slider__wrapper">
           <ul 
