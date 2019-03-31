@@ -1,15 +1,15 @@
 import React from 'react';
-import arrow from '../../image/arrow.svg';
+import rightArrow from '../../image/right-arrow.svg';
 import './Arrows.scss';
 
 const RightArrow = (props) => {
   return (
     <button 
       type="button" 
-      className="button slider__rightButton button_back_white button_shape_circle"
+      className="button slider__rightArrow button_back_white button_shape_circle"
       onClick={props.goToNextSlide}
     >
-      <img src={arrow} alt="Right arrow" className="slider__nextArrow"/>
+      <img src={rightArrow} alt="Right arrow" className="slider__nextArrow"/>
     </button>
   );
 }

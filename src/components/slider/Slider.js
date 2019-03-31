@@ -1,65 +1,77 @@
 import React, { Component } from 'react';
-import './Slider.scss';
-import Slide from './Slide';
-import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
-import slide1 from '../../image/slide-1.png';
-import slide2 from '../../image/slide-2.png';
-import slide3 from '../../image/slide-3.png';
+import LeftArrow from './LeftArrow';
+import './Slider.scss';
 
 class Slider extends Component {
   state = {  
-    images: [slide1, slide2, slide3],
     currentIndex: 0,
     translateValue: 0
   }
 
-  goToPreviousSlide = () => {
+  firstSlide = React.createRef();
 
+  slideWidth = () => {
+    return this.firstSlide.current.clientWidth;
+  }
+
+  goToPreviousSlide = () => {
+    const {currentIndex} = this.state;
+    if (currentIndex !== 0) {
+      this.setState((prevState) => ({
+        currentIndex: prevState.currentIndex - 1,
+        translateValue: prevState.translateValue + this.slideWidth()
+      }));
+    }
   }
 
   goToNextSlide = () => {
-    const {images, currentIndex} = this.state;
-
-    if (currentIndex === images.length-1) {
-      return this.setState({
+    const {slides, visibleSlidesNum} = this.props;
+    const {currentIndex} = this.state;
+    if ((currentIndex + (visibleSlidesNum-1)) === slides.length-1) { // Reached the last slide
+      this.setState({
         currentIndex: 0,
         translateValue: 0
-      })
+      });
+    } else {
+      this.setState((prevState) => ({
+        currentIndex: prevState.currentIndex + 1,
+        translateValue: prevState.translateValue - this.slideWidth()
+      }));
     }
-
-    this.setState((prevState) => ({
-      currentIndex: prevState.currentIndex + 1,
-      translateValue: prevState.translateValue - this.slideWidth()
-    }));
-  }
-
-  slideWidth = () => {
-    return document.querySelector('.slide').clientWidth
   }
 
   render() {
-    const {images, translateValue} = this.state;
+    const {sliderType, sliderSize, slides} = this.props;
+    const {translateValue} = this.state;
 
     return (
-      <div className="slider">
-        <div className="slider__wrapper"
-          style={{
-            transform: `translateX(${translateValue}px)`,
-            transition: 'transform ease-out 0.45s'
-          }}
-        >
-          {
-            images.map((image, index) => (
-              <Slide key={index} image={image} />
-            ))
-          }
+      <div className={`slider App__slider ${sliderType} ${sliderSize}`}>
+        <div className="slider__wrapper">
+          <ul 
+            className="list slider__list"
+            style={{
+              transform: `translateX(${translateValue}px)`
+            }}
+          >
+            {
+              slides.map((slide, index) => (
+                <li key={index} className="slide" ref={index === 0 ? this.firstSlide : null}>
+                  {
+                    (sliderType === 'styleSlider') ?
+                    <img src={slide} alt="NasNav theme" className="slide__image"/> :
+                    null
+                  }
+                </li>
+              ))
+            }
+          </ul>
         </div>
-    
-        <LeftArrow 
+
+        <LeftArrow
           goToPreviousSlide={this.goToPreviousSlide}
         />
-        <RightArrow 
+        <RightArrow
           goToNextSlide={this.goToNextSlide}
         />
       </div>

@@ -17,14 +17,12 @@ import Editor360Page from './Editor360Page/Editor360Page';
 import DashboardPage from './DashboardPage/DashboardPage';
 import Topbar from './header/Topbar';
 import './App.scss';
-import Slider from './slider/Slider';
 
 class App extends Component {
   render() {
     return (
       <HashRouter basename={process.env.PUBLIC_URL}>
         <div className="App">
-          <Slider />
           <Topbar />
           <Switch>
             <Route exact path="/" component={HomePage} />

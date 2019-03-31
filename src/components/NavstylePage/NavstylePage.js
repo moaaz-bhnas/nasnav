@@ -2,11 +2,11 @@ import React from 'react';
 import Header from '../header/Header';
 import Thriller from '../thriller/Thriller';
 import ServiceSection from '../service/ServiceSection';
-import Carousel from './Carousel';
 import './NavstylePage.scss';
 import FeatureSection from './FeatureSection';
 import navstylePageImages from '../../pages-images/navstyles-page-images';
-const { styles, serviceImage1, serviceImage2 } = navstylePageImages;
+import Slider from '../slider/Slider';
+const { styles, serviceImage1, serviceImage2, slide1, slide2, slide3 } = navstylePageImages;
 
 const NavstylePage = () => {
   const pageName = 'navstyle';
@@ -106,6 +106,7 @@ const NavstylePage = () => {
       ]
     }
   ];
+  const slides = [slide1, slide2, slide3, slide1, slide2, slide3];
   return (
     <React.Fragment>
       <Header 
@@ -120,7 +121,24 @@ const NavstylePage = () => {
         pageName={pageName}
         services={services} 
       />
-      <Carousel />
+      <Slider 
+        sliderType="styleSlider"
+        sliderSize='small'
+        slides={slides}
+        visibleSlidesNum={1}
+      />
+      <Slider 
+        sliderType="styleSlider"
+        sliderSize='med'
+        slides={slides}
+        visibleSlidesNum={2}
+      />
+      <Slider 
+        sliderType="styleSlider"
+        sliderSize='large'
+        slides={slides}
+        visibleSlidesNum={3}
+      />
       <div className="container">
         <p className="paragraph navstyles__paragraph paragraph_line_high paragraph_color_grey paragraph_align_center paragraph_centered">
           You'll get the device wherever you are

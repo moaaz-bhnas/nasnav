@@ -1,0 +1,24 @@
+.slider__rightArrow,
+.slider__leftArrow {
+  position: absolute;
+  top: 48%;
+  width: 3rem;
+  padding: .9rem;
+  box-shadow: 0 0 10px rgba($color: #000, $alpha: .2);
+  transition-property: box-shadow, transform;
+  transition-duration: .2s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 15px rgba($color: #000, $alpha: .3);
+    transform: scale(1.2);
+  }
+}
+
+.slider__leftArrow {
+  left: -8vw;
+}
+
+.slider__rightArrow {
+  right: -8vw;
+}
