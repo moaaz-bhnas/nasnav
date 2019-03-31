@@ -41,12 +41,27 @@ class Slider extends Component {
     }
   }
 
+  handleKeyDown = (e) => {
+    const left = 37;
+    const right = 39;
+
+    if (e.keyCode === left) {
+      this.goToPreviousSlide();
+    } else if (e.keyCode === right) {
+      this.goToNextSlide();
+    }
+  }
+
   render() {
     const {sliderType, sliderSize, slides} = this.props;
     const {translateValue} = this.state;
 
     return (
-      <div className={`slider App__slider ${sliderType} ${sliderSize}`}>
+      <div 
+        className={`slider App__slider ${sliderType} ${sliderSize}`}
+        tabIndex="0"
+        onKeyDown={this.handleKeyDown}
+      >
         <div className="slider__wrapper">
           <ul 
             className="list slider__list"

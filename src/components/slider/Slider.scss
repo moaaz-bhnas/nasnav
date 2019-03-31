@@ -1,6 +1,10 @@
 @import '../../sass-modules/lengths';
 @import '../../sass-modules/breakpoints';
 
+.slider {
+  outline: none;
+}
+
 .App__slider {
   margin: 0 auto;
   position: relative;
