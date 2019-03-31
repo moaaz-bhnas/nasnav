@@ -1,3 +1,5 @@
+@import '../../sass-modules/breakpoints';
+
 .countries {
   text-align: center;
   overflow: hidden;
@@ -23,7 +25,9 @@
 Country List
 ================================ */
 .countryList {
-  text-align: center;
+  @media screen and (max-width: $break-countries) {
+    display: none;
+  }
 }
 
 .countries__countryList {

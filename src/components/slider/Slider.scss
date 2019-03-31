@@ -74,9 +74,48 @@ Styles Slider
     padding: 1rem .8rem;
     max-width: 19.4rem;
   }
+
+  .slider__leftArrow {
+    left: -8vw;
+  }
+  
+  .slider__rightArrow {
+    right: -8vw;
+  }
 }
 
 /* image */
 .slide__image {
   width: 100%;
 }
+
+/* ========================================
+Country Slider
+=========================================== */
+.countrySlider {
+  height: 12.7rem;
+  width: $country-slide;
+  padding: 4rem 0;
+
+  @media screen and (min-width: $break-countries) {
+    display: none;
+  }
+
+  .slider__list {
+    width: 5 * $country-slide;
+  }
+
+  .slide {
+    width: 20%;
+  }
+
+  .slider__leftArrow {
+    left: -3rem;
+  }
+  
+  .slider__rightArrow {
+    right: -3rem;
+  }
+}
+
+/* Country details */

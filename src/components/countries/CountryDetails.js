@@ -7,7 +7,7 @@ const CountryDetails = (props) => {
   const {name, location, phone, mail} = props;
 
   return (
-    <li className="country countryList__country">
+    <React.Fragment>
       <h3 className="country__countryName">{name}</h3>
       <p className="country__countryLocation">{location}</p>
       <h4 className="country__customerServicesTitle">Customer Services</h4>
@@ -21,7 +21,7 @@ const CountryDetails = (props) => {
           <span className="customerServices__mail">{mail}</span>
         </li>
       </ul>
-    </li>
+    </React.Fragment>
   );
 }
 

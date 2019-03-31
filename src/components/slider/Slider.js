@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import RightArrow from './RightArrow';
 import LeftArrow from './LeftArrow';
 import './Slider.scss';
+import CountryDetails from '../countries/CountryDetails';
 
 class Slider extends Component {
   state = {  
@@ -76,7 +77,12 @@ class Slider extends Component {
                   {
                     (sliderType === 'styleSlider') ?
                     <img src={slide} alt="NasNav theme" className="slide__image"/> :
-                    null
+                    <CountryDetails 
+                      name={slide.name}
+                      location={slide.location}
+                      phone={slide.phone}
+                      mail={slide.mail}
+                    />
                   }
                 </li>
               ))

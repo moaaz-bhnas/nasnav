@@ -2,6 +2,7 @@ import React from 'react';
 import CountryDetails from './CountryDetails';
 import './CountrySection.scss';
 import Map from './Map';
+import Slider from '../slider/Slider';
 
 const CountrySection = () => {
   const countriesDetails = [
@@ -56,17 +57,24 @@ const CountrySection = () => {
             countriesDetails.map((countryDetails, index) => {
               const {name, location, phone, mail} = countryDetails;
               return (
-                <CountryDetails 
-                  key={index}
-                  name={name}
-                  location={location}
-                  phone={phone}
-                  mail={mail}
-                />
+                <li key={index} className="country countryList__country">
+                  <CountryDetails 
+                    name={name}
+                    location={location}
+                    phone={phone}
+                    mail={mail}
+                  />
+                </li>
               );
             })
           }
         </ul>
+        <Slider 
+          sliderType="countrySlider"
+          sliderSize='small'
+          slides={countriesDetails}
+          visibleSlidesNum={1}
+        />
       </div>
     </section>
   );
