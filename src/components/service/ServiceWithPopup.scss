@@ -16,6 +16,7 @@ View 360
     right: -1.5rem;
 
     @media screen and (min-width: $break-service) {
+      right: 0;
       float: right;
       width: 30vw;
     }
@@ -63,6 +64,7 @@ chair
   left: -1.5rem;
 
   @media screen and (min-width: $break-service) {
+    left: 0;
     float: left;
     width: 30vw;
     margin-top: -13rem;
@@ -76,18 +78,22 @@ chair
 
 /* eye --- */
 .chair__eye {
-  width: 5rem;
-  position: absolute;
-  bottom: 20%;
-  left: 15%;
+  width: 100%;
 }
 
 /* popup button */
-.chair__button[aria-pressed="true"] {
-  & ~ .chair__popup,
-  & ~ .chair__info {
-    transform: scale(1);
-    transition: transform .3s cubic-bezier(.14,1.31,.79,1.01);
+.chair__button {
+  width: 5rem;
+  position: absolute;
+  bottom: 15%;
+  left: 4%;
+
+  &[aria-pressed="true"] {
+    & ~ .chair__popup,
+    & ~ .chair__info {
+      transform: scale(1);
+      transition: transform .3s cubic-bezier(.14,1.31,.79,1.01);
+    }
   }
 }
 
@@ -95,7 +101,7 @@ chair
 .chair__popup {
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 20%;
   z-index: 1;
 
   transform: scale(0);
@@ -109,7 +115,7 @@ chair
 
   position: absolute;
   top: 16%;
-  left: 15%;
+  left: 25%;
   z-index: 1;
 
   transform: scale(0);

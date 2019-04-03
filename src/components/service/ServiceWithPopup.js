@@ -50,7 +50,7 @@ class ServiceWithPopup extends Component {
         >
           <img className="chair__image" src={chair} alt="chair"/>
           <button 
-            className="button chair__button"
+            className="button button_back_transparent chair__button"
             type="button"
             aria-controls="chair__popup chair__info"
             aria-expanded={popupOpened}
