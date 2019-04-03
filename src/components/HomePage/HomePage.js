@@ -152,72 +152,7 @@ const HomePage = () => {
     },
     {
       name: 'view360',
-      imageContainers: [
-        {
-          classes: [],
-          images: [
-            {
-              src: serviceImage3,
-              alt: 'Laptop',
-              classes: [
-                'service__image',
-                'service__image_width_full'
-              ]
-            },
-            {
-              src: badge360,
-              alt: '360 view',
-              classes: [
-                'service__360Badge'
-              ]
-            },
-            {
-              src: eye,
-              alt: '',
-              classes: [
-                'service__eye'
-              ]
-            }
-          ]
-        },
-        {
-          classes: ['chair'],
-          images: [
-            {
-              src: chair,
-              alt: 'Chair',
-              classes: [
-                'chair__image'
-              ]
-            },
-            {
-              src: modal,
-              alt: '',
-              classes: [
-                'chair__modal'
-              ]
-            },
-            {
-              src: eye,
-              alt: '',
-              classes: [
-                'chair__eye'
-              ]
-            }
-          ],
-          chair: true
-        }
-      ],
-      contentClasses: [],
-      paragraphs: [
-        'Once your customers have a fun experience using 360 technology',
-        '*A new shopping* experience for your customers',
-        'Here at NasNav we designed a device called the route box that plugs into a stores barcode scanner. The box picks up products UPC codes and uses that to populate a website of the products here at NasNav we designed a device called the route box'
-      ],
-      buttons: [
-        {text: 'Download PDF', backgroundColor: 'blue'},
-        {text: 'Live Demo', backgroundColor: 'green'}
-      ]
+      hasPopup: true
     },
     {
       name: 'controlPanel',

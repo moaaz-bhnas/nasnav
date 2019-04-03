@@ -3,6 +3,7 @@ import Service from './Service';
 import './ServiceSection.scss';
 import ServiceWithoutImage from './ServiceWithoutImage';
 import PaymentOptions from './PaymentOptions';
+import ServiceWithPopup from './ServiceWithPopup';
 
 const ServiceSection = (props) => {
   const {pageName, services} = props;
@@ -15,6 +16,8 @@ const ServiceSection = (props) => {
             services.map((service) => (
               <li key={service.name} className="serviceList__item">
                 {
+                  service.hasPopup ?
+                  <ServiceWithPopup /> :
                   service.paymentMethods ?
                   <PaymentOptions /> :
                   service.textOnly ?

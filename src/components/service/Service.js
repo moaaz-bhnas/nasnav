@@ -70,28 +70,6 @@ const Service = (props) => {
           ))
         }
       </div>
-      {
-        imageContainer2 &&
-        <div className={`service__imageContainer ${imageContainer2.classes.join(' ')}`}>
-          {
-            imageContainer2.images.map((image) => (
-              <img 
-                key={image.src} 
-                src={image.src} 
-                alt={image.alt} 
-                className={image.classes.join(' ')}
-              />
-            ))
-          }
-          {
-            imageContainer2.chair &&
-            <div className="chair__content">
-              <h4 className="chair__title">Modern Chair</h4>
-              <p className="paragraph chair__paragraph paragraph_color_grey">Chair is a piece of furniture with raised surface supported by legs, commonly supported most often by four legs ..</p>
-            </div>
-          }
-        </div>
-      }
     </article>
   );
 }

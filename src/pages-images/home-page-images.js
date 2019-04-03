@@ -16,7 +16,7 @@ import barcode from '../image/barcode.png';
 import badge360 from '../image/360.png';
 import eye from '../image/eye.png';
 import chair from '../image/chair.png';
-import modal from '../image/modal.png';
+import popup from '../image/modal.png';
 import controlBadge1 from '../image/control-badge1.png';
 import controlBadge2 from '../image/control-badge2.png';
 import controlBadge3 from '../image/control-badge3.png';
@@ -53,7 +53,7 @@ export default {
   badge360,
   eye,
   chair,
-  modal,
+  popup,
   controlBadge1,
   controlBadge2,
   controlBadge3,
