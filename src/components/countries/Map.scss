@@ -62,22 +62,22 @@
 Modal
 ================================ */
 .modal {
-  display: none;
   width: 15rem;
   padding: 1.6rem 1rem;
   background-color: #fff;
   border-radius: .2rem;
   box-shadow: 0 0 10px -1px rgba($color: #000, $alpha: .2);
-
-  @media screen and (min-width: $break-modal-med) {
-    display: block;
-  }
 }
 
 .map__modal {
   position: absolute;
-  top: 12%;
-  left: 0;
+  top: 65%;
+  left: 15rem;
+
+  @media screen and (min-width: $break-modal-med) {
+    top: 12%;
+    left: 0;
+  }
 
   @media screen and (min-width: $break-modal-large) {
     left: -14%;

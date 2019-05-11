@@ -96,6 +96,7 @@ Country Slider
   height: 12.7rem;
   width: $country-slide;
   padding: 4rem 0;
+  margin-top: 4rem;
 
   @media screen and (min-width: $break-countries) {
     display: none;

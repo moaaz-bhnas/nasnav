@@ -4,8 +4,13 @@
 .paymentOptions {
   position: relative;
   padding-bottom: 2rem;
+
   @media screen and (min-width: $break-large) {
     margin: 0 calc((-100vw + #{$max-width}) / 2);
+  }
+
+  @media screen and (min-width: $break-service2) {
+    margin: 0 -15rem;
   }
 
   .service__imageContainer:first-child {
@@ -16,9 +21,9 @@
     @media screen and (min-width: $break-service) {
       position: absolute;
       right: 0;
-      max-width: initial;
       margin-right: 0;
       width: 40%;
+      max-width: 34.149375rem;
     }
 
     .service__image {

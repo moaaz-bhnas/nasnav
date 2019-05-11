@@ -115,15 +115,21 @@ Styles
     margin-left: -1.5rem;
 
     @media screen and (min-width: $break-service) {
-      max-width: initial;
       width: 67vw;
       margin-left: calc((-100vw + #{$max-width})/2 - 1.5rem);
+      max-width: 62rem;
+    }
+
+    @media screen and (min-width: $break-service2) {
+      width: 67vw;
+      margin-left: -13rem;
+      max-width: 62rem;
     }
   }
 
   .service__content {
     @media screen and (min-width: $break-service) {
-      margin-top: 26rem; 
+      margin-top: 29rem; 
     }
   }
 }

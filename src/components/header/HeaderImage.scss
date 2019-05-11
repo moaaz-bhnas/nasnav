@@ -96,10 +96,10 @@ Navbox Page
     right: -1.5rem;
 
     @media screen and (min-width: $break-header) {
-      max-width: initial;
       position: absolute;
       left: 0;
       width: 50vw;
+      max-width: 47rem;
     }
   }
 }
@@ -122,10 +122,10 @@ Navstyle Page
     right: -1.5rem;
 
     @media screen and (min-width: $break-header) {
-      max-width: initial;
       position: absolute;
       left: 0;
       width: 50vw;
+      max-width: 47rem;
     }
   }
 }
@@ -152,10 +152,10 @@ Shopping Page
     max-width: 30.4rem;
 
     @media screen and (min-width: $break-xlarge) {
-      max-width: none;
       position: absolute;
       right: -4rem;
       width: 52vw;
+      max-width: 44.375rem;
     }
   }
 }

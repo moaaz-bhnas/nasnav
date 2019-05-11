@@ -31,6 +31,10 @@ Country List
 }
 
 .countries__countryList {
-  margin-top: 4rem;
+  margin-top: 9rem;
   margin-bottom: 0;
+
+  @media screen and (min-width: $break-modal-med) {
+    margin-top: 4rem;
+  }
 }
