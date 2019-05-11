@@ -73,8 +73,8 @@ Service Image
   max-width: 32.25rem;
   margin-left: -1.5rem;
   @media screen and (min-width: $break-service) {
-    max-width: initial;
     width: 50vw;
+    max-width: 47.375rem;
 
     position: absolute;
     right: 0;

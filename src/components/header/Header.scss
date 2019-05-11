@@ -21,10 +21,6 @@
 
 .App__header {
   margin-bottom: 5rem;
-
-  @media screen and (min-width: $break-header) {
-    margin-bottom: 4rem;
-  }
 }
 
 /* title --- */

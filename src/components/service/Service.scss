@@ -102,6 +102,12 @@ NavBox
 /* ===============================
 Styles 
 ================================== */
+.styles2 {
+  @media screen and (min-width: $break-service) {
+    margin-bottom: 12rem;
+  }
+}
+
 .styles3 {
   .service__image {
     width: 100%;
@@ -216,9 +222,10 @@ Dashboard
     @media screen and (min-width: $break-service) {
       margin-left: 0;
       position: absolute;
-      left: 0;
+      right: 50vw;
       max-width: initial;
       width: 50vw;
+      max-width: 47.375rem;
     }
   }
 

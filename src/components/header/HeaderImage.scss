@@ -48,6 +48,10 @@ Home Page
       @media screen and (min-width: $break-header3) {
         top: 7.5rem;
       }
+
+      @media screen and (min-width: $break-header3) {
+        right: -8.5rem;
+      }
     }
 
     &:last-child {
@@ -68,6 +72,10 @@ Home Page
 
       @media screen and (min-width: $break-header3) {
         top: 1rem;
+      }
+
+      @media screen and (min-width: $break-header3) {
+        right: -28em;
       }
     }
   }
