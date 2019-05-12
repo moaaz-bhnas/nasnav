@@ -3,7 +3,7 @@ import Header from '../header/Header';
 import About from './About';
 import ServiceSection from '../service/ServiceSection';
 import homePageImages from '../../pages-images/home-page-images';
-const {tablet, phone, dot, googleIcon, serviceImage1, serviceImage2, serviceImage3, serviceImage4, serviceImage5, serviceImage6, googleBadge, view360Badge, onlinePaymentBadge, designEditorBadge, barcode, badge360, eye, chair, modal, controlBadge1, controlBadge2, controlBadge3, dashboardBadge1, dashboardBadge2, stepicon2, stepicon3, stepicon4, stepicon5, stepicon6, stepicon7, stepicon8, stepicon9, stepicon10, stepicon11, stepicon12} = homePageImages;
+const {tablet, phone, googleIcon, serviceImage1, serviceImage2, serviceImage3, serviceImage4, serviceImage5, serviceImage6, googleBadge, view360Badge, onlinePaymentBadge, designEditorBadge, barcode, badge360, eye, chair, modal, controlBadge1, controlBadge2, controlBadge3, dashboardBadge1, dashboardBadge2, stepicon1, stepicon2, stepicon3, stepicon4, stepicon5, stepicon6, stepicon7, stepicon8, stepicon9, stepicon10, stepicon11, stepicon12} = homePageImages;
 
 const HomePage = () => {
   const pageName = 'home';
@@ -79,7 +79,7 @@ const HomePage = () => {
       ],
       steps: [
         {
-          iconSrc: dot,
+          iconSrc: stepicon1,
           iconAlt: '',
           text: 'Just plug in the NasNav Box'
         },

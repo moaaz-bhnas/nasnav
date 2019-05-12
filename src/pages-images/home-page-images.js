@@ -1,6 +1,5 @@
 import tablet from '../image/home-header-tablet.png';
 import phone from '../image/home-header-phone.png';
-import dot from '../image/dot.svg';
 import googleIcon from '../image/google.png';
 import serviceImage1 from '../image/navbox-image.png';
 import serviceImage2 from '../image/styles-image.png';
@@ -22,6 +21,7 @@ import controlBadge2 from '../image/control-badge2.png';
 import controlBadge3 from '../image/control-badge3.png';
 import dashboardBadge1 from '../image/dashboard-badge1.png';
 import dashboardBadge2 from '../image/dashboard-badge2.png';
+import stepicon1 from '../image/step-icon1.png';
 import stepicon2 from '../image/step-icon2.png';
 import stepicon3 from '../image/step-icon3.png';
 import stepicon4 from '../image/step-icon4.png';
@@ -37,7 +37,6 @@ import stepicon12 from '../image/step-icon12.png';
 export default {
   tablet,
   phone,
-  dot,
   googleIcon,
   serviceImage1,
   serviceImage2,
@@ -59,6 +58,7 @@ export default {
   controlBadge3,
   dashboardBadge1,
   dashboardBadge2,
+  stepicon1,
   stepicon2,
   stepicon3,
   stepicon4,
