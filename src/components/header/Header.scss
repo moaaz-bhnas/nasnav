@@ -56,3 +56,27 @@ Navstyles
     margin-bottom: 10%;
   }
 }
+
+/* ================================
+Shopping 
+=================================== */
+.shoppingPage.App__header {
+  @media screen and (min-width: $break-header) {
+    padding-bottom: 4rem;
+  }
+  @media screen and (min-width: $break-xlarge) {
+    padding-bottom: 8rem;
+  }
+}
+
+/* ================================
+Dashboard 
+=================================== */
+.dashboardPage.App__header {
+  @media screen and (min-width: $break-header) {
+    padding-bottom: 5rem;
+  }
+  @media screen and (min-width: $break-xlarge) {
+    padding-bottom: 8rem;
+  }
+}

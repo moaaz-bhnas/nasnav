@@ -113,11 +113,35 @@ Styles Slider
   }
 
   .slider__leftArrow {
-    left: -6vw;
+    left: -8.8vw;
+
+    @media screen and (min-width: 333px) {
+      left: -10vw;
+    }
+
+    @media screen and (min-width: 360px) {
+      left: -9vw;
+    }
+
+    @media screen and (min-width: 420px) {
+      left: -3rem;
+    }
   }
   
   .slider__rightArrow {
-    right: -6vw;
+    right: -8.8vw;
+
+    @media screen and (min-width: 333px) {
+      right: -10vw;
+    }
+
+    @media screen and (min-width: 360px) {
+      right: -9vw;
+    }
+
+    @media screen and (min-width: 420px) {
+      right: -3rem;
+    }
   }
 }
 
