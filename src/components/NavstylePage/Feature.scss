@@ -5,15 +5,15 @@ Features
   display: inline-block;
   text-align: center;
   max-width: 17.6rem;
-  padding: 2rem 1vw;
+  padding: 0 1vw 1rem;
   vertical-align: top;
 
-  @media screen and (min-width: 655px) {
+  @media screen and (min-width: 591px) {
     text-align: left;
   }
 
   @media screen and (min-width: 1102px) {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 }
 

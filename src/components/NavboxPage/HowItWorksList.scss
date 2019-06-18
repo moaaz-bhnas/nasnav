@@ -4,20 +4,25 @@
   text-align: center;
 }
 
-.navboxPage__howItWorksList {
-  margin-top: 2.5rem;
-}
-
 /* ========================
 Thriller Item
 =========================== */
 .navboxStep {
   display: inline-block;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
 
   @media screen and (min-width: $break-thriller) {
     width: 18.6rem;
+  }
+}
+
+/* image */
+.navboxStep__image {
+  max-width: 8rem;
+
+  @media screen and (min-width: 37.0625rem) { // 593px
+    max-width: 9rem;
   }
 }
 

@@ -22,12 +22,38 @@
   }
 }
 
+/* close button */
+.sidebar__closeButtonContainer {
+  text-align: right;
+  background-color: #fff;
+}
+
+.sidebar__closeButton {
+  width: 3rem;
+  padding: .7rem;
+  border: none;
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    .sidebar__closeIcon {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.sidebar__closeIcon {
+  width: 100%;
+  vertical-align: top;
+  transition: transform .3s;
+}
+
 /* button --- */
 .sidebar__button {
   margin-left: 1.6rem;
 
   position: absolute;
-  top: 17.6rem;
+  top: 20.2975rem;
   z-index: 1;
 }
 

@@ -3,14 +3,12 @@
 
 .statistics {
   text-align: center;
-  padding: 5rem 0 7rem;
-  // background-image:
-  //   linear-gradient(
-  //     to bottom, 
-  //     $lighter-grey, #fff
-  //   );
-
+  padding: 1rem 0 2rem;
   position: relative;
+
+  @media screen and (min-width: $break-service) {
+    padding: 5rem 0 7rem;
+  }
 }
 
 /* --- title --- */

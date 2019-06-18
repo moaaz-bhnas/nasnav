@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.scss';
+import close from '../../image/close.svg';
 
 class Sidebar extends Component {
   // For managing focus
-  firstLink = React.createRef();
-  lastLink = React.createRef();
+  firstInteractiveElement = React.createRef();
+  lastInteractiveElement = React.createRef();
 
   componentDidMount() {
-    this.firstLink.current.focus();
     document.body.setAttribute('data-scroll', 'false');
   }
 
@@ -43,13 +43,25 @@ class Sidebar extends Component {
       <div className="sidebar" id="sidebar">
         <nav className="mobileNavbar" role="navigation">
           <h2 className="mobileNavbar__title">Mobile Navigation Bar</h2>
+
+          <div className="sidebar__closeButtonContainer">
+            <button 
+              type="button"
+              className="button sidebar__closeButton"
+              ref={this.firstInteractiveElement}
+              onClick={closeSidebar}
+            >
+              <img className="image sidebar__closeIcon" src={close} alt="Close"/>
+            </button>
+          </div>
+
           <ul 
             className="list mobileNavMenu"
-            onKeyDown={(e) => this.trapFocus(e, this.firstLink.current, this.lastLink.current, closeSidebar)}
+            onKeyDown={(e) => this.trapFocus(e, this.firstInteractiveElement.current, this.lastInteractiveElement.current, closeSidebar)}
             onClick={this.handleClick}
           >
             <li className="mobileNavMenu__item">
-              <Link to="/navbox" className="mobileNavMenu__link" innerRef={this.firstLink}>Navbox</Link>
+              <Link to="/navbox" className="mobileNavMenu__link">Navbox</Link>
             </li>
             <li className="mobileNavMenu__item">
               <Link to="/navstyle" className="mobileNavMenu__link">NavStyle</Link>
@@ -61,7 +73,7 @@ class Sidebar extends Component {
               <Link to="/360editor" className="mobileNavMenu__link">360 Editor</Link>
             </li>
             <li className="mobileNavMenu__item">
-              <Link to="/dashboard" className="mobileNavMenu__link" innerRef={this.lastLink}>Dashboard</Link>
+              <Link to="/dashboard" className="mobileNavMenu__link" innerRef={this.lastInteractiveElement}>Dashboard</Link>
             </li>
           </ul>
         </nav>

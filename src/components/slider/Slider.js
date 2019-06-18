@@ -13,7 +13,7 @@ class Slider extends Component {
   firstSlide = React.createRef();
 
   slideWidth = () => {
-    return this.firstSlide.current.clientWidth;
+    return this.firstSlide.current.offsetWidth;
   }
 
   goToPreviousSlide = () => {

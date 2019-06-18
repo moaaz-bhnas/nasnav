@@ -13,7 +13,8 @@
 }
 
 .App__slider {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
 }
 
@@ -42,10 +43,26 @@ Styles Slider
 =========================================== */
 .styleSlider {
   height: $style-slide * 244 / 408;
-  padding: 7rem 0;
+  margin-top: -2rem;
+  margin-bottom: 5rem;
+
+  @media screen and (min-width: 374px) {
+    height: $style-slide-big * 244 / 408;
+  }
+
+  @media screen and (min-width: $break-service) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 7rem 0;
+  }
 
   &.small {
     width: $style-slide;
+
+    @media screen and (min-width: 374px) {
+      width: $style-slide-big;
+    }
+
     @media screen and (min-width: $break-style-slider) {
       display: none;
     }
@@ -53,6 +70,11 @@ Styles Slider
 
   &.med {
     width: 2 * $style-slide;
+
+    @media screen and (min-width: 374px) {
+      width: 2 * $style-slide-big;
+    }
+
     display: none;
     @media screen and (min-width: $break-style-slider) and (max-width: $break-style-slider-large) {
       display: block;
@@ -61,6 +83,11 @@ Styles Slider
 
   &.large {
     width: 3 * $style-slide;
+
+    @media screen and (min-width: 374px) {
+      width: 3 * $style-slide-big;
+    }
+
     @media screen and (max-width: $break-style-slider-large) {
       display: none;
     }
@@ -68,19 +95,29 @@ Styles Slider
 
   .slider__list {
     width: 6 * $style-slide;
+
+    @media screen and (min-width: 374px) {
+      width: 6 * $style-slide-big;
+    }
+
   }
 
   .slide {
     padding: 1rem .8rem;
-    max-width: 19.4rem;
+    max-width: $style-slide;
+
+    @media screen and (min-width: 374px) {
+      max-width: $style-slide-big;
+    }
+
   }
 
   .slider__leftArrow {
-    left: -8vw;
+    left: -6vw;
   }
   
   .slider__rightArrow {
-    right: -8vw;
+    right: -6vw;
   }
 }
 
@@ -111,11 +148,11 @@ Country Slider
   }
 
   .slider__leftArrow {
-    left: -3rem;
+    left: -2.5rem;
   }
   
   .slider__rightArrow {
-    right: -3rem;
+    right: -2.5rem;
   }
 }
 
