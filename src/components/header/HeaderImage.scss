@@ -40,7 +40,7 @@ Home Page
       }
       
       @media screen and (min-width: $break-header2) {
-        top: 10rem;
+        top: 11rem;
         right: calc((-100vw + #{$max-width}) / 2 + 6rem);
         width: 37.5rem;
       }
@@ -65,7 +65,7 @@ Home Page
       }
       
       @media screen and (min-width: $break-header2) {
-        top: 3.5rem;
+        top: 4.5rem;
         right: calc((-100vw + #{$max-width}) / 2 - 13.5rem);
         width: 25rem;
       }

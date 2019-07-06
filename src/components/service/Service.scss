@@ -19,6 +19,11 @@
 /* item --- */
 .stepList__step {
   margin: 1.5rem 0;
+  // padding-left: 1.3rem;
+  // background-image: url(../../image/step-icons.png);
+  // background-repeat: no-repeat;
+  // background-size: .8rem auto;
+  // background-position-y: center;
 }
 
 /* paragraph --- */
@@ -30,8 +35,14 @@
 .step__icon {
   display: inline-block;
   width: .8rem;
+  height: .8rem;
   margin-right: .5rem;
   vertical-align: middle;
+
+  background-image: url(../../image/step-icons.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position-y: center;
 }
 
 /* step explanation --- */
@@ -46,6 +57,113 @@
 .service__button:first-of-type {
   margin-right: 1.5rem;
   margin-bottom: .5rem;
+}
+
+/* ===============================
+Steps Icons 
+================================== */
+.navbox {
+  .stepList__step {
+    &:nth-child(1) {
+      .step__icon {
+        background-position-x: 0;
+      }
+    }
+    &:nth-child(2) {
+      .step__icon {
+        background-position-x: -.8rem;
+      }
+    }
+    &:nth-child(3) {
+      .step__icon {
+        background-position-x: -1.6rem;
+      }
+    }
+  }
+}
+
+.styles {
+  .stepList__step {
+    &:nth-child(1) {
+      .step__icon {
+        background-position-x: -2.4rem;
+      }
+    }
+    &:nth-child(2) {
+      .step__icon {
+        background-position-x: -3.2rem;
+      }
+    }
+    &:nth-child(3) {
+      .step__icon {
+        height: 0.751875rem;
+        background: url(../../image/step-icon6.png) no-repeat center / .8rem .8rem;
+      }
+    }
+  }
+}
+
+.styles2 {
+  .stepList__step {
+    &:nth-child(1) {
+      .step__icon {
+        background-position-x: -2.4rem;
+      }
+    }
+    &:nth-child(2) {
+      .step__icon {
+        background-position-x: -3.2rem;
+      }
+    }
+    &:nth-child(3) {
+      .step__icon {
+        height: 0.751875rem;
+        background: url(../../image/step-icon6.png) no-repeat center / .8rem .8rem;
+      }
+    }
+  }
+}
+
+.controlPanel {
+  .stepList__step {
+    &:nth-child(1) {
+      .step__icon {
+        height: 0.699375;
+        background: url(../../image/step-icon7.png) no-repeat center / .8rem .8rem;
+      }
+    }
+    &:nth-child(2) {
+      .step__icon {
+        background-position-x: -4rem;
+      }
+    }
+    &:nth-child(3) {
+      .step__icon {
+        background-position-x: -4.8rem;
+      }
+    }
+  }
+}
+
+.dashboard {
+  .stepList__step {
+    &:nth-child(1) {
+      .step__icon {
+        height: 0.970625rem;
+        background: url(../../image/step-icona.png) no-repeat center / .8rem auto;
+      }
+    }
+    &:nth-child(2) {
+      .step__icon {
+        background-position-x: -5.6rem;
+      }
+    }
+    &:nth-child(3) {
+      .step__icon {
+        background-position-x: -6.4rem;
+      }
+    }
+  }
 }
 
 /* ===============================

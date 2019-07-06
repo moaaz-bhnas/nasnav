@@ -5,7 +5,7 @@ import HowItWorksList from './HowItWorksList';
 import ServiceSection from '../service/ServiceSection';
 import './NavboxPage.scss';
 import navboxPageImages from '../../pages-images/navbox-page-images';
-const { screens, serviceImage1, serviceImage2, serviceImage3, stepIcon1, stepIcon2, stepIcon3 } = navboxPageImages;
+const { screens, serviceImage1, serviceImage2, serviceImage3 } = navboxPageImages;
 
 const NavboxPage = () => {
   const pageName = 'navbox';
@@ -127,17 +127,14 @@ const NavboxPage = () => {
       ],
       steps: [
         {
-          iconSrc: stepIcon1,
           iconAlt: '',
           text: 'Adjust the colors to suit your type of work'
         },
         {
-          iconSrc: stepIcon2,
           iconAlt: '',
           text: 'Edit photos and upload photos that reflect you'
         },
         {
-          iconSrc: stepIcon3,
           iconAlt: '',
           text: 'Add you logo and your ways of communication'
         }

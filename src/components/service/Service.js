@@ -51,14 +51,12 @@ const Service = (props) => {
           <ul className="list stepList">
             {steps.map((step, index) => (
               <li key={index} className="step stepList__step">
-                <img src={step.iconSrc} alt={step.iconAlt} className="step__icon"/>
-                <span className="step__explanation">
-                  {step.text}
-                  {
-                    step.googleIcon &&
-                    <img src={step.googleIcon} alt="Google logo" className="step__googleIcon"/>
-                  }
-                </span>
+                <span aria-hidden="true" className="step__icon"></span>
+                {step.text}
+                {
+                  step.googleIcon &&
+                  <img src={step.googleIcon} alt="Google logo" className="step__googleIcon"/>
+                }
               </li>
             ))}
           </ul>

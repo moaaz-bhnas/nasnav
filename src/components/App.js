@@ -27,7 +27,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/navbox" component={NavboxPage} />
-            <Route path="/navstyle" component={NavstylePage} />
+            <Route path="/navstyles" component={NavstylePage} />
             <Route path="/shopping" component={ShoppingPage} />
             <Route path="/360editor" component={Editor360Page} />
             <Route path="/dashboard" component={DashboardPage} />

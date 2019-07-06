@@ -49,6 +49,15 @@
 }
 
 /* ================================
+Home page 
+=================================== */
+.homePage.App__header {
+  @media screen and (min-width: $break-header) {
+    padding-bottom: 10rem;
+  }
+}
+
+/* ================================
 Navstyles 
 =================================== */
 .navstylePage.App__header {

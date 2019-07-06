@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import logo from '../../image/logo.png';
 import menuIcon from '../../image/menu-button.svg';
 import './Topbar.scss';
@@ -28,7 +28,9 @@ class Topbar extends Component {
   }
 
   render() {
-    const {menuButtonPressed} = this.state;
+    const { menuButtonPressed } = this.state;
+    const { pathname } = this.props.location;
+    const pagesNames = ['Navbox', 'NavStyles', 'Shopping', '360 Editor', 'Dashboard'];
   
     return (
       <div className="topbar App__topbar">
@@ -57,21 +59,19 @@ class Topbar extends Component {
           <nav className="desktopNavbar" role="navigation">
             <h2 className="desktopNavbar__title">Desktop Navigation Bar</h2>
             <ul className="list desktopNavMenu">
-              <li className="desktopNavMenu__item">
-                <Link to="/navbox" className="desktopNavMenu__link">Navbox</Link>
-              </li>
-              <li className="desktopNavMenu__item">
-                <Link to="/navstyle" className="desktopNavMenu__link">NavStyle</Link>
-              </li>
-              <li className="desktopNavMenu__item">
-                <Link to="/shopping" className="desktopNavMenu__link">Shopping</Link>
-              </li>
-              <li className="desktopNavMenu__item">
-                <Link to="/360editor" className="desktopNavMenu__link">360 Editor</Link>
-              </li>
-              <li className="desktopNavMenu__item">
-                <Link to="/dashboard" className="desktopNavMenu__link">Dashboard</Link>
-              </li>
+              {
+                pagesNames.map((pageName, index) => {
+                  const formattedPageName = pageName.toLowerCase().replace(/\s/g, '');
+                  return (
+                    <li className="desktopNavMenu__item" key={index}>
+                      <Link 
+                        to={`/${formattedPageName}`} 
+                        className={`desktopNavMenu__link ${pathname.includes(formattedPageName) ? 'desktopNavMenu__link_active' : null}`}
+                      >{pageName}</Link>
+                    </li>
+                  );
+                })
+              }
             </ul>
           </nav>
           <button className="button button_size_med button_shape_oval button_color_blue button_back_white topbar__button">Get Started</button>
@@ -81,4 +81,4 @@ class Topbar extends Component {
   }
 }
 
-export default Topbar;
+export default withRouter(Topbar);

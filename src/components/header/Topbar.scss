@@ -122,6 +122,14 @@ Desktop Navigation Menu
   }
 }
 
+// modifier
+.desktopNavMenu__link_active {
+  &::before {
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+  }
+}
+
 /* ===================================== 
 Button
 ===================================== */

@@ -37,7 +37,7 @@ class Sidebar extends Component {
   }
 
   render() {
-    const {closeSidebar} = this.props;
+    const { closeSidebar } = this.props;
 
     return (
       <div className="sidebar" id="sidebar">

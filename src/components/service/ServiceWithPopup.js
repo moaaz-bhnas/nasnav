@@ -25,7 +25,6 @@ class ServiceWithPopup extends Component {
         <div className="service__imageContainer">
           <img className="service__image service__image_width_full" src={laptop} alt="Laptop"/>
           <img className="service__360Badge" src={badge360} alt="360 view"/>
-          <img className="service__eye" src={eye} alt=""/>
         </div>
 
         <div className="service__content">
