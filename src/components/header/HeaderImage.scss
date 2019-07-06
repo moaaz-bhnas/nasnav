@@ -7,6 +7,14 @@
   }
 }
 
+.header__image {
+  display: inline-block;
+
+  img {
+    width: 100%;
+  }
+}
+
 // modifiers
 .header__content_widthOnLargeViewport_half {
   @media screen and (min-width: $break-header) {

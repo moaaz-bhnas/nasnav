@@ -6,7 +6,7 @@ import './NavstylePage.scss';
 import FeatureSection from './FeatureSection';
 import navstylePageImages from '../../pages-images/navstyles-page-images';
 import Slider from '../slider/Slider';
-const { styles, serviceImage1, serviceImage2, slide1, slide2, slide3 } = navstylePageImages;
+const { styles, stylesSm, serviceImage1, serviceImage2, slide1, slide2, slide3 } = navstylePageImages;
 
 const NavstylePage = () => {
   const pageName = 'navstyle';
@@ -19,7 +19,7 @@ const NavstylePage = () => {
       button: 'Get Started'
     },
     images: [
-      {src: styles, alt: 'Multiple screens showing various NasNav designs'}
+      {lg: styles, sm: stylesSm, alt: 'Multiple screens showing various NasNav designs'}
     ]
   }
   const thriller = {

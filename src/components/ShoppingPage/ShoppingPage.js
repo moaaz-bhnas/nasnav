@@ -3,7 +3,7 @@ import Header from '../header/Header';
 import Thriller from '../thriller/Thriller';
 import ServiceSection from '../service/ServiceSection';
 import shoppingPageImages from '../../pages-images/shopping-page-images';
-const { phone, serviceImage1, serviceImage2, serviceImage3 } = shoppingPageImages;
+const { phone, phoneSm, serviceImage1, serviceImage2, serviceImage3 } = shoppingPageImages;
 
 const ShoppingPage = () => {
   const pageName = 'shopping';
@@ -16,7 +16,7 @@ const ShoppingPage = () => {
       button: 'Get Started'
     },
     images: [
-      {src: phone, alt: 'A shopping website built by NasNav web builder'}
+      {lg: phone, sm: phoneSm, alt: 'A shopping website built by NasNav web builder'}
     ]
   }
   const thriller = {

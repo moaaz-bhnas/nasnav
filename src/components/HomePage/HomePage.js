@@ -3,7 +3,7 @@ import Header from '../header/Header';
 import About from './About';
 import ServiceSection from '../service/ServiceSection';
 import homePageImages from '../../pages-images/home-page-images';
-const {tablet, phone, googleIcon, serviceImage1, serviceImage2, serviceImage4, serviceImage5, serviceImage6, controlBadge1, controlBadge2, controlBadge3} = homePageImages;
+const {tablet, tabletSm, phone, phoneSm, googleIcon, serviceImage1, serviceImage2, serviceImage4, serviceImage5, serviceImage6, controlBadge1, controlBadge2, controlBadge3} = homePageImages;
 
 const pageName = 'home';
 const header = {
@@ -15,8 +15,8 @@ const header = {
     button: 'Get Started'
   },
   images: [
-    {src: tablet, alt: 'NasNav platform opened on a tablet'},
-    {src: phone, alt: 'NasNav platform opened on a phone'}
+    {lg: tablet, sm: tabletSm, alt: 'NasNav platform opened on a tablet'},
+    {lg: phone,  sm: phoneSm,  alt: 'NasNav platform opened on a phone'}
   ]
 }
 const services = [

@@ -4,7 +4,7 @@ import Thriller from '../thriller/Thriller';
 import ServiceSection from '../service/ServiceSection';
 import StatisticsSection from './StatisticsSection';
 import editor360PageImages from '../../pages-images/360editor-page-images';
-const { computer, editor1, editor2, editor3 } = editor360PageImages;
+const { computer, computerSm, editor1, editor2, editor3 } = editor360PageImages;
 
 const Editor360Page = () => {
   const pageName = 'editor360';
@@ -17,7 +17,7 @@ const Editor360Page = () => {
       button: 'Get Started'
     },
     images: [
-      {src: computer, alt: 'NasNav web builder'}
+      {lg: computer, sm: computerSm, alt: 'NasNav web builder'}
     ]
   }
   const thriller = {

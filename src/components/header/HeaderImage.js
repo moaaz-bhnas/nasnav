@@ -7,7 +7,10 @@ const HeaderImage = (props) => {
     <div className={`header__imageContainer header__content_widthOnLargeViewport_${width}`}>
       {
         images.map((image) => (
-          <img key={image.src} src={image.src} alt={image.alt} className="header__image"/>
+          <picture className="header__image" key={image.alt}>
+            <source srcSet={image.sm} media="(max-width: 450px)" />
+            <img src={image.lg} />
+          </picture>
         ))
       }
     </div>

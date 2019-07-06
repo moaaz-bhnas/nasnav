@@ -64,7 +64,7 @@ class Sidebar extends Component {
               <Link to="/navbox" className="mobileNavMenu__link">Navbox</Link>
             </li>
             <li className="mobileNavMenu__item">
-              <Link to="/navstyle" className="mobileNavMenu__link">NavStyle</Link>
+              <Link to="/navstyles" className="mobileNavMenu__link">NavStyle</Link>
             </li>
             <li className="mobileNavMenu__item">
               <Link to="/shopping" className="mobileNavMenu__link">Shopping</Link>

@@ -3,7 +3,7 @@ import Thriller from '../thriller/Thriller';
 import Header from '../header/Header';
 import ServiceSection from '../service/ServiceSection';
 import dashboardPageImages from '../../pages-images/dashboard-page-images';
-const { headerImage, serviceImage1, serviceImage2, serviceImage3, serviceImage4 } = dashboardPageImages;
+const { headerImage, headerImageSm, serviceImage1, serviceImage2, serviceImage3, serviceImage4 } = dashboardPageImages;
 
 const DashboardPage = () => {
   const pageName = 'dashboard';
@@ -16,7 +16,7 @@ const DashboardPage = () => {
       button: 'Get Started'
     },
     images: [
-      {src: headerImage, alt: 'Dashboard opened on a laptop'}
+      {lg: headerImage, sm: headerImageSm, alt: 'Dashboard opened on a laptop'}
     ]
   }
   const thriller = {

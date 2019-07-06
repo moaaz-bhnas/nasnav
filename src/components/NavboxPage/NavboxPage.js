@@ -5,7 +5,7 @@ import HowItWorksList from './HowItWorksList';
 import ServiceSection from '../service/ServiceSection';
 import './NavboxPage.scss';
 import navboxPageImages from '../../pages-images/navbox-page-images';
-const { screens, serviceImage1, serviceImage2, serviceImage3 } = navboxPageImages;
+const { screens, screensSm, serviceImage1, serviceImage2, serviceImage3 } = navboxPageImages;
 
 const NavboxPage = () => {
   const pageName = 'navbox';
@@ -18,7 +18,7 @@ const NavboxPage = () => {
       button: 'Get Started'
     },
     images: [
-      {src: screens, alt: 'NasNav platform opened on a tablet'}
+      {lg: screens, sm: screensSm, alt: 'NasNav platform opened on a tablet'}
     ]
   }
   const thriller = {
