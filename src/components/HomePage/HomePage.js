@@ -3,7 +3,7 @@ import Header from '../header/Header';
 import About from './About';
 import ServiceSection from '../service/ServiceSection';
 import homePageImages from '../../pages-images/home-page-images';
-const {tablet, tabletSm, phone, phoneSm, googleIcon, serviceImage1, serviceImage2, serviceImage4, serviceImage5, serviceImage6, controlBadge1, controlBadge2, controlBadge3} = homePageImages;
+const {tablet, tabletSm, phone, phoneSm, googleIcon, serviceImage1, serviceImage2, serviceImage6} = homePageImages;
 
 const pageName = 'home';
 const header = {
@@ -22,26 +22,23 @@ const header = {
 const services = [
   {
     name: 'navbox',
-    imageContainers: [
-      {
+    imageContainer: {
+      paddingBottom: 91.114,
+      classes: [
+        'service__imageContainer_widthOnlargeScreen_half',
+        'service__imageContainer_floatOnlargeScreen_right',
+        'service__imageContainer_width_limited',
+        'service__imageContainer_positionOnSmallScreen_center'
+      ],
+      image: {
+        src: serviceImage1,
+        alt: 'NasNav website opened on a laptop',
         classes: [
-          'service__imageContainer_widthOnlargeScreen_half',
-          'service__imageContainer_floatOnlargeScreen_right',
-          'service__imageContainer_width_limited',
-          'service__imageContainer_positionOnSmallScreen_center'
-        ],
-        images: [
-          {
-            src: serviceImage1,
-            alt: 'NasNav website opened on a laptop',
-            classes: [
-              'service__image',
-              'service__image_width_full'
-            ]
-          }
+          'service__image',
+          'service__image_width_full'
         ]
       }
-    ],
+    },
     contentClasses: [
       'service__content_widthOnlargeScreen_lessThanHalf',
       'service__content_floatOnlargeScreen_left'
@@ -72,24 +69,20 @@ const services = [
   },
   {
     name: 'styles',
-    imageContainers: [
-      {
+    imageContainer: {
+      classes: [
+        'service__imageContainer_widthOnlargeScreen_half',
+        'service__imageContainer_floatOnlargeScreen_left'
+      ],
+      image: {
+        src: serviceImage2,
+        alt: 'multiple screens showing various styles',
         classes: [
-          'service__imageContainer_widthOnlargeScreen_half',
-          'service__imageContainer_floatOnlargeScreen_left'
-        ],
-        images: [
-          {
-            src: serviceImage2,
-            alt: 'multiple screens showing various styles',
-            classes: [
-              'service__image',
-              'service__image_extend_left'
-            ]
-          }
+          'service__image',
+          'service__image_extend_left'
         ]
       }
-    ],
+    },
     contentClasses: [
       'service__content_widthOnlargeScreen_lessThanHalf',
       'service__content_floatOnlargeScreen_right'
@@ -124,95 +117,21 @@ const services = [
   },
   {
     name: 'controlPanel',
-    imageContainers: [
-      {
-        classes: [
-          'service__imageContainer_widthOnlargeScreen_half',
-          'service__imageContainer_floatOnlargeScreen_right'
-        ],
-        images: [
-          {
-            src: serviceImage4,
-            alt: 'NasNav website opened on a phone',
-            classes: [
-              'service__image'
-            ]
-          },
-          {
-            src: serviceImage5,
-            alt: 'NasNav website opened on a tablet',
-            classes: [
-              'service__image'
-            ]
-          },
-          {
-            src: controlBadge1,
-            alt: '',
-            classes: [
-              'service__badge'
-            ]
-          },
-          {
-            src: controlBadge2,
-            alt: '',
-            classes: [
-              'service__badge'
-            ]
-          },
-          {
-            src: controlBadge3,
-            alt: '',
-            classes: [
-              'service__badge'
-            ]
-          }
-        ]
-      }
-    ],
-    contentClasses: [
-      'service__content_widthOnlargeScreen_lessThanHalf',
-      'service__content_floatOnlargeScreen_left'
-    ],
-    paragraphs: [
-      'How will my products be displayed?',
-      '*Control panel* to edit 360 pictures of branches',
-      'Here at NasNav we designed a device called the route box that plugs into a stores barcode scanner. The box picks up products UPC codes and uses that to populate a website of the products here at NasNav we designed a device called the route box'
-    ],
-    steps: [
-      { 
-        iconAlt: '',
-        text: 'Add and modify products'
-      },
-      { 
-        iconAlt: '',
-        text: 'Aditions directions and shapes'
-      },
-      {
-        iconAlt: '',
-        text: 'A separate control panel for each branch'
-      }
-    ],
-    buttons: [
-      {text: 'Download PDF', backgroundColor: 'blue'}
-    ]
+    controlPanel: true
   },
   {
     name: 'dashboard',
-    imageContainers: [
-      {
-        classes: [],
-        images: [
-          {
-            src: serviceImage6,
-            alt: 'NasNav dashboard',
-            classes: [
-              'service__image',
-              'service__image_width_full'
-            ]
-          }
+    imageContainer: {
+      classes: [],
+      image: {
+        src: serviceImage6,
+        alt: 'NasNav dashboard',
+        classes: [
+          'service__image',
+          'service__image_width_full'
         ]
       }
-    ],
+    },
     contentClasses: [
       'service__content_widthOnlargeScreen_lessThanHalf',
       'service__content_floatOnlargeScreen_right'

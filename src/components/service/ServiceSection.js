@@ -4,6 +4,7 @@ import './ServiceSection.scss';
 import ServiceWithoutImage from './ServiceWithoutImage';
 import PaymentOptions from './PaymentOptions';
 import ServiceWithPopup from './ServiceWithPopup';
+import ControlPanel from './ControlPanel';
 
 const ServiceSection = (props) => {
   const {pageName, services} = props;
@@ -20,6 +21,8 @@ const ServiceSection = (props) => {
                   <ServiceWithPopup /> :
                   service.paymentMethods ?
                   <PaymentOptions /> :
+                  service.controlPanel ?
+                  <ControlPanel /> :
                   service.textOnly ?
                   <ServiceWithoutImage serviceData={service} /> :
                   <Service serviceData={service} />

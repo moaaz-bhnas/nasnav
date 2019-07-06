@@ -1,0 +1,68 @@
+@import '../../sass-modules/breakpoints';
+
+/* ===============================
+Control Panel
+================================== */
+.controlPanel {
+  .service__image:first-child {
+    width: 40%;
+
+    @media screen and (min-width: $break-service) {
+      position: absolute;
+      right: 17rem;
+      top: 15rem;
+      width: 23rem;
+    }
+  }
+
+  .service__image:nth-child(2) {
+    width: 60%;
+
+    @media screen and (min-width: $break-service) {
+      position: absolute;
+      right: -15rem;
+      width: 38rem;
+    }
+  }
+
+  .service__badge {
+    width: 4rem;
+  
+    @media screen and (min-width: $break-service) {
+      width: 6.5rem;
+    }
+  
+    &:nth-child(3) {
+      position: absolute;
+      top: -5%;
+      left: 30%;
+  
+      @media screen and (min-width: $break-service) {
+        top: 35rem;
+        left: 17rem;
+      }
+    }
+  
+    &:nth-child(4) {
+      position: absolute;
+      bottom: -8%;
+      right: 10%;
+  
+      @media screen and (min-width: $break-service) {
+        top: 31rem;
+        left: -12rem;
+      }
+    }
+  
+    &:nth-child(5) {
+      position: absolute;
+      bottom: -5%;
+      left: 10%;
+  
+      @media screen and (min-width: $break-service) {
+        top: 10rem;
+        left: 0rem;
+      }
+    }
+  }
+}

@@ -2,25 +2,26 @@ import React from 'react';
 import './Service.scss';
 import './ServiceImage.scss';
 import './ServiceContent.scss';
+import LazyLoad from "react-lazy-load";
 
 const Service = (props) => {
-  const {name, imageContainers, contentClasses, paragraphs, steps, buttons} = props.serviceData;
-  const [imageContainer1, imageContainer2] = imageContainers;
-  const [paragraph1, paragraph2, paragraph3, paragraph4] = paragraphs;
+  const { name, imageContainer, contentClasses, paragraphs, steps, buttons } = props.serviceData;
+  const { image } = imageContainer;
+  const [ paragraph1, paragraph2, paragraph3, paragraph4 ] = paragraphs;
 
   return (
-    <article className={`service ${name}`} role="article">
-      <div className={`service__imageContainer ${imageContainer1.classes.join(' ')}`}>
-        {
-          imageContainer1.images.map((image) => (
-            <img 
-              key={image.src} 
-              src={image.src} 
-              alt={image.alt} 
-              className={image.classes.join(' ')}
-            />
-          ))
-        }
+    <article className={`service ${name}`} role="article"> 
+      <div 
+        className={`service__imageContainer ${imageContainer.classes.join(' ')}`}
+        // style={{paddingBottom: `${imageContainer1.paddingBottom}%`}}
+      >
+        <LazyLoad>
+          <img 
+            src={image.src} 
+            alt={image.alt} 
+            className={image.classes.join(' ')}
+          />
+        </LazyLoad>
       </div>
       <div className={`service__content ${contentClasses.join(' ')}`}>
         <h3 className="service__title">{name}</h3>
