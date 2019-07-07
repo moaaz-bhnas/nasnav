@@ -7,15 +7,25 @@ import LazyLoad from 'react-lazy-load';
 
 class StatisticsSection extends Component {
   state = {  
-    imgLoaded: false
+    websiteImg: false,
+    phoneLoaded: false,
+    tabletLoaded: false
   }
 
-  setLoadedToTrue = () => {
-    this.setState({ imgLoaded: true });
+  setWebsiteLoadedToTrue = () => {
+    this.setState({ websiteImgloaded: true });
+  }
+  
+  setPhoneLoadedToTrue = () => {
+    this.setState({ phoneLoaded: true });
+  }
+
+  setTabletLoadedToTrue = () => {
+    this.setState({ tabletLoaded: true });
   }
 
   render() {
-    const { imgLoaded } = this.state;
+    const { websiteImgloaded } = this.state;
 
     return (
       <section className="statistics" role="region" aria-labelledby="statistics__title">
@@ -32,12 +42,22 @@ class StatisticsSection extends Component {
             offsetVertical={500}
           >
             <div className="statistics__imageContainer">
-              <img src={website} alt="Web Site" className={`image statistics__image ${imgLoaded ? 'loaded' : null}`} onLoad={this.setLoadedToTrue} />
+              <img src={website} alt="Web Site" className={`image statistics__image ${websiteImgloaded ? 'loaded' : null}`} onLoad={this.setWebsiteLoadedToTrue} />
             </div>
           </LazyLoad>
         </div>
-        <img className="statistics__phone" src={phone} alt="Phone" />
-        <img className="statistics__tablet" src={tablet} alt="Tablet" />
+        <LazyLoad
+          debounce={false}
+          offsetVertical={500}
+        >
+          <img className={`statistics__phone ${phoneLoaded ? 'loaded' : null}`} src={phone} alt="Phone" onClick={this.setPhoneLoadedToTrue} />
+        </LazyLoad>
+        <LazyLoad
+          debounce={false}
+          offsetVertical={500}
+        >
+          <img className={`statistics__tablet ${tabletLoaded ? 'loaded' : null}`} src={tablet} alt="Tablet" onClick={this.setTabletLoadedToTrue} />
+        </LazyLoad>
       </section>
     );
   }
