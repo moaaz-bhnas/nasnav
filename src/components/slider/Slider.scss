@@ -94,10 +94,10 @@ Styles Slider
   }
 
   .slider__list {
-    width: 6 * $style-slide;
+    width: 11 * $style-slide;
 
     @media screen and (min-width: 374px) {
-      width: 6 * $style-slide-big;
+      width: 11 * $style-slide-big;
     }
 
   }

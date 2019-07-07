@@ -40,11 +40,10 @@ class ControlPanel extends Component {
           <LazyLoad
             debounce={false}
             offsetVertical={500}
-            onContentVisible={this.setLoadedToTrue}
           >
             <React.Fragment>
               <img className={`service__image ${imgLoaded ? 'loaded' : null}`} src={phone} alt="NasNav website opened on a phone"/>
-              <img className={`service__image ${imgLoaded ? 'loaded' : null}`} src={tablet} alt="NasNav website opened on a tablet"/>
+              <img className={`service__image ${imgLoaded ? 'loaded' : null}`} src={tablet} alt="NasNav website opened on a tablet" onLoad={this.setLoadedToTrue} />
               <img className={`service__badge ${imgLoaded ? 'loaded' : null}`} src={controlBadge1} alt=""/>
               <img className={`service__badge ${imgLoaded ? 'loaded' : null}`} src={controlBadge2} alt=""/>
               <img className={`service__badge ${imgLoaded ? 'loaded' : null}`} src={controlBadge3} alt=""/>

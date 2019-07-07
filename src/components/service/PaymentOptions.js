@@ -28,9 +28,8 @@ class PaymentOptions extends Component {
           <LazyLoad
             debounce={false}
             offsetVertical={500}
-            onContentVisible={this.setLaptopLoadedToTrue}
           >
-            <img src={serviceImage1} alt="NasNav Dashboard" className={`service__image ${laptopImgLoaded ? 'loaded' : null}`}/>
+            <img src={serviceImage1} alt="NasNav Dashboard" className={`service__image ${laptopImgLoaded ? 'loaded' : null}`} onLoad={this.setLaptopLoadedToTrue} />
           </LazyLoad>
         </div>
         <div className="service__content">
@@ -51,9 +50,8 @@ class PaymentOptions extends Component {
         <LazyLoad
           debounce={false}
           offsetVertical={500}
-          onContentVisible={this.setMobileLoadedToTrue}
         >
-          <img src={serviceImage3} alt="A website built by NasNav web builder opened on a phone" className={`service__phone ${mobileImgLoaded ? 'loaded' : null}`}/>
+          <img src={serviceImage3} alt="A website built by NasNav web builder opened on a phone" className={`service__phone ${mobileImgLoaded ? 'loaded' : null}`} onLoad={this.setMobileLoadedToTrue} />
         </LazyLoad>
       </article>
     );

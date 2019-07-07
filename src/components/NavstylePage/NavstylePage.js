@@ -6,7 +6,7 @@ import './NavstylePage.scss';
 import FeatureSection from './FeatureSection';
 import navstylePageImages from '../../pages-images/navstyles-page-images';
 import Slider from '../slider/Slider';
-const { styles, stylesSm, serviceImage1, serviceImage2, slide1, slide2, slide3 } = navstylePageImages;
+const { styles, stylesSm, serviceImage1, serviceImage2, slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10, slide11 } = navstylePageImages;
 
 const pageName = 'navstyle';
 const header = {
@@ -97,7 +97,19 @@ const services = [
     ]
   }
 ];
-const slides = [slide1, slide2, slide3, slide1, slide2, slide3];
+const slides = [
+  { src: slide1, alt: 'Femex Theme' },
+  { src: slide2, alt: 'Fortune Theme' },
+  { src: slide3, alt: 'Nissan Theme' },
+  { src: slide4, alt: 'City Stars Theme' },
+  { src: slide5, alt: 'Sallab Theme' },
+  { src: slide6, alt: 'Happy Theme' },
+  { src: slide7, alt: 'Ravin Theme' },
+  { src: slide8, alt: 'Osoul Theme' },
+  { src: slide9, alt: 'Super Theme' },
+  { src: slide10, alt: 'Outlet Theme' },
+  { src: slide11, alt: 'AI\'s Image Theme' }
+];
 
 const NavstylePage = () => {
   return (

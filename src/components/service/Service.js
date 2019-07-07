@@ -25,12 +25,12 @@ class Service extends Component {
           <LazyLoad
             debounce={false}
             offsetVertical={500}
-            onContentVisible={this.setLoadedToTrue}
           >
             <img 
               src={image.src} 
               alt={image.alt} 
               className={`${image.classes.join(' ')} ${imgLoaded ? 'loaded' : null}`}
+              onLoad={this.setLoadedToTrue}
             />
           </LazyLoad>
         </div>

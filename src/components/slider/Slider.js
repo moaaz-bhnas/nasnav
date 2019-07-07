@@ -77,7 +77,7 @@ class Slider extends Component {
                 <li key={index} className="slide" ref={index === 0 ? this.firstSlide : null}>
                   {
                     (sliderType === 'styleSlider') ?
-                    <img src={slide} alt="NasNav theme" className="slide__image"/> :
+                    <img src={slide.src} alt={slide.alt} className="slide__image"/> :
                     <CountryDetails 
                       name={slide.name}
                       location={slide.location}

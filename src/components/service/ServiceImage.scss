@@ -174,14 +174,15 @@ Service Image
 } 
 
 /* animation */
+.service__image {
+  opacity: 0;
+}
+
 .loaded {
-  animation: fadeInImg .7s both cubic-bezier(0.23, 1, 0.32, 1);
+  animation: fadeInImg .7s forwards cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 @keyframes fadeInImg {
-  from {
-    opacity: 0;
-  }
   to {
     opacity: 1;
   }

@@ -37,10 +37,9 @@ class ServiceWithPopup extends Component {
           <LazyLoad
             debounce={false}
             offsetVertical={500}
-            onContentVisible={this.setLaptopLoadedToTrue}
-          >
+            >
             <React.Fragment>
-              <img className={`service__image service__image_width_full ${laptopImgLoaded ? 'loaded' : null}`} src={laptop} alt="Laptop"/>
+              <img className={`service__image service__image_width_full ${laptopImgLoaded ? 'loaded' : null}`} src={laptop} alt="Laptop" onLoad={this.setLaptopLoadedToTrue} />
               <img className={`service__360Badge ${laptopImgLoaded ? 'loaded' : null}`} src={badge360} alt="360 view"/>
             </React.Fragment>
           </LazyLoad>
@@ -69,10 +68,9 @@ class ServiceWithPopup extends Component {
           <LazyLoad
             debounce={false}
             offsetVertical={500}
-            onContentVisible={this.setChairLoadedToTrue}
           >
             <React.Fragment>
-              <img className={`chair__image ${chairImgLoaded ? 'loaded' : null}`} src={chair} alt="chair"/>
+              <img className={`chair__image ${chairImgLoaded ? 'loaded' : null}`} src={chair} alt="chair" onLoad={this.setChairLoadedToTrue} />
               <button 
                 className="button button_back_transparent chair__button"
                 type="button"

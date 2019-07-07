@@ -3,7 +3,7 @@
 
 .statistics {
   text-align: center;
-  padding: 1rem 0 2rem;
+  padding: 1rem 0 4rem;
   position: relative;
 
   @media screen and (min-width: $break-service) {
@@ -34,8 +34,21 @@ Second Paragraph
 /* ===============================
 Image
 ================================== */
-.statistics__image {
+.statistics__imageContainer {
+  position: relative;
   max-width: 35rem;
+  margin: 0 auto;
+  padding-bottom: 67.578%;
+
+  @media screen and (min-width: 38rem) {
+    padding-bottom: 23.652rem;
+  }
+}
+
+.statistics__image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%
 }
 
