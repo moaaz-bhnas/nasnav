@@ -9,7 +9,7 @@ const HeaderImage = (props) => {
         images.map((image) => (
           <picture className="header__image" key={image.alt}>
             <source srcSet={image.sm} media="(max-width: 450px)" />
-            <img src={image.lg} />
+            <img src={image.lg} alt={image.alt} />
           </picture>
         ))
       }
