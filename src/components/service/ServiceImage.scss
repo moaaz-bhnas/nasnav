@@ -102,7 +102,7 @@ Service Image
     }
   }
 
-  .styles {
+  .styles, .styles2 {
     .service__imageContainer {
       padding-bottom: 30.895rem;
       @media screen and (max-width: 35.25rem) {
@@ -169,6 +169,129 @@ Service Image
     .service__image {
       position: absolute;
       top: 0; left: 0;
+    }
+  }
+
+  .navbox2 {
+    .service__imageContainer {
+      padding-bottom: 26.218rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 81.299%; 
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .seo, .seo2, .seo3 {
+    .service__imageContainer {
+      padding-bottom: 31.465rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 97.568%; 
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .styles3 {
+    .service__imageContainer {
+      padding-bottom: 20.963rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 65%;
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 0;
+    }
+  }
+
+  .styles4 {
+    .service__imageContainer {
+      padding-bottom: 24.499rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 75.966%; 
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 0;
+    }
+  }
+
+  .marketing {
+    .service__imageContainer {
+      padding-bottom: 25.375rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 78.683%; 
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .editor, .editor2, .editor3 {
+    .service__imageContainer {
+      padding-bottom: 22.426rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 69.54%; 
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .dashboard2 {
+    .service__imageContainer {
+      padding-bottom: 22.277rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 69.077%; 
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .dashboard3 {
+    .service__imageContainer {
+      padding-bottom: 19.318rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 59.903%; 
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .dashboard4, .dashboard5 {
+    .service__imageContainer {
+      padding-bottom: 22.009rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 68.244%; 
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translate(-50%);
     }
   }
 } 
