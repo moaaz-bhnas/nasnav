@@ -25,7 +25,7 @@ class StatisticsSection extends Component {
   }
 
   render() {
-    const { websiteImgloaded } = this.state;
+    const { websiteImgloaded, phoneLoaded, tabletLoaded } = this.state;
 
     return (
       <section className="statistics" role="region" aria-labelledby="statistics__title">
@@ -50,13 +50,13 @@ class StatisticsSection extends Component {
           debounce={false}
           offsetVertical={500}
         >
-          <img className={`statistics__phone ${phoneLoaded ? 'loaded' : null}`} src={phone} alt="Phone" onClick={this.setPhoneLoadedToTrue} />
+          <img className={`statistics__phone ${phoneLoaded ? 'loaded' : null}`} src={phone} alt="Phone" onLoad={this.setPhoneLoadedToTrue} />
         </LazyLoad>
         <LazyLoad
           debounce={false}
           offsetVertical={500}
         >
-          <img className={`statistics__tablet ${tabletLoaded ? 'loaded' : null}`} src={tablet} alt="Tablet" onClick={this.setTabletLoadedToTrue} />
+          <img className={`statistics__tablet ${tabletLoaded ? 'loaded' : null}`} src={tablet} alt="Tablet" onLoad={this.setTabletLoadedToTrue} />
         </LazyLoad>
       </section>
     );
