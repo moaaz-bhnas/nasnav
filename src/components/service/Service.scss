@@ -58,7 +58,6 @@
 Steps Icons 
 ================================== */
 .navbox {
-  background-color: rgba(0, 0, 0, .2);
   .stepList__step {
     &:nth-child(1) {
       .step__icon {
@@ -82,18 +81,18 @@ Steps Icons
   .stepList__step {
     &:nth-child(1) {
       .step__icon {
-        background-position-x: -2.4rem;
+        background-position-x: -36px;
       }
     }
     &:nth-child(2) {
       .step__icon {
-        background-position-x: -3.2rem;
+        background-position-x: -48px;
       }
     }
     &:nth-child(3) {
       .step__icon {
-        height: 0.751875rem;
-        background: url(../../image/step-icon6.png) no-repeat center / .8rem .8rem;
+        height: 11.294px;
+        background: url(../../image/step-icon6.png) no-repeat center / 12px auto;
       }
     }
   }
@@ -103,12 +102,12 @@ Steps Icons
   .stepList__step {
     &:nth-child(1) {
       .step__icon {
-        background-position-x: -2.4rem;
+        background-position-x: -36px;
       }
     }
     &:nth-child(2) {
       .step__icon {
-        background-position-x: -3.2rem;
+        background-position-x: -48px;
       }
     }
     &:nth-child(3) {
@@ -124,18 +123,18 @@ Steps Icons
   .stepList__step {
     &:nth-child(1) {
       .step__icon {
-        height: 0.699375;
-        background: url(../../image/step-icon7.png) no-repeat center / .8rem .8rem;
+        height: 10.5px;
+        background: url(../../image/step-icon7.png) no-repeat center / 12px auto;
       }
     }
     &:nth-child(2) {
       .step__icon {
-        background-position-x: -4rem;
+        background-position-x: -60px;
       }
     }
     &:nth-child(3) {
       .step__icon {
-        background-position-x: -4.8rem;
+        background-position-x: -72px;
       }
     }
   }
@@ -145,18 +144,18 @@ Steps Icons
   .stepList__step {
     &:nth-child(1) {
       .step__icon {
-        height: 0.970625rem;
-        background: url(../../image/step-icona.png) no-repeat center / .8rem auto;
+        height: 14.571px;
+        background: url(../../image/step-icona.png) no-repeat center / 12px auto;
       }
     }
     &:nth-child(2) {
       .step__icon {
-        background-position-x: -5.6rem;
+        background-position-x: -84px;
       }
     }
     &:nth-child(3) {
       .step__icon {
-        background-position-x: -6.4rem;
+        background-position-x: -96px;
       }
     }
   }
