@@ -5,10 +5,13 @@ import eye from '../../image/eye.png';
 import chair from '../../image/chair.png';
 import popup from '../../image/modal.png';
 import './ServiceWithPopup.scss';
+import LazyLoad from "react-lazy-load";
 
 class ServiceWithPopup extends Component {
   state = { 
-    popupOpened: false
+    popupOpened: false,
+    laptopImgLoaded: false,
+    chairImgLoaded: false
   }
 
   togglePopup = () => {
@@ -17,14 +20,30 @@ class ServiceWithPopup extends Component {
     }));
   }
 
+  setLaptopLoadedToTrue = () => {
+    this.setState({ laptopImgLoaded: true });
+  }
+
+  setChairLoadedToTrue = () => {
+    this.setState({ chairImgLoaded: true });
+  }
+
   render() {
-    const {popupOpened} = this.state;
+    const { popupOpened, laptopImgLoaded, chairImgLoaded } = this.state;
 
     return (
       <article className="service view360">
         <div className="service__imageContainer">
-          <img className="service__image service__image_width_full" src={laptop} alt="Laptop"/>
-          <img className="service__360Badge" src={badge360} alt="360 view"/>
+          <LazyLoad
+            debounce={false}
+            offsetVertical={500}
+            onContentVisible={this.setLaptopLoadedToTrue}
+          >
+            <React.Fragment>
+              <img className={`service__image service__image_width_full ${laptopImgLoaded ? 'loaded' : null}`} src={laptop} alt="Laptop"/>
+              <img className={`service__360Badge ${laptopImgLoaded ? 'loaded' : null}`} src={badge360} alt="360 view"/>
+            </React.Fragment>
+          </LazyLoad>
         </div>
 
         <div className="service__content">
@@ -47,23 +66,31 @@ class ServiceWithPopup extends Component {
           className="image__container chair"
           onClick={() => {}}
         >
-          <img className="chair__image" src={chair} alt="chair"/>
-          <button 
-            className="button button_back_transparent chair__button"
-            type="button"
-            aria-controls="chair__popup chair__info"
-            aria-expanded={popupOpened}
-            aria-pressed={popupOpened}
-            onClick={this.togglePopup}
+          <LazyLoad
+            debounce={false}
+            offsetVertical={500}
+            onContentVisible={this.setChairLoadedToTrue}
           >
-            <img className="chair__eye" src={eye} alt=""/>
-          </button>
-          <img className="chair__popup" id="chair__popup" src={popup} alt="popup"/>
+            <React.Fragment>
+              <img className={`chair__image ${chairImgLoaded ? 'loaded' : null}`} src={chair} alt="chair"/>
+              <button 
+                className="button button_back_transparent chair__button"
+                type="button"
+                aria-controls="chair__popup chair__info"
+                aria-expanded={popupOpened}
+                aria-pressed={popupOpened}
+                onClick={this.togglePopup}
+              >
+                <img className={`chair__eye ${chairImgLoaded ? 'loaded' : null}`} src={eye} alt=""/>
+              </button>
+              <img className="chair__popup" id="chair__popup" src={popup} alt="popup"/>
 
-          <div className="chair__info" id="chair__info">
-            <h4 className="chair__title">Modern Chair</h4>
-            <p className="paragraph chair__paragraph paragraph_color_grey">Chair is a piece of furniture with raised surface supported by legs, commonly supported most often by four legs ..</p>
-          </div>
+              <div className="chair__info" id="chair__info">
+                <h4 className="chair__title">Modern Chair</h4>
+                <p className="paragraph chair__paragraph paragraph_color_grey">Chair is a piece of furniture with raised surface supported by legs, commonly supported most often by four legs ..</p>
+              </div>
+            </React.Fragment>
+          </LazyLoad>
         </div>
       </article>
     );

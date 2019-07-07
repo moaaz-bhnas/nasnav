@@ -23,7 +23,6 @@ const services = [
   {
     name: 'navbox',
     imageContainer: {
-      paddingBottom: 91.114,
       classes: [
         'service__imageContainer_widthOnlargeScreen_half',
         'service__imageContainer_floatOnlargeScreen_right',

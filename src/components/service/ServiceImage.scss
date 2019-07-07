@@ -60,9 +60,6 @@ Service Image
 ------------------------ */
 .service__image_width_full {
   width: 100%;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
 }
 .service__image_style_normal {
   width: 100%;
@@ -88,4 +85,104 @@ Service Image
 }
 .service__image_upOnlargeScreen_med {
   margin-top: -2rem;
+}
+
+/* fillers for lazy loading */
+@media screen and (max-width: $break-service) {
+  .navbox {
+    .service__imageContainer {
+      padding-bottom: 29.384rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 91.114%; 
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 0;
+    }
+  }
+
+  .styles {
+    .service__imageContainer {
+      padding-bottom: 30.895rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 95.798%;
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 0;
+    }
+  }
+
+  .view360 {
+    .service__imageContainer {
+      padding-bottom: 32.783rem;
+      @media screen and (max-width: 33rem) {
+        padding-bottom: 109.277%;
+      }
+    }
+    .image__container {
+      padding-bottom: 35.681rem;
+      @media screen and (max-width: 33rem) {
+        padding-bottom: 118.937%;
+      }
+    }
+    .chair__image {
+      position: absolute;
+    }
+  }
+
+  .controlPanel {
+    .service__imageContainer {
+      padding-bottom: 50.039%;
+    }
+    .service__image {
+      position: absolute;
+
+      &:nth-child(2) {
+        right: 0;
+      }
+    }
+  }
+
+  .dashboard {
+    .service__imageContainer {
+      padding-bottom: 21.237rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 64.953%; 
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 0;
+    }
+  }
+
+  .paymentOptions {
+    .service__imageContainer {
+      padding-bottom: 23.138rem;
+      @media screen and (max-width: 35.25rem) {
+        padding-bottom: 71.747%; 
+      }
+    }
+    .service__image {
+      position: absolute;
+      top: 0; left: 0;
+    }
+  }
+} 
+
+/* animation */
+.loaded {
+  animation: fadeInImg .7s both cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes fadeInImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -5,6 +5,8 @@
 View 360 
 ================================== */
 .view360 {
+  position: relative;
+
   @media screen and (min-width: $break-service) {
     margin: 12rem calc((-100vw + #{$max-width}) / 2) 0;
   }
@@ -34,7 +36,7 @@ View 360
   }
 
   .service__image {
-    position: relative;
+    position: absolute;
     top: 10.5rem;
   }
 
@@ -46,6 +48,7 @@ View 360
       text-align: center;
       position: relative;
       top: 14rem;
+      margin-bottom: 22rem;
     }
   }
 }
@@ -69,9 +72,9 @@ chair
 
   @media screen and (min-width: $break-service) {
     left: 0;
-    float: left;
+    top: 4rem;
+    position: absolute;
     width: 30vw;
-    margin-top: -13rem;
   }
 }
 
@@ -104,8 +107,8 @@ chair
 /* popup --- */
 .chair__popup {
   position: absolute;
-  top: 10%;
-  left: 20%;
+  top: 7%;
+  left: 17%;
   z-index: 1;
 
   transform: scale(0);
@@ -118,8 +121,8 @@ chair
   width: 16rem;
 
   position: absolute;
-  top: 16%;
-  left: 25%;
+  top: 14%;
+  left: 22%;
   z-index: 1;
 
   transform: scale(0);

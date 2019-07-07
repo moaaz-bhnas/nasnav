@@ -6,6 +6,7 @@ import nigeria from '../../image/nigeria.png';
 import london from '../../image/london.png';
 import map from '../../image/map.png';
 import './Map.scss';
+import LazyLoad from 'react-lazy-load';
 
 const Map = () => {
   const countryFlags = [
