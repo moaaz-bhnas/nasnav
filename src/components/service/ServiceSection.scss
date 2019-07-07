@@ -9,7 +9,7 @@
 
 /* service item --- */
 .serviceList__item {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 
 /* ================================
@@ -33,8 +33,14 @@ NavStyle
   margin-top: 4rem;
 }
 
+.shopping__serviceSection {
+  .serviceList__item:first-child {
+    margin-bottom: 8rem;
+  }
+}
+
 /* ================================
-Shoppinh 
+Shopping
 =================================== */
 .shopping__serviceSection {
   margin: 7rem 0;
