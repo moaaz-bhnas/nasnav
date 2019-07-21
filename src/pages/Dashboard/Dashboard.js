@@ -1,7 +1,7 @@
 import React from 'react';
-import Thriller from '../thriller/Thriller';
-import Header from '../header/Header';
-import ServiceSection from '../service/ServiceSection';
+import Thriller from '../../components/thriller/Thriller';
+import Header from '../../components/header/Header';
+import ServiceSection from '../../components/service/ServiceSection';
 import dashboardPageImages from '../../pages-images/dashboard-page-images';
 const { headerImage, headerImageSm, serviceImage1, serviceImage2, serviceImage3, serviceImage4 } = dashboardPageImages;
 
@@ -144,7 +144,7 @@ const services = [
   }
 ];
 
-const DashboardPage = () => {
+const Dashboard = () => {
   return (
     <React.Fragment>
       <Header
@@ -163,4 +163,4 @@ const DashboardPage = () => {
   );
 }
 
-export default DashboardPage;
+export default Dashboard;

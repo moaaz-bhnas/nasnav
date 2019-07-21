@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../header/Header';
-import Thriller from '../thriller/Thriller';
-import ServiceSection from '../service/ServiceSection';
+import Header from '../../components/header/Header';
+import Thriller from '../../components/thriller/Thriller';
+import ServiceSection from '../../components/service/ServiceSection';
 import shoppingPageImages from '../../pages-images/shopping-page-images';
 const { phone, phoneSm, serviceImage1, serviceImage2, serviceImage3 } = shoppingPageImages;
 
@@ -159,7 +159,7 @@ const services = [
   }
 ];
 
-const ShoppingPage = () => {
+const Shopping = () => {
   return (
     <React.Fragment>
       <Header 
@@ -178,4 +178,4 @@ const ShoppingPage = () => {
   );
 }
 
-export default ShoppingPage;
+export default Shopping;

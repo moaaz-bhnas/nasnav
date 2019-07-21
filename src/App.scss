@@ -1,0 +1,27 @@
+@import './sass-modules/colors', 
+        './sass-basic-components/Button.scss', 
+        './sass-basic-components/Container.scss', 
+        './sass-basic-components/Image.scss',
+        './sass-basic-components/Link.scss',
+        './sass-basic-components/List.scss',
+        './sass-basic-components/Logo.scss',
+        './sass-basic-components/Paragraph.scss';
+
+.App {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 28%;
+    right: 0;
+    z-index: -1;
+    width: 97%;
+    height: 35rem;
+    background-color: $ribbon;
+  
+    transform-origin: 100% 0;
+    transform: rotate(-24deg);
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../header/Header';
+import Header from '../../components/header/Header';
 import About from './About';
-import ServiceSection from '../service/ServiceSection';
+import ServiceSection from '../../components/service/ServiceSection';
 import homePageImages from '../../pages-images/home-page-images';
 const {tablet, tabletSm, phone, phoneSm, googleIcon, serviceImage1, serviceImage2, serviceImage6} = homePageImages;
 

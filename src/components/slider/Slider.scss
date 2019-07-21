@@ -1,6 +1,6 @@
-@import '../../sass-modules/lengths';
-@import '../../sass-modules/breakpoints';
-@import '../../sass-modules/colors';
+@import '../../sass-modules/lengths',
+        '../../sass-modules/breakpoints',
+        '../../sass-modules/colors';
 
 .slider {
   &:focus {

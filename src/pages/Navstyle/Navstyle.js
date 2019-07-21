@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../header/Header';
-import Thriller from '../thriller/Thriller';
-import ServiceSection from '../service/ServiceSection';
-import './NavstylePage.scss';
+import Header from '../../components/header/Header';
+import Thriller from '../../components/thriller/Thriller';
+import ServiceSection from '../../components/service/ServiceSection';
 import FeatureSection from './FeatureSection';
 import navstylePageImages from '../../pages-images/navstyles-page-images';
-import Slider from '../slider/Slider';
+import Slider from '../../components/slider/Slider';
+import './Navstyle.scss';
 const { styles, stylesSm, serviceImage1, serviceImage2, slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10, slide11 } = navstylePageImages;
 
 const pageName = 'navstyle';
@@ -111,7 +111,7 @@ const slides = [
   { src: slide11, alt: 'AI\'s Image Theme' }
 ];
 
-const NavstylePage = () => {
+const Navstyle = () => {
   return (
     <React.Fragment>
       <Header 
@@ -157,4 +157,4 @@ const NavstylePage = () => {
   );
 }
 
-export default NavstylePage;
+export default Navstyle;

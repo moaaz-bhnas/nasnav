@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../header/Header';
-import Thriller from '../thriller/Thriller';
+import Header from '../../components/header/Header';
+import Thriller from '../../components/thriller/Thriller';
 import HowItWorksList from './HowItWorksList';
-import ServiceSection from '../service/ServiceSection';
-import './NavboxPage.scss';
+import ServiceSection from '../../components/service/ServiceSection';
+import './Navbox.scss';
 import navboxPageImages from '../../pages-images/navbox-page-images';
 const { screens, screensSm, serviceImage1, serviceImage2, serviceImage3 } = navboxPageImages;
 
@@ -134,7 +134,7 @@ const services = [
 ];
 
 
-const NavboxPage = () => {
+const Navbox = () => {
   return (
     <React.Fragment>
       <Header 
@@ -154,4 +154,4 @@ const NavboxPage = () => {
   );
 }
 
-export default NavboxPage;
+export default Navbox;

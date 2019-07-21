@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../header/Header';
-import Thriller from '../thriller/Thriller';
-import ServiceSection from '../service/ServiceSection';
+import Header from '../../components/header/Header';
+import Thriller from '../../components/thriller/Thriller';
+import ServiceSection from '../../components/service/ServiceSection';
 import StatisticsSection from './StatisticsSection';
 import editor360PageImages from '../../pages-images/360editor-page-images';
 const { computer, computerSm, editor1, editor2, editor3 } = editor360PageImages;
@@ -112,7 +112,7 @@ const services = [
   }
 ];
 
-const Editor360Page = () => {
+const Editor360 = () => {
   return (
     <React.Fragment>
       <Header 
@@ -132,4 +132,4 @@ const Editor360Page = () => {
   );
 }
 
-export default Editor360Page;
+export default Editor360;
