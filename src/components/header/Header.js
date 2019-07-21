@@ -14,7 +14,6 @@ const Header = (props) => {
     >
       <div className="container">
         <h1 className="header__title">NasNav</h1>
-        {/* <Topbar /> */}
         <HeaderContent 
           width={contentWidth}
           text={text}
@@ -28,7 +27,7 @@ const Header = (props) => {
         className="header__curve" 
         src={curve} alt="" 
         aria-hidden="true" 
-      /> {/* style={{zIndex: overflowHidden ? 1 : null}}  */}
+      />
     </header>
   );
 }
