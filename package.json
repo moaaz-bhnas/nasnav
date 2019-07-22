@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "http://moaaz-bhnas.github.io/nasnav",
   "dependencies": {
-    "core-js": "^3.1.4",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
