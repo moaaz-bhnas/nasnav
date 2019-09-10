@@ -1,5 +1,5 @@
 # NasNav
-A website for a web engagement platform NasNav.
+A website for a web engagement platform (NasNav).
 
 ## Quality Standards
 - The project is fully accessible (friendly for disabled people and interactive elements like buttons and sliders are operable using keyboard only).
