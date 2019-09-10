@@ -1,5 +1,5 @@
-import styles from '../image/styles-image.png';
-import stylesSm from '../image/styles-image-sm.png';
+import styles from '../image/styles-image-mirror.png';
+import stylesSm from '../image/styles-image-mirror.png';
 import serviceImage1 from '../image/styles-image2.png';
 import serviceImage2 from '../image/styles-image3.png';
 import slide1 from '../image/slide-1.png';

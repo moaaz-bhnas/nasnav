@@ -8,7 +8,7 @@
   box-sizing: border-box;
   width: 19.3%;
   min-width: 200.72px;
-  padding: 0 1.5rem;
+  padding: 0 1.4rem;
   vertical-align: top;
 
   @media screen and (min-width: $break-countries) {
@@ -52,6 +52,7 @@ Customer Services
 /* contact icon --- */
 .customerServices__contactIcon {
   width: 1rem;
+  height: auto;
   vertical-align: middle;
   margin-right: .19rem;
 }

@@ -11,7 +11,7 @@ const RightArrow = (props) => {
       className="button slider__rightArrow button_back_white button_shape_circle"
       onClick={props.goToNextSlide}
     >
-      <img src={rightArrow} alt="Right arrow" className="slider__nextArrow"/>
+      <img src={rightArrow} alt="Right arrow" className="slider__arrowIcon"/>
     </button>
   );
 }
