@@ -3,7 +3,7 @@ A website for a web engagement platform ([NasNav](http://nasorg.co/))
 
 ## Quality Standards
 - The project is fully accessible (friendly for disabled people and interactive elements like buttons and sliders are operable using keyboard only).
-- Cross-browser compatible (Works on most common browsers available, including IE).
+- Cross-browser compatible (to IE9).
 - Responsive for all screen sizes.
 
 ## Live
