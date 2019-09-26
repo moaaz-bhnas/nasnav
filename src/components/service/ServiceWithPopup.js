@@ -11,10 +11,15 @@ class ServiceWithPopup extends Component {
   state = { 
     popupOpened: false,
     laptopImgLoaded: false,
-    chairImgLoaded: false
+    chairImgLoaded: false,
+    eyeClicked: false
   }
 
   togglePopup = () => {
+    if (!this.state.eyeClicked) {
+      this.setState({ eyeClicked: true });
+    }
+
     this.setState((prevState) => ({
       popupOpened: !prevState.popupOpened
     }));
@@ -29,7 +34,7 @@ class ServiceWithPopup extends Component {
   }
 
   render() {
-    const { popupOpened, laptopImgLoaded, chairImgLoaded } = this.state;
+    const { popupOpened, laptopImgLoaded, chairImgLoaded, eyeClicked } = this.state;
 
     return (
       <article className="service view360">
@@ -77,13 +82,15 @@ class ServiceWithPopup extends Component {
                 aria-controls="chair__popup chair__info"
                 aria-expanded={popupOpened}
                 aria-pressed={popupOpened}
+                data-clickedOnce={eyeClicked}
                 onClick={this.togglePopup}
+                onMouseDown={e => e.preventDefault()}
               >
                 <img className={`chair__eye ${chairImgLoaded ? 'loaded' : null}`} src={eye} alt=""/>
               </button>
               <img className="chair__popup" id="chair__popup" src={popup} alt="popup"/>
 
-              <div className="chair__info" id="chair__info">
+              <div className="chair__info" id="chair__info" aria-hidden={!popupOpened}>
                 <h4 className="chair__title">Modern Chair</h4>
                 <p className="paragraph chair__paragraph paragraph_color_grey">Chair is a piece of furniture with raised surface supported by legs, commonly supported most often by four legs ..</p>
               </div>
