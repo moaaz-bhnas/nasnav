@@ -10,7 +10,7 @@ const Footer = () => {
         <img src={logo} alt="Logo" className="logo logo_size_med logo_verticalAlign_middle footer__logo" />
         <img src={facebookIcon} alt="Facebook Icon" className="facebook" />
         <p className="copyright footer__copyright">
-          <small>2019 Nasorg.com All Rights Reserved</small>
+          <small>2019 NasNav all rights reserved</small>
         </p>
       </div>
     </footer>

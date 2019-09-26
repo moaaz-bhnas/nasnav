@@ -1,19 +1,13 @@
 import React from 'react';
-import kuwait from '../../image/kuwait.png';
+import saudi from '../../image/saudi.svg';
 import egypt from '../../image/egypt.png';
 import poland from '../../image/poland.png';
 import nigeria from '../../image/nigeria.png';
-import london from '../../image/london.png';
 import map from '../../image/map.png';
 import './Map.scss';
 
 const Map = () => {
   const countryFlags = [
-    {
-      country: 'kuwait',
-      flag: 'kuwait Flag',
-      image: kuwait
-    },
     {
       country: 'egypt',
       flag: 'egypt Flag',
@@ -30,9 +24,9 @@ const Map = () => {
       image: nigeria
     },
     {
-      country: 'london',
-      flag: 'london Flag',
-      image: london
+      country: 'saudi',
+      flag: 'Saudi Flag',
+      image: saudi
     }
   ];
 
@@ -45,7 +39,7 @@ const Map = () => {
             const {country, flag, image} = countryFlag;
             return (
               <li className={`flagList__item flagList__item_country_${country}`} key={index}>
-                <img src={image} alt={flag} className="flagList__flag" />
+                <img src={image} alt={flag} className={`flagList__flag flagList__flag_country_${country}`} />
                 <span className="flagList__pointer" />
               </li>
             );

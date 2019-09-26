@@ -25,17 +25,21 @@
 }
 
 // modifiers
-.flagList__item_country_kuwait {
-  top: 35.5%;
-  left: 58%;
-}
+// .flagList__item_country_kuwait {
+//   top: 35.5%;
+//   left: 58%;
+// }
 .flagList__item_country_egypt {
   top: 35.5%;
   left: 53%;
 }
-.flagList__item_country_london {
-  top: 22%;
-  left: 44.5%;
+// .flagList__item_country_london {
+//   top: 22%;
+//   left: 44.5%;
+// }
+.flagList__item_country_saudi {
+  top: 37.5%;
+  left: 57.5%;
 }
 .flagList__item_country_nigeria {
   top: 51%;
@@ -56,6 +60,12 @@
   border: .4rem solid #fff;
   border-radius: 50%;
   box-shadow: 0 4px 15px rgba($color: #000, $alpha: .2)
+}
+
+/* --- Flag --- */
+.flagList__flag_country_saudi {
+  width: 2rem;
+  margin-bottom: .4rem;
 }
 
 /* =============================
