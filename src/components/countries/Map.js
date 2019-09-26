@@ -1,5 +1,5 @@
 import React from 'react';
-import saudi from '../../image/saudi.svg';
+import saudi from '../../image/saudi.png';
 import egypt from '../../image/egypt.png';
 import poland from '../../image/poland.png';
 import nigeria from '../../image/nigeria.png';
