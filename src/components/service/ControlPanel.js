@@ -10,11 +10,11 @@ import LazyLoad from "react-lazy-load";
 const steps = [
   { 
     iconAlt: '',
-    text: 'Add and modify products'
+    text: 'Seach engine to show case products'
   },
   { 
     iconAlt: '',
-    text: 'Aditions directions and shapes'
+    text: 'Naviagtion to location when viewing products'
   },
   {
     iconAlt: '',
@@ -56,10 +56,10 @@ class ControlPanel extends Component {
             How will my products be displayed?
           </p>
           <p className="paragraph service__paragraph paragraph_size_large">
-            <strong>Control panel</strong> to edit 360 pictures of branches
+            <strong>AI Customer Engagement</strong>
           </p>
           <p className="paragraph paragraph_color_grey paragraph_line_high">
-            Here at NasNav we designed a device called the route box that plugs into a stores barcode scanner. The box picks up products UPC codes and uses that to populate a website of the products here at NasNav we designed a device called the route box
+            NasNav empowers users to rediscover shopping in a visual, personalized and engaging way by utilizing advanced computer vision and deep learning technology. 
           </p>
           <ul className="list stepList">
             {steps.map((step, index) => (

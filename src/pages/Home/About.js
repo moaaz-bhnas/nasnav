@@ -15,7 +15,7 @@ const About = () => {
         <h2 className="aboutSection__title" id="aboutSection__title">About</h2>
         <img className="logo logo_size_large" src={logo} alt="NasNav Logo"/>
         <p className=" aboutSection__paragraph paragraph_line_high paragraph_shortened_medLarge">
-          We use proven technologies, combining them with new concepts and techniques wherever possible. In this way we rapidly develop tailor-made solutions which incubates location-based and retailers services technologies.
+          We use proven technologies, combining them with new concepts and techniques to rapidly develop tailor-made solutions which are not available in any other e-commerce platform.   
         </p>
         <ul className="list serviceIconList">
           <li className="serviceIconList__item">

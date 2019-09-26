@@ -3,14 +3,14 @@ import Header from '../../components/header/Header';
 import About from './About';
 import ServiceSection from '../../components/service/ServiceSection';
 import homePageImages from '../../pages-images/home-page-images';
-const {tablet, tabletSm, phone, phoneSm, googleIcon, serviceImage1, serviceImage2, serviceImage6} = homePageImages;
+const {tablet, tabletSm, phone, phoneSm, googleIcon, bingIcon, serviceImage1, serviceImage2, serviceImage6} = homePageImages;
 
 const pageName = 'home';
 const header = {
   text: {
     paragraphs: [
-      '*NasNav* is the  Next Generation of big businesses Data!',
-      'Our services are not to be reckoned with upload Products can sliping in your home and see theyou an edge over the online competitors of big businesses data'
+      'Get connected and start providing customer-centric.',
+      'Let us create a special tour within your eCommerce website using a unique platform that allows you to creators 360 tours, selection of attractive web theme and of course multi store inventory which is based on consumers location.'
     ],
     button: 'Get Started'
   },
@@ -43,9 +43,9 @@ const services = [
       'service__content_floatOnlargeScreen_left'
     ],
     paragraphs: [
-      'Reach the buyer faster',
-      '*NavBox* Your products are top Google search',
-      'Here at NasNav we designed a device called the route box that plugs into a stores barcode scanner. The box picks up products UPC codes and uses that to populate a website of the products here at NasNav we designed a device called the route box'
+      'Attract more consumers to your store.',
+      '*NavBox* get your stores and products seen higher up in Google or Bing search results.',
+      'Here at NasNav we designed a device called the NavBox that plugs into a stores barcode scanner. The box picks up products codes and uses that to showcase your products to be seen on Google or Bing search results'
     ],
     steps: [
       { 
@@ -59,7 +59,8 @@ const services = [
       {
         iconAlt: '',
         text: 'Come up on',
-        googleIcon: googleIcon
+        googleIcon: googleIcon,
+        bingIcon: bingIcon
       }
     ],
     buttons: [
@@ -87,22 +88,19 @@ const services = [
       'service__content_floatOnlargeScreen_right'
     ],
     paragraphs: [
-      'How will my products be displayed?',
-      '*+10 Navbox* styles you can choose between',
-      'Here at NasNav we designed a device called the route box that plugs into a stores barcode scanner. The box picks up products UPC codes and uses that to populate a website of the products here at NasNav we designed a device called the route box'
+      'Why have one website when you can select from a load!',
+      '*+20 Themes* styles you can choose between',
+      'With a wide selection of web or mobile-responsive themes suitable for retails industry, anyone can start selling their products online now.',
+      'Our leading eCommerce website builder gives you full control over your website\'s look and feel, and you have total access to your theme so you can customize them to match your brand.'
     ],
     steps: [
       { 
         iconAlt: '',
-        text: 'Adjust the colors to suit your type of work'
+        text: 'Functionality and tools like Quick Cart, Recently Viewed items, Single page checkout, and more…'
       },
       { 
         iconAlt: '',
-        text: 'Edit photos and upload photos that reflect you'
-      },
-      {
-        iconAlt: '',
-        text: 'Add you logo and your ways of communication'
+        text: 'Our themes are crafted by professional designers who specialize in e-commerce. Every theme is beautiful, fully responsive, easy to customize and designed to sell more.'
       }
     ],
     buttons: [
@@ -136,23 +134,10 @@ const services = [
       'service__content_floatOnlargeScreen_right'
     ],
     paragraphs: [
-      'How will my products be displayed?',
+      '',
       '*Dashboard* to manage your store and results',
-      'Here at NasNav we designed a device called the route box that plugs into a stores barcode scanner. The box picks up products UPC codes and uses that to populate a website of the products here at NasNav we designed a device called the route box'
-    ],
-    steps: [
-      { 
-        iconAlt: '',
-        text: 'Management of roducts and branches'
-      },
-      { 
-        iconAlt: '',
-        text: 'Analysis of results and reciept of orders'
-      },
-      {
-        iconAlt: '',
-        text: 'Manage Facebook page and Google analytics'
-      }
+      'Our team is proud to announce the new sophisticated dashboard for which store owners can manage and monitor all key reporting metrics.',
+      'NasNav Admin is ready for the world so everyone can start benefiting from this unique all integrated omnichannel platform that all you to multiple ways for your consumers to engage with your store smoothly.'
     ],
     buttons: [
       {text: 'Download PDF', backgroundColor: 'blue'},

@@ -48,13 +48,13 @@ class ServiceWithPopup extends Component {
         <div className="service__content">
           <h3 className="service__title">360 View</h3>
           <p className="paragraph paragraph_color_grey">
-            Once your customers have a fun experience using 360 technology
+            360 Virtual Tours made easy. Create, edit, share.
           </p>
           <p className="paragraph service__paragraph paragraph_size_large">
-            <strong>A new shopping</strong> experience for your customers
+            <strong>Enhance your business</strong> listing by showcasing your Store online.
           </p>
           <p className="paragraph paragraph_color_grey paragraph_line_high">
-            Here at NasNav we designed a device called the route box that plugs into a stores barcode scanner. The box picks up products UPC codes and uses that to populate a website of the products here at NasNav we designed a device called the route box
+            To deliver immersive, virtual experiences that inspire trust among consumers before they arrive. Packed with powerful features, yet simple to use. NasNav is an easy-to-use friendly solution for creating ­­360° virtual tours within your e-commerce website. 
           </p>
 
           <button className="button service__button button_color_white button_back_blue button_shape_oval button_size_large buttn_decoration_underline">Download PDF</button>

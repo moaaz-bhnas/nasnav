@@ -17,8 +17,12 @@
 }
 
 /* item --- */
+.step {
+  line-height: 1.5;
+}
+
 .stepList__step {
-  margin: 1.5rem 0;
+  margin: 1.2rem 0;
 }
 
 /* paragraph --- */
@@ -165,7 +169,8 @@ Steps Icons
 NavBox 
 ================================== */
 /* google icon --- */
-.step__googleIcon {
+.step__googleIcon,
+.step__bingIcon {
   width: 3rem;
   vertical-align: middle;
   margin-left: .4rem;

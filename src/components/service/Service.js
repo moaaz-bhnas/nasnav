@@ -67,7 +67,10 @@ class Service extends Component {
                   {step.text}
                   {
                     step.googleIcon &&
-                    <img src={step.googleIcon} alt="Google logo" className="step__googleIcon"/>
+                    <>
+                    <img src={step.googleIcon} alt="Google logo" className="step__googleIcon" /> or 
+                    <img src={step.bingIcon} alt="Bing logo" className="step__bingIcon" />
+                    </>
                   }
                 </li>
               ))}

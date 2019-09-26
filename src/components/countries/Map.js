@@ -56,11 +56,11 @@ const Map = () => {
         <p className="paragraph paragraph_weight_bold paragraph_size_med modal__paragraph">
           Join our family now wherever you are
         </p>
-        <p className="paragraph paragraph_color_grey modal__paragraph">
+        {/* <p className="paragraph paragraph_color_grey modal__paragraph">
           <a href="#" className="modal__joinLink">
             You can join us easily and increase your profits
           </a>
-        </p>
+        </p> */}
         <button className="button button_color_white button_back_blue button_shape_oval button_size_large">Get Started</button>
       </div>
     </div>

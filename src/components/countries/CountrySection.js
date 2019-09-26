@@ -7,34 +7,24 @@ import Slider from '../slider/Slider';
 const CountrySection = () => {
   const countriesDetails = [
     {
-      name: 'london',
-      location: 'The United Kingdom latitude and -0.13',
-      phone: '0052635458',
-      mail: 'london@nasorg.co'
-    },
-    {
       name: 'Egypt',
-      location: 'The United Kingdom latitude and -0.13',
-      phone: '0052635458',
-      mail: 'egypt@nasorg.co'
+      phone: '01206411114',
+      mail: 'franchising@nasnav.com'
     },
     {
-      name: 'Kuwait',
-      location: 'The United Kingdom latitude and -0.13',
-      phone: '0052635458',
-      mail: 'kuwait@nasorg.co'
+      name: 'Saudi Arabia',
+      phone: '966533077772',
+      mail: 'dhari@nasnav.com'
     },
     {
       name: 'Nigeria',
-      location: 'The United Kingdom latitude and -0.13',
-      phone: '0052635458',
-      mail: 'nigeria@nasorg.co'
+      phone: '2348032056154',
+      mail: 'aliu.ajao@nasnav.com'
     },
     {
       name: 'Poland',
-      location: 'The United Kingdom latitude and -0.13',
-      phone: '0052635458',
-      mail: 'poland@nasorg.co'
+      phone: '48500169262',
+      mail: 'marek.zachara@nasnav.com'
     },
   ];
 
@@ -43,13 +33,13 @@ const CountrySection = () => {
       <div className="container">
         <h2 className="countries__title" id="countries__title">Countries where we offer our services</h2>
         <p className="paragraph paragraph_color_grey countries__paragraph">
-          In many countries of the world we are present
+          We started and we are growing right around the world…
         </p>
         <p className="paragraph paragraph_size_med countries__paragraph">
-          <strong>Where do</strong> we go and offer our services?
+          {/* <strong>Where do</strong> we go and offer our services? */}
         </p>
         <p className="paragraph paragraph_line_high paragraph_color_grey paragraph_shortened_large countries__paragraph">
-          Here at NasNav we designed a device called the route box that plugs into a store barcode scanner we designed a device called the route box that.
+          We can provide you with a complete ‘Business-in-a-Box’ solution. Join our franchising scheme and be a part of the team. Build your business with confidence knowing you are backed by expert. 
         </p>
         <Map />
         <ul className="list countryList countries__countryList">

@@ -6,8 +6,8 @@
   text-align: center;
   display: inline-block;
   box-sizing: border-box;
-  width: 19.3%;
-  min-width: 200.72px;
+  width: 25%;
+  min-width: 16.25rem;
   padding: 0 1.4rem;
   vertical-align: top;
 
@@ -24,13 +24,7 @@
 /* name --- */
 .country__countryName {
   font-weight: 500;
-  margin: 0;
-}
-
-/* location --- */
-.country__countryLocation {
-  color: $light-grey;
-  margin: .9rem 0;
+  margin: 0 0 .9rem;
 }
 
 /* customer service title --- */
@@ -51,12 +45,21 @@ Customer Services
 
 /* contact icon --- */
 .customerServices__contactIcon {
+  display: none;
   width: 1rem;
   vertical-align: middle;
   margin-right: .19rem;
+
+  @media screen and (min-width: 380px) {
+    display: inline;
+  }
 }
 
 /* mail --- */
-.customerServices__mail {
-  margin-right: -.5rem;
+.customerServices__contactLink {
+  margin-left: -3.78px;
+
+  @media screen and (min-width: 380px) {
+    margin-left: 0;
+  }
 }
